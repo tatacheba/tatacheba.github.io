@@ -1,0 +1,556 @@
+// Fonts
+@font-face {
+  font-family: 'Bellota';
+  src        : url('../fonts/Bellota-Regular.eot');
+  src        : url('../fonts/Bellota-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Bellota-Regular.woff2') format('woff2'),
+    url('../fonts/Bellota-Regular.woff') format('woff'),
+    url('../fonts/Bellota-Regular.ttf') format('truetype'),
+    url('../fonts/Bellota-Regular.svg#Bellota-Regular') format('svg');
+
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bellota-Italic';
+  src        : url('../fonts/Bellota-Italic.eot');
+  /* IE9 Compat Modes */
+  src        : url('../fonts/Bellota-Italic.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/Bellota-Italic.otf') format('opentype'),
+    /* Open Type Font */
+    url('../fonts/Bellota-Italic.svg') format('svg'),
+    /* Legacy iOS */
+    url('../fonts/Bellota-Italic.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/Bellota-Italic.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/Bellota-Italic.woff2') format('woff2');
+  /* Modern Browsers */
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+}
+
+// Colors
+$main-color    :#ff9474;
+$footer-color  : #fefcf8;
+$font-color    :#833219;
+$me-color      :#ff997c;
+$send-btn-color: #be6f57;
+
+
+
+// Basic settings 
+
+html {
+  font-size : 20px;
+  min-height: 100%;
+
+}
+
+body {
+  margin     : 0rem;
+  font-family: 'Bellota';
+  color      : $font-color;
+}
+
+a:active,
+/* активная/посещенная ссылка */
+a:hover
+
+/* при наведении */
+a {
+  text-decoration: none;
+  color          : #666;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+%h2 {
+  font-size  : 3rem;
+  text-align : center;
+  color      : $main-color;
+  font-weight: 700;
+  font-family: 'Bellota-Italic';
+}
+
+%h3 {
+  font-size  : 2rem;
+  text-align : center;
+  color      : $main-color;
+  font-weight: 700;
+  font-family: 'Bellota-Italic';
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+%p {
+  display   : block;
+  width     : 70%;
+  text-align: center;
+
+}
+
+%button-radius {
+  padding       : .5rem 1rem;
+  border-radius : 2rem;
+  text-transform: uppercase;
+  border        : none;
+  font-size     : .7rem;
+  font-weight   : 900;
+
+}
+
+%button-radius-min {
+  padding       : .5rem 1rem;
+  border-radius : .3rem;
+  text-transform: uppercase;
+  border        : none;
+  font-size     : .7rem;
+  font-weight   : 900;
+
+}
+
+
+%button-dark {
+  background-color   : $main-color;
+  color              : #ffffff;
+  transition-property: all;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background   : darken($main-color, $amount: 10%);
+    // border    : 4rem solid red;
+  }
+}
+
+%button-light {
+  background-color   : #ffffff;
+  color              : $main-color;
+  transition-property: all;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background   : lighten($main-color, $amount: 20%);
+    // border    : 4rem solid red;
+  }
+}
+
+%button-animation {
+  transition-property: all;
+  transition-duration: 1s;
+
+  &:hover {
+
+    padding   : 0.8rem 1.3rem;
+    background: darken($main-color, $amount: 10%);
+  }
+
+}
+
+//header
+
+.header {
+  background: url(/build/img/weddingservices-sliderbg.jpg) top center no-repeat;
+  margin    : 0 auto;
+  height    : 5rem;
+  padding   : 0.5rem 0;
+  height    : 100%;
+
+  .header__phone {
+    display    : inline-block;
+    color      : $font-color;
+    font-size  : 1rem;
+    font-weight: 700;
+    height     : 5rem;
+    line-height: 5rem;
+    white-space: nowrap;
+  }
+
+  .header__button {
+    display: table;
+    width  : 100%;
+    height : 5rem;
+
+    .wrap-block {
+      display       : table-cell;
+      vertical-align: middle;
+
+      .header__button_dark {
+        @extend%button-radius;
+        @extend%button-dark;
+
+      }
+
+      .header__button_animation {
+        @extend%button-animation;
+
+
+      }
+    }
+  }
+
+  // header-content
+  .header-content {
+    text-align    : center;
+    position      : relative;
+    padding-bottom: 5rem;
+
+    h1 {
+      margin     : 3rem 0 2rem;
+      color      : $main-color;
+      font-weight: 600;
+      font-family: 'Bellota';
+
+    }
+
+    p {
+      @extend%p;
+      margin: 2rem auto;
+
+    }
+
+    .header-content__buttons {
+      padding-bottom: 11rem;
+      margin        : auto;
+
+      .header-content__order-btn {
+        @extend%button-radius;
+        @extend%button-dark;
+        // border: 4rem solid green;
+      }
+
+      .header-content__more-btn {
+        @extend%button-radius;
+        @extend%button-light;
+      }
+    }
+
+    .header-content__scroll-btn {
+      display   : block;
+      width     : 100%;
+      height    : 30px;
+      position  : absolute;
+      left      : 50%;
+      transform : translateX(-50%);
+      margin-top: -3.0rem;
+    }
+  }
+}
+
+
+// services
+.services {
+
+  .services__content {
+    text-align: center;
+
+    h2 {
+      @extend%h2;
+      margin-bottom: 4rem;
+
+    }
+
+    p {
+      @extend%p;
+      width : 100%;
+      margin: 2rem auto;
+
+    }
+
+    .services__more-btn {
+      @extend%button-radius-min;
+      @extend%button-dark;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .services__cards {
+    text-align: center;
+    margin    : 1rem;
+
+
+    .card {
+      width : 16rem;
+      border: none;
+    }
+
+    h4 {
+      color      : $main-color;
+      font-weight: 900;
+    }
+  }
+}
+
+
+// Promo vodeo
+.video-promo {
+  padding      : 10rem 0;
+  background   : url('/build/img/weddingservices-sectionbg1.jpg') 50% 50% no-repeat;
+  position     : relative;
+  // height    : 10rem;
+
+  .video-promo__img {
+    position   : relative;
+    padding    : 4rem 2rem;
+    // margin  : 4rem 2rem;
+    object-fit : cover;
+  }
+
+  // .video-promo__img {
+  //   display        : flex;
+  //   justify-content: center;
+  //   align-items    : center;
+  //   height         : 400px;
+  //   max-width      : 400px;
+  //   position       : absolute;
+  //   top            : calc(50% - 200px);
+  //   left           : 0;
+  //   right          : 0;
+  //   margin         : 0 auto;
+  //   object-fit     : cover;
+
+  // }
+
+  .video-promo__text {
+    display    : table;
+    color      : $footer-color;
+    position   : absolute;
+    text-align : center;
+    left       : 0;
+    right      : 0;
+    margin     : 0 auto;
+    top        : 45%;
+    z-index    : 3;
+    white-space: nowrap;
+    height     : 5rem;
+
+
+    .video-promo__play {
+      display   : inline-block;
+      background: url();
+      position  : relative;
+      cursor    : pointer;
+      height    : 5rem;
+      width     : 5rem;
+
+
+
+      .video-promo__play_act {
+        position           : absolute;
+        top                : 0;
+        right              : 0;
+        left               : 0;
+        display            : inline-block;
+        height             : 5rem;
+        width              : 5rem;
+        z-index            : 5;
+        opacity            : 1;
+        transition-property: opacity;
+        transition-duration: 0.5s;
+
+        &:hover {
+          opacity: 0;
+
+        }
+      }
+
+      .video-promo__play_hov {
+        position: absolute;
+        top     : 0;
+        right   : 0;
+        left    : 0;
+        display : inline-block;
+        height  : 5rem;
+        width   : 5rem;
+        z-index : 4;
+
+      }
+
+    }
+
+    p {
+      display       : table-cell;
+      vertical-align: middle;
+      text-align    : center;
+
+      padding    : 0 5rem;
+      font-size  : 2rem;
+      font-weight: 900;
+
+    }
+
+  }
+
+}
+
+
+// More
+.more {
+  h2 {
+    @extend%h2;
+  }
+
+  p {
+    @extend%p;
+    margin: 1rem auto;
+  }
+
+  .more__card {
+    margin-top: 2rem;
+
+
+    .card {
+
+      text-align : center;
+      display    : flex;
+      align-items: center;
+      border     : none;
+
+      img {
+        height   : 6rem;
+        width    : 6rem;
+        // border: 3px solid red;
+      }
+
+      .card-text {
+        @extend%p;
+        width: 100%;
+        color: $main-color;
+      }
+    }
+  }
+
+
+}
+
+//Team
+.team {
+  margin-top: 14rem;
+  background: url(/build/img/weddingservices-sectionbg2.jpg);
+  text-align: center;
+
+  .team__content {
+    text-align: center;
+    margin    : 0 auto;
+
+    h3 {
+      margin-top: 2rem;
+    }
+
+    h2 {
+      @extend%h2;
+      margin: 2rem auto 3rem;
+      color : #ffffff;
+    }
+  }
+
+  .team__love-img {
+
+    img {
+      margin-top: -13rem;
+    }
+
+  }
+
+  .team__child {
+    text-align: center;
+    margin    : auto;
+
+    .card {
+      text-align: center;
+      background: transparent;
+      width     : 16rem;
+      border    : none;
+    }
+
+    img {
+
+      margin: 2rem auto;
+      width : 10rem;
+      height: 10rem;
+
+    }
+
+    h4 {
+      color : #ffffff;
+      margin: 1rem auto;
+    }
+  }
+
+  .team__more-btn {
+    @extend%button-radius-min;
+    @extend%button-light;
+    margin: 3rem auto;
+  }
+}
+
+// Footer
+.footer {
+  background-color   : $footer-color;
+  // box-sizing      : content-box;
+
+  .footer__menu {
+    padding      : 3rem 0;
+    text-align   : center;
+    margin       : auto;
+    // box-sizing: content-box;
+
+
+    .footer__adress {
+
+      text-align: center;
+
+      h4 {
+        color: $main-color;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .footer__social {
+      // border    : 1px solid red;
+      text-align: center;
+
+      // box-sizing: content-box;
+
+      .footer__social-logo {
+        width : 100%;
+        margin: auto;
+      }
+
+      .footer__social-icon img {
+        // display      : inline-block;
+        // justify-content: center;
+        // box-sizing: content-box;
+        margin: 0 1rem;
+        height: 2rem;
+        width : 2rem;
+      }
+    }
+
+    .footer__contact {
+      text-align   : center;
+      // box-sizing: content-box;
+
+      h4 {
+        color: $main-color;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+
+}
