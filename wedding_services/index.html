@@ -31,34 +31,39 @@
                </div>
             </div>
          </div>
-         <div class="row">
-            <div class="header-content">
-               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                  <h1>Запланируйте свою незабываемую свадьбу с нами</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deleniti maiores suscipit
-                     laboriosam
-                     porro voluptas. Impedit a sunt fugiat consequatur debitis unde officia saepe totam. Unde numquam
-                     quas
-                     vitae? Repudiandae.</p>
+         <div class="header__content row">
+            <!-- <div class="header-content"> -->
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+               <h1>Запланируйте свою незабываемую свадьбу с нами</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deleniti maiores suscipit
+                  laboriosam
+                  porro voluptas. Impedit a sunt fugiat consequatur debitis unde officia saepe totam. Unde numquam
+                  quas
+                  vitae? Repudiandae.</p>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+               <div class="header__buttons">
+                  <button class="header__order_btn">Заказать</button>
+                  <button class="header__more_btn">Узнать больше</button>
                </div>
-               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <div class="header-content__buttons">
-                     <button class="header-content__order-btn">Заказать</button>
-                     <button class="header-content__more-btn">Узнать больше</button>
-                  </div>
-               </div>
-               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            </div>
+            <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   <div class="header-content__scroll-btn">
                      <a href="#services">
                         <img src="build/img/weddingservices-slider-pic1.png" alt=""></a>
                   </div>
-               </div>
-            </div>
+               </div> -->
          </div>
       </div>
+      <div class="header__scroll-btn">
+         <a href="#services">
+            <img src="build/img/weddingservices-slider-pic1.png" alt=""></a>
+      </div>
    </div>
+
+
    <!-- Services -->
-   <div class="services">
+   <div id="services" class="services">
       <div class="container">
          <div class="row">
             <div class="services__content col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
@@ -111,19 +116,33 @@
    <!-- Video-promo -->
    <div class="video-promo">
       <div class="video-promo__block container">
-         <!-- <img class="video-promo__img" src="build/img/weddingservices-wrapbg1.png" alt=""> -->
-         <div class="video-promo__text row justify-content-center align-items-center">
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+         <!-- <div class="video-promo__text row justify-content-center">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
                <h3 class="video-promo__text_right">Смотрите наше</h3>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 align-self-center">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 align-self-center">
                <a class="video-promo__play" href="/" data-target="#staticBackdrop" data-toggle="modal">
                   <img class="video-promo__play_act" src="build/img/weddingservices-home-icon1a.png" alt="">
                   <img class="video-promo__play_hov" src="build/img/weddingservices-home-icon1b.png" alt="">
                </a>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-               <h3 class="video-promo__text_left">промо видео</h3>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 video-promo__text_left">
+               <h3 class="">промо видео</h3>
+            </div>
+         </div> -->
+         <div class="video-promo__text row justify-content-center">
+
+            <div>
+               <h3>Смотрите наше</h3>
+            </div>
+            <div class="video-promo__player">
+               <a class="video-promo__play" href="/" data-target="#staticBackdrop" data-toggle="modal">
+                  <img class="video-promo__play_act" src="build/img/weddingservices-home-icon1a.png" alt="">
+                  <img class="video-promo__play_hov" src="build/img/weddingservices-home-icon1b.png" alt="">
+               </a>
+            </div>
+            <div>
+               <h3>промо видео</h3>
             </div>
          </div>
       </div>
@@ -158,43 +177,42 @@
    <div class="more">
       <div class="container">
          <div class="row">
-            <div class="more__content col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="more__content col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                <h2>А также</h2>
                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ut, quaerat id velit eaque culpa.
                   Reprehenderit similique, repellat aliquam est tempora cupiditate vel, ea expedita nostrum itaque,
                   deleniti quasi recusandae!</p>
             </div>
          </div>
-         <div class="row">
-            <div class="more__card row">
-               <div class="card col-xl-3 col-lg-3 col-md-12 col-sm-12">
-                  <img src="build/img/weddingservices-home-icon2.png" alt="...">
-                  <div class="card-body">
-                     <h5 class="card-text">Найдем для Вас кольца</h5>
+         <div class="more__card row">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+               <img src="build/img/weddingservices-home-icon2.png" alt="...">
+               <div class="card-body">
+                  <h5 class="card-text">Найдем для Вас кольца</h5>
 
-                  </div>
-               </div>
-               <div class="card col-xl-3 col-lg-3 col-md-12 col-sm-12">
-                  <img src="build/img/weddingservices-home-icon3.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                     <h5 class="card-text">Наймем музыкантов</h5>
-                  </div>
-               </div>
-               <div class="card col-xl-3 col-lg-3 col-md-12 col-sm-12">
-                  <img src="build/img/weddingservices-home-icon4.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                     <h5 class="card-text">Огранизуем профессиональную съемку</h5>
-                     </p>
-                  </div>
-               </div>
-               <div class="card col-xl-3 col-lg-3 col-md-12 col-sm-12">
-                  <img src="build/img/weddingservices-home-icon5.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                     <h5 class="card-text">Проведем дегустацию свадебного торта</h5>
-                     </p>
-                  </div>
                </div>
             </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+               <img src="build/img/weddingservices-home-icon3.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-text">Наймем музыкантов</h5>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+               <img src="build/img/weddingservices-home-icon4.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-text">Огранизуем профессиональную съемку</h5>
+                  </p>
+               </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+               <img src="build/img/weddingservices-home-icon5.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-text">Проведем дегустацию свадебного торта</h5>
+                  </p>
+               </div>
+            </div>
+
          </div>
       </div>
    </div>
@@ -247,12 +265,13 @@
                   <img src="build/img/Logo.png" alt="">
                </div>
                <div class="footer__social-icon">
-                  <a href="">
+                  <a href="https://twitter.com/" target="_blank">
                      <img src="build/img/weddingservices-twitter_icon.png" alt=""></a>
-                  <a href="">
+                  <a href="https://youtube.com/" target="_blank">
                      <img src="build/img/weddingservices-youtube_icon.png" alt=""></a>
-                  <a href="" img src="build/img/weddingservices-instagram_icon.png" alt=""></a>
-                  <a href="">
+                  <a href="https://instagram.com/" target="_blank">
+                     <img src="build/img/weddingservices-instagram_icon.png" alt=""></a>
+                  <a href="https://facebook.com/" target="_blank">
                      <img src="build/img/weddingservices-facebook_icon.png" alt=""></a>
                </div>
             </div>
