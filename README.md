@@ -5,4 +5,4 @@
 * [Wedding_serviсes](https://tatacheba.github.io/wedding_services/index.html) - HTML, CSS, БЭМ, Bootstrap4.
 * [Beehive](https://tatacheba.github.io/beehive/index.html) - HTML, CSS + Grid(no adaptive).
 
-[![Up to Date](https://github.com/ikatyang/emoji-cheat-sheet/workflows/Up%20to%20Date/badge.svg)](https://github.com/ikatyang/emoji-cheat-sheet/actions?query=workflow%3A%22Up+to+Date%22)
+[![HH]()](https://spb.hh.ru/resume/10b9a9d9ff084bdafe0039ed1f584a304c5441)
