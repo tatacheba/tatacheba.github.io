@@ -1,0 +1,374 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+a,
+img,
+ol,
+ul,
+li,
+table,
+tbody,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 101%;
+    font-family: Arial, verdana, arial, sans-serif;
+    font-size: 12px;
+    -webkit-text-size-adjust: none;
+    color: #6F6F6F;
+    background-color: #efefef;
+}
+
+body {
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+}
+
+footer,
+header,
+section {
+    display: block;
+}
+
+a {
+    color: #6F6F6F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p,
+ul,
+ol {
+    margin: 18px 0;
+    line-height: 1.5em;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    display: block;
+    height: 0px;
+    line-height: 0px;
+    border: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #aaa;
+    margin: 16px 0;
+    padding: 0;
+    clear: both;
+    float: none;
+}
+
+hr.notop {
+    margin-top: 0;
+}
+
+#documenter_sidebar {
+    -moz-box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+    -webkit-box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+    box-shadow: 0 0 6px rgba(3, 3, 3, 0.6);
+    position: fixed;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+
+#documenter_content {
+    position: absolute;
+    top: 0px;
+    right: 18px;
+    left: 218px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    min-height: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/*---------------------------------------------------------------------*/
+
+/* Sidebar
+/*----------------------------------------------------------------------*/
+
+#documenter_sidebar #documenter_logo {
+    display: block;
+    /* height: 15%; */
+    height: 100px;
+    /* min-height: 50px; */
+    width: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#documenter_logo img {
+    height: 100px;
+}
+
+#documenter_sidebar ul {
+    font-size: 12px;
+    font-weight: 700;
+    min-height: 150px;
+    height: 70%;
+    overflow: auto;
+}
+
+#documenter_sidebar ul li a {
+    display: block;
+    border-top: 1px solid #e0e0e0;
+    padding: 6px 15px 7px 0;
+    text-align: right;
+}
+
+#documenter_sidebar ul a:hover
+{
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+    text-decoration: none;
+    background-color: #d1d1d1;
+    color: #5c5c5c;
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    padding: 6px 15px 6px 0;
+}
+
+#documenter_sidebar ul li:last-child a {
+    border-bottom: 1px solid #e0e0e0;
+}
+#documenter_sidebar ul li:last-child a:hover {
+    border-bottom: 1px solid #aaa;
+}
+/*----------------------------------------------------------------------*/
+
+/* Content
+/*----------------------------------------------------------------------*/
+
+#documenter_structure {
+    position: relative;
+}
+
+
+#tag_head {
+    position: relative;
+    height: auto;
+}
+
+#documenter_content section {
+    padding-top: 20px;
+}
+
+#documenter_content h1 {
+    font-family: MarqueeMieux;
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+#documenter_content h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.shpar {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+#documenter_content h3 {
+    font-size: 16px;
+    margin: 18px 0 0;
+    font-weight: 100;
+}
+
+#documenter_content p {
+    margin: 10px 0;
+}
+
+#documenter_content ol li {
+    list-style: decimal;
+    margin-left: 36px;
+}
+
+/*---------------------------------------------------------------------*/
+/*Table*/
+/*---------------------------------------------------------------------*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td li,
+td a {
+    color: #5600ff;
+}
+
+td a:hover {
+    text-decoration: underline;
+    }
+
+div table tr td p {
+    margin: 0 !important;
+    ;
+}
+
+td li:hover:after {
+    content: attr(data-title);
+    /* Выводим текст */
+    position: fixed;
+    /* Абсолютное позиционирование */
+    right: 30%;
+    top: 30%;
+    /* Положение подсказки */
+    z-index: 1;
+    /* Отображаем подсказку поверх других элементов */
+    background: rgba(255, 255, 230, 0.9);
+    /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif;
+    /* Гарнитура шрифта */
+    font-size: 11px;
+    /* Размер текста подсказки */
+    padding: 5px 10px;
+    /* Поля */
+    border: 1px solid #6F6F6F;
+    /* Параметры рамки */
+    width: auto;
+    max-width: 50%;
+    text-align: right;
+}
+
+td,
+th {
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #dddddd;
+}
+
+tr td:first-child {
+    font-weight: 700;
+}
+
+tr td:last-child li:hover {
+    cursor: help;
+    color: #6F6F6F;
+}
+
+.block_elem {
+    color: #D9A91A;
+}
+
+.string_elem {
+    color: #731D1D;
+}
+
+/*---------------------------------------------------------------------*/
+/*Code*/
+/*---------------------------------------------------------------------*/
+
+.tages,
+.view_code {
+    font-family: Arial,monospace;
+    font-size: 10px;
+    line-height: 16px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    background-color: #848484;
+    border: 1px solid #E6E6E6
+}
+.code_s {
+    font-weight: 700;
+
+}
+
+ol.tages{
+    display: block;
+    font-size: 10px;
+    background-color: #f2f2f2;
+    color: #939393;
+    padding: 0;
+    text-indent: 0;
+    list-style: none
+}
+
+ol.tages li{
+    margin: 0;
+    background-color: #fff;
+    border: 0 solid #fff;
+    padding: 0 5px 0 14px;
+    line-height: 14px;
+    color: #939393;
+    list-style: none;
+    font-size: inherit
+}
+
+ol.tages li:FIRST-CHILD{
+    padding-top: 5px
+}
+
+ol.tages li:LAST-CHILD {
+    padding-bottom: 5px
+}
+
+.tages span {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    font-size: 120%;
+    font-family: inherit
+}
+
+.tages .tage_name {
+    color: #12217c;
+    font-weight: 500;
+}
+
+.tages .atrib_name {
+    color: #6e0d6e;
+}
+
+.tages .value_name {
+    color: #961414;
+}
+
+.tages .comment {
+    color: #086b08;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+/* Print Styles
+/*----------------------------------------------------------------------*/
