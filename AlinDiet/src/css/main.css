@@ -1,0 +1,1023 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 13px !important;
+  }
+  html #exl {
+    font-size: 2rem;
+  }
+  html #col-about-me {
+    margin: auto !important;
+  }
+  html #col-about-me #text-aboutme {
+    padding: 1rem;
+  }
+  html #col-about-me #text-aboutme p {
+    overflow-x: hidden;
+  }
+  html #me_photo {
+    margin: auto !important;
+    text-align: center;
+  }
+  html #me_photo img {
+    margin: -10rem auto 0 !important;
+    height: 20rem;
+  }
+  html #comments #carouselExampleIndicators .carousel-inner .carousel-item #text-com {
+    margin: 0rem;
+    padding: 0rem;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 14px !important;
+  }
+  #col-about-me {
+    margin: auto !important;
+  }
+  #col-about-me #me_photo {
+    margin: auto !important;
+    text-align: center;
+  }
+  #col-about-me #me_photo img {
+    margin: -12rem auto 0 !important;
+  }
+  #comments #carouselExampleIndicators .carousel-inner .carousel-item #text-com {
+    margin: 0.4rem !important;
+    height: 30rem;
+  }
+}
+
+html {
+  color: #2f3231;
+  font-size: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #2f3231;
+  font-size: 4rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+h2 {
+  color: #2f3231;
+  font-size: 3rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+h3 {
+  color: #2f3231;
+  font-size: 2rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+h4 {
+  color: #4ac6d6;
+  font-size: 1.5rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+h5 {
+  color: black;
+  font-size: 1.3rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+#Modalwindow h4 {
+  color: #2f3231;
+}
+
+#Modalwindow .form-group {
+  text-align: left;
+}
+
+#header-menu .naviganion_bar {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#header-menu .naviganion_bar.fixed {
+  position: fixed;
+  z-index: 3;
+  background-color: #fff;
+  opacity: .8;
+  left: 0;
+  right: 0;
+}
+
+#header-menu .naviganion_bar #navbarNavAltMarkup {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header-menu .naviganion_bar .logo img {
+  height: 3rem;
+}
+
+#header-menu .naviganion_bar .nav-btn {
+  margin-left: 6rem;
+}
+
+#header-menu .naviganion_bar .nav-item {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+#header-menu .naviganion_bar .nav-item a.nav-link {
+  color: #2f3231;
+}
+
+#header-menu .naviganion_bar .nav-item.active a.nav-link {
+  color: #4ac6d6;
+}
+
+#header-menu .naviganion_bar .nav-item:hover a.nav-link {
+  color: #4ac6d6;
+}
+
+#header-menu .naviganion_bar button.btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: #4ac6d6;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 1rem;
+}
+
+#header-menu .naviganion_bar button.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3fb5c5;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+#header-menu .naviganion_bar button.btn:hover:before,
+#header-menu .naviganion_bar button.btn:focus:before,
+#header-menu .naviganion_bar button.btn:active:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#header-menu #header {
+  position: relative;
+  top: 1rem;
+}
+
+#header-menu #header #head_photo {
+  z-index: 0;
+}
+
+#header-menu #header #head_photo img {
+  display: block;
+  width: 100%;
+}
+
+#header-menu #header #head-text {
+  margin-top: 4rem;
+  z-index: 2;
+}
+
+#header-menu #header #head-text #exl {
+  white-space: nowrap;
+  overflow: visible;
+}
+
+#header-menu #header #head-text a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#header-menu #header #head-text2 {
+  font-size: 1rem;
+}
+
+#header-menu #header button.btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: #4fc99a;
+  color: #fff;
+  font-weight: bold;
+  margin: 2rem 1rem;
+  padding: 1rem 1rem;
+}
+
+#header-menu #header button.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #59d4a5;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+#header-menu #header button.btn:hover:before,
+#header-menu #header button.btn:focus:before,
+#header-menu #header button.btn:active:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#practice #prc-txt {
+  margin: 4rem auto;
+}
+
+#practice #prc-txt #exl {
+  font-family: "Philosopher", sans-serif;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+#practice #prc-card {
+  text-align: center;
+  color: #ffffff;
+}
+
+#practice #prc-card div.row {
+  margin: -10% 2% 3% 2%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#practice #prc-card div.row div {
+  margin: 1%;
+  border-radius: 3%;
+}
+
+#practice #prc-card img {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 1rem;
+}
+
+#practice #prc-card h4 {
+  padding-top: 2rem;
+}
+
+#practice #prc-card #card-1 {
+  background-color: #f48fb1;
+  padding: 3%;
+  color: #ffffff;
+}
+
+#practice #prc-card #card-1 p,
+#practice #prc-card #card-1 h4 {
+  color: #ffffff;
+}
+
+#practice #prc-card #card-2 {
+  background-color: #ff8a65;
+  padding: 3%;
+  color: #ffffff;
+}
+
+#practice #prc-card #card-2 p,
+#practice #prc-card #card-2 h4 {
+  color: #ffffff;
+}
+
+#practice #prc-card #card-3 {
+  background-color: #4ac6d6;
+  padding: 3%;
+}
+
+#practice #prc-card #card-3 p,
+#practice #prc-card #card-3 h4 {
+  color: #ffffff;
+}
+
+#services {
+  text-align: center;
+}
+
+#services h3 {
+  padding-top: 3rem;
+  color: #4ac6d6;
+}
+
+#services-card {
+  margin: 7.5rem 0 5rem 0;
+  text-align: center;
+  float: left;
+}
+
+#services-card .card-text {
+  margin: 2rem 0;
+}
+
+#services-card hr {
+  width: 30%;
+  height: 6px;
+  border-radius: 3px;
+}
+
+#services-card div {
+  border-radius: 8px;
+  margin: 0 2rem 0 0rem;
+}
+
+#services-card ul {
+  list-style: none;
+}
+
+#services-card ul > li {
+  text-align: left;
+}
+
+#services-card img {
+  margin-top: -5.5rem;
+  height: auto;
+  width: 12rem;
+}
+
+#services-card > div {
+  margin: 1rem;
+  margin-bottom: 6rem;
+}
+
+#services-card #card-1 {
+  background-color: #edfaf5;
+}
+
+#services-card #card-1 ul {
+  list-style-image: url(../img/home_dietitian2_pic5.png);
+}
+
+#services-card #card-1 hr {
+  background-color: #51ca9c;
+}
+
+#services-card #card-2 {
+  background-color: #fff3ef;
+}
+
+#services-card #card-2 ul {
+  list-style-image: url(../img/home_dietitian2_pic9.png);
+}
+
+#services-card #card-2 hr {
+  background-color: #ff8a65;
+}
+
+#services-card #card-3 {
+  background-color: #fef4f7;
+}
+
+#services-card #card-3 ul {
+  list-style-image: url(../img/home_dietitian2_pic10.png);
+}
+
+#services-card #card-3 hr {
+  background-color: #f48fb1;
+}
+
+#contact-me {
+  display: block;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#contact-me span {
+  color: #4ac6d6;
+}
+
+#contact-me button.btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background: #4ac6d6;
+  color: #fff;
+  font-weight: bold;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+}
+
+#contact-me button.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3fb5c5;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+#contact-me button.btn:hover:before,
+#contact-me button.btn:focus:before,
+#contact-me button.btn:active:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#col-about-me {
+  margin: 3rem 0 3rem -3rem;
+}
+
+#col-about-me #text-aboutme {
+  background-color: #ecfafc;
+  height: 45rem;
+  margin-top: -2.5rem;
+  position: relative;
+  padding: 5rem 0 2rem 15rem;
+}
+
+#col-about-me #text-aboutme h3 {
+  color: #4ac6d6;
+}
+
+#col-about-me #text-aboutme .text-about {
+  width: 30rem;
+  padding-bottom: 1rem;
+}
+
+#col-about-me #text-aboutme #contact {
+  font-size: 1.5rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+#col-about-me #text-aboutme #contact .bi {
+  margin-right: 2rem;
+}
+
+#col-about-me #text-aboutme #name {
+  margin-top: 2rem;
+  font-family: "Philosopher", sans-serif;
+  font-size: 4rem;
+}
+
+#col-about-me img {
+  height: auto;
+  width: 100%;
+  margin-left: -10rem;
+  border-radius: 0.5rem;
+}
+
+#price #price-text {
+  position: relative;
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#price #price-text p {
+  margin: 0 25%;
+}
+
+#price #price-text h3 {
+  color: #4ac6d6;
+}
+
+#price #card-price {
+  margin: auto;
+}
+
+#price #card-price h3 {
+  margin-top: 1rem;
+}
+
+#price #card-price #exl-1 {
+  color: #929292;
+  font-size: 3rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+#price #card-price #exl-1 img[src$=".svg"] {
+  height: 4rem;
+}
+
+#price #card-price img[src$=".png"] {
+  margin-top: 2rem;
+}
+
+#price #card-price hr#blu {
+  width: 60%;
+  height: 1px;
+  background-color: #4ac6d6;
+}
+
+#price #card-price svg {
+  height: 2rem;
+}
+
+#price #card-price sup.currency {
+  font-size: 1rem;
+  font-family: "Philosopher", sans-serif;
+}
+
+#price #card-price button.btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background: #4ac6d6;
+  color: #fff;
+  font-weight: bold;
+  margin: 2rem 1rem;
+  padding: 1rem 1rem;
+}
+
+#price #card-price button.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3fb5c5;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+#price #card-price button.btn:hover:before,
+#price #card-price button.btn:focus:before,
+#price #card-price button.btn:active:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#price #card-price #basic {
+  margin: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 12px 38px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 38px 0px rgba(0, 0, 0, 0.1);
+}
+
+#price #card-price #basic .normal {
+  text-align: left;
+  margin: 0 2.5rem;
+}
+
+#price #card-price #basic ul {
+  text-align: left;
+  margin: 3rem 0;
+  list-style-image: url(../img/home_dietitian2_pic9.png);
+}
+
+#price #card-price #basic ul li {
+  margin-top: 1rem;
+}
+
+#price #card-price #standart {
+  margin: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 12px 38px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 38px 0px rgba(0, 0, 0, 0.1);
+}
+
+#price #card-price #standart .normal {
+  text-align: left;
+  margin: 0 2.5rem;
+}
+
+#price #card-price #standart ul {
+  text-align: left;
+  margin: 3rem 0;
+  list-style-image: url(../img/home_dietitian2_pic10.png);
+}
+
+#price #card-price #standart ul li {
+  margin-top: 1rem;
+}
+
+#price #card-price #professional {
+  margin: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 12px 38px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 38px 0px rgba(0, 0, 0, 0.1);
+}
+
+#price #card-price #professional .normal {
+  text-align: left;
+  margin: 0 2.5rem;
+}
+
+#price #card-price #professional ul {
+  text-align: left;
+  margin: 3rem 0;
+  list-style-image: url(../img/home_dietitian2_pic5.png);
+}
+
+#price #card-price #professional ul li {
+  margin-top: 1rem;
+}
+
+#comments {
+  background-image: url(../img/home_dietitian2_sectionbg2.jpg);
+  padding-top: 2rem;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  background-clip: border-box;
+}
+
+#comments h3 {
+  color: #4ac6d6;
+}
+
+#comments h2 {
+  margin-bottom: 3rem;
+}
+
+#comments #carouselExampleIndicators .carousel-indicators #point {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #4ac6d6;
+  margin: 1rem;
+}
+
+#comments #carouselExampleIndicators .carousel-indicators #point.active {
+  border-radius: 0;
+  border-left: 0.7rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#comments #carouselExampleIndicators .carousel-inner .carousel-item .dots {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #4ac6d6;
+  height: 0.4rem;
+  width: 0.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+#comments #carouselExampleIndicators .carousel-inner .carousel-item #text-com {
+  height: 15rem;
+  background-image: url(../img/blockquote.png);
+  background-repeat: no-repeat;
+  background-position: 5% 10%;
+  margin: 0 10rem 1rem 10rem;
+  padding: 3rem 3rem 1rem 3rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  line-height: 4rem;
+  font-size: 1.2rem;
+}
+
+#comments #carouselExampleIndicators .carousel-inner .carousel-item img {
+  height: 7rem;
+  width: auto;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+#comments #carouselExampleIndicators .carousel-inner .carousel-item h4 {
+  color: #2f3231;
+  -webkit-margin-after: 8rem;
+          margin-block-end: 8rem;
+}
+
+#info {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+#info h3 {
+  color: #4ac6d6;
+}
+
+#info h2 {
+  margin-bottom: 3rem;
+}
+
+#info .card-desk {
+  width: auto;
+  overflow-x: hidden;
+}
+
+#info .card-desk .card {
+  border: none;
+}
+
+#info .card-desk .card .card-img-top {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#info .card-desk .card .card-body .card-title {
+  font-family: "Philosopher", sans-serif;
+}
+
+#info .card-desk .card .card-body hr {
+  text-align: left;
+  width: 30%;
+  height: 6px;
+  border-radius: 3px;
+  margin: 0 auto 0 0;
+  background-color: #cbf2f7;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+#info .card-desk .card .card-footer {
+  background-color: #ffffff;
+  border: none;
+}
+
+#info .card-desk .card .card-footer :focus {
+  outline: none;
+}
+
+#info .card-desk .card .card-footer ::-moz-focus-inner {
+  border: 0;
+}
+
+#info .card-desk .card .card-footer a[aria-expanded="true"] {
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(74, 198, 214, 0.3));
+          filter: drop-shadow(0px 0px 10px rgba(74, 198, 214, 0.3));
+}
+
+#send-message {
+  text-align: center;
+  background-color: #ecfafc;
+}
+
+#send-message .form-control::-webkit-input-placeholder {
+  color: #adb8c2;
+  opacity: 1;
+}
+
+#send-message .form-control:-ms-input-placeholder {
+  color: #adb8c2;
+  opacity: 1;
+}
+
+#send-message .form-control::-ms-input-placeholder {
+  color: #adb8c2;
+  opacity: 1;
+}
+
+#send-message .form-control::placeholder {
+  color: #adb8c2;
+  opacity: 1;
+}
+
+#send-message .modal-content {
+  padding: 2rem 2rem 2rem 2rem;
+  border: none;
+  background-color: #ecfafc;
+  margin: auto;
+}
+
+#send-message .modal-content .form-control {
+  margin-top: 1rem;
+}
+
+#send-message .modal-content input,
+#send-message .modal-content textarea {
+  border-radius: 0;
+  border-color: #e0edf0;
+}
+
+#send-message .modal-content .modal-footer {
+  border-top: none;
+}
+
+#send-message .modal-content .modal-footer button.btn {
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  background-color: #4ac6d6;
+  color: #fff;
+  font-weight: bold;
+  margin: .5rem 0rem;
+  padding: .5rem 1rem;
+}
+
+#send-message .modal-content .modal-footer button.btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3fb5c5;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+#send-message .modal-content .modal-footer button.btn:hover:before,
+#send-message .modal-content .modal-footer button.btn:focus:before,
+#send-message .modal-content .modal-footer button.btn:active:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#send-message h3 {
+  color: #4ac6d6;
+  padding-top: 2rem;
+}
+
+#footer {
+  margin: 2rem auto 3rem;
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#footer > .row > div {
+  margin: 1rem auto;
+}
+
+#footer span {
+  color: #4ac6d6;
+}
+
+#footer #footer-social {
+  margin: auto;
+  text-align: center;
+}
+
+#footer #footer-social img {
+  height: 2rem;
+  opacity: .4;
+}
+
+#footer #footer-social :hover img {
+  opacity: 1;
+}
+
+#scroll {
+  margin-top: 5rem;
+}
+
+#scroll .button-scroll a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: black;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+#scroll .button-scroll a:hover {
+  opacity: .5;
+}
+
+#scroll #section02 a {
+  padding-top: 60px;
+}
+
+#scroll #section02 a span {
+  position: absolute;
+  margin: auto;
+  width: 46px;
+  height: 46px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#scroll #section02 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  margin: -5px 0 0 -8px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
