@@ -4,7 +4,7 @@
 * [Form](https://tatacheba.github.io/form/index.html) - HTML, CSS.
 * [HTML5-prompt](https://tatacheba.github.io/HTML5-prompt/index.html) - HTML, CSS, Table layout.
 * [AlinDiet](https://tatacheba.github.io/AlinDiet/index.html) - HTML, CSS, Bootstrap4.
-* [Wedding_serviсes](https://tatacheba.github.io/weddHTML5-prompting_services/index.html) - HTML, CSS, БЭМ, Bootstrap4.
+* [Wedding_serviсes](https://tatacheba.github.io/wedding_services/index.html) - HTML, CSS, БЭМ, Bootstrap4.
 * [Beehive](https://tatacheba.github.io/beehive/index.html) - HTML, CSS + Grid(no adaptive).
 * [Cafe](https://tatacheba.github.io/cafe/index.html) - HTML, CSS, Grid, Flex (adaptive).
 
