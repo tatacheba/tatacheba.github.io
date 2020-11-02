@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 20px;
+    color: #898686;
+}
+
+.gallery img {
+    margin: auto;
+    width: 300px;
+    height: auto;
+    display: block;
+    border: 1px dotted gray;
+}
+
+.button {
+    text-align: center;
+    margin: 15px auto 50px;
+}
+
+.button>button {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #5CCCCC;
+    color: darkslategrey;
+    cursor: pointer;
+    margin: 0 15px;
+    border: 1px groove #1D7373;
+}
+
+#gallery_opacity .photos {
+    position: relative;
+    height: 300px;
+    display: block;
+}
+
+#gallery_opacity .photos img {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: auto;
+  
+}
+
+#gallery_opacity .photos img.show {
+    opacity: 1;
+    /* display: block; */
+}
