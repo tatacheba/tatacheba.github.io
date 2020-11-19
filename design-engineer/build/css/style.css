@@ -222,6 +222,9 @@ nav .test .tolerance .block-sim {
   background-color: #FFFFF1;
   padding: 2px;
   border: 2px solid gray;
+}
+
+nav .test .tolerance .block-sim .sim {
   font-family: GosttypeB;
 }
 
