@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'GosttypeB';
-  src: url("build/fonts/GosttypeB.eot");
-  src: url("build/fonts/GosttypeB.eot") format("embedded-opentype"), url("build/fonts/GosttypeB.woff2") format("woff2"), url("build/fonts/GosttypeB.woff") format("woff"), url("build/fonts/GosttypeB.ttf") format("truetype"), url("build/fonts/GosttypeB.svg#GosttypeA") format("svg");
+  src: url("../fonts/GosttypeB.eot");
+  src: url("../fonts/GosttypeB.eot") format("embedded-opentype"), url("../fonts/GosttypeB.woff2") format("woff2"), url("../fonts/GosttypeB.woff") format("woff"), url("../fonts/GosttypeB.ttf") format("truetype"), url("../fonts/GosttypeB.svg#GosttypeA") format("svg");
 }
 
 @font-face {
   font-family: 'GosttypeA_l';
-  src: url("../build/fonts/GosttypeA_l.eot");
-  src: url("../build/fonts/GosttypeA_l.eot") format("embedded-opentype"), url("../build/fonts/GosttypeA_l.woff2") format("woff2"), url("../build/fonts/GosttypeA_l.woff") format("woff"), url("../build/fonts/GosttypeA_l.ttf") format("truetype"), url("../build/fonts/GosttypeA_l.svg#GosttypeA") format("svg");
+  src: url("../fonts/GosttypeA_l.eot");
+  src: url("../fonts/GosttypeA_l.eot") format("embedded-opentype"), url("../fonts/GosttypeA_l.woff2") format("woff2"), url("../fonts/GosttypeA_l.woff") format("woff"), url("../fonts/GosttypeA_l.ttf") format("truetype"), url("../fonts/GosttypeA_l.svg#GosttypeA") format("svg");
 }
 
 * {
