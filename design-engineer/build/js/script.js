@@ -6,6 +6,7 @@ window.onload = function () {
     let sectionSkill = document.querySelector('#skill-me');
     let sectionTest = document.querySelector('#test-me');
     let sectionAbout = document.querySelector('#about-me');
+    let sectionResume = document.querySelector('#resume-me');
 
 
     for (let i = 0; i < navBlock.length; i++) {
@@ -37,6 +38,10 @@ window.onload = function () {
                     break;
                 case 'about':
                     sectionAbout.classList.add('active');
+                    this.classList.add('active');
+                    break;
+                case 'resume':
+                    sectionResume.classList.add('active');
                     this.classList.add('active');
                     break;
             };

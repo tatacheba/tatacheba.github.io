@@ -334,15 +334,21 @@ section p {
   padding: 6px 15px;
 }
 
-#skill-me ol {
+#skill-me ol,
+#resume-me ol,
+#about-me ol {
   margin: 10px;
 }
 
-#skill-me ol li {
+#skill-me ol li,
+#resume-me ol li,
+#about-me ol li {
   padding: 3px;
 }
 
-#skill-me ol ul {
+#skill-me ol ul,
+#resume-me ol ul,
+#about-me ol ul {
   padding-left: 10px;
 }
 
@@ -440,18 +446,6 @@ section p {
 
 #test-me .test-me_content .block-simbol .sim.active {
   color: black;
-}
-
-#about-me ol {
-  margin: 10px;
-}
-
-#about-me ol li {
-  padding: 3px;
-}
-
-#about-me ol ul {
-  padding-left: 10px;
 }
 
 .slider {
