@@ -238,3 +238,30 @@ window.onload = function () {
         };
     };
 };
+
+// Popup
+
+let popupActive = document.querySelector('.popup');
+let galleryPopup = document.querySelectorAll('.photos img');
+let imgPopup = document.querySelector('.popup img');
+let popupClose = document.querySelector('.popup-close');
+
+for (let i = 0; i < galleryPopup.length; i++) {
+    galleryPopup[i].onclick = popupActiveFun;
+};
+
+function popupActiveFun() {
+    console.log(4);
+    console.log(this.classList.contains('show'));
+    popupActive.style.display = "flex";
+    if (this.classList.contains('show')) {
+        let path = this.getAttribute('src');
+        console.log(path);
+
+        imgPopup.setAttribute('src', path);
+    };
+
+};
+popupActive.onclick = function () {
+    popupActive.style.display = "none";
+}
