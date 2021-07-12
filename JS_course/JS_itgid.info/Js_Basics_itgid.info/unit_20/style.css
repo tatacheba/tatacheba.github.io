@@ -1,0 +1,61 @@
+.container  {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+.block {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+    border: 2px solid #333;
+}
+
+.active {
+    background: orange;
+}
+
+.hide {
+    display: none;
+}
+.clav .number,.clav .simbol, .clav .block_space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number div,.simbol div, .block_space  div{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    -webkit-box-shadow: 8px 7px 8px -7px rgba(67, 60, 49, 0.2);
+    -moz-box-shadow: 8px 7px 8px -7px rgba(67, 60, 49, 0.2);
+    box-shadow: 8px 7px 8px -7px rgba(67, 60, 49, 0.2);
+}
+.clav .simbol div[data-key='enter'] {
+    width: 100px;
+    height: 40px;
+}
+.clav .block_space  div[data-key='space'] {
+    width: 300px;
+    height: 40px;
+}
+.clav .active{
+    border: none;
+    background-color: rosybrown;
+    color:beige  ;
+    -webkit-box-shadow: 0px 0px 36px -5px rgba(21, 15, 13, 0.62) inset;
+    -moz-box-shadow: 0px 0px 36px -5px rgba(21, 15, 13, 0.62) inset;
+    box-shadow: 0px 0px 36px -5px rgba(21, 15, 13, 0.62) inset;
+}
+.out-11 {
+    min-height: 30px;
+}
