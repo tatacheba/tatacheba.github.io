@@ -23,11 +23,10 @@ let max = 900;
 
 
 function getRandomInt2(min, max) {
-
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return out2.innerHTML = Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
-out2.innerHTML = getRandomInt2(min, max);
+getRandomInt2(min, max);
 // функцию пишите здесь
 
 

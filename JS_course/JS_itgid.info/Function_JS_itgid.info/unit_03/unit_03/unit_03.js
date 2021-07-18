@@ -428,10 +428,12 @@ const obj27 = {
 }
 
 function t27(v) {
-    let key = Object.keys(obj27);
-    if (key.includes(v)) {
-        return obj27[v];
+    for (let key in obj27) {
+        if (obj27[key] == v) {
+            return key;
+        }
     }
+
     return false;
 
 
@@ -459,7 +461,7 @@ document.querySelector('.b-28').addEventListener('click', function () {
 // Напишите функцию, которая получает в качестве аргументов строки и возвращает большую строку (прямым сравнением).
 
 function t29(str1, str2) {
-    if (str1.length > str2.length) return str1;
+    if (str1 > str2) return str1;
     return str2;
 
 }
@@ -478,7 +480,7 @@ function t31() {
 }
 
 function t30() {
-    return t31();
+    return t31;
 }
 
 

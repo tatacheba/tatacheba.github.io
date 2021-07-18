@@ -106,8 +106,7 @@ let a6_to = 67;
 
 const f6 = () => {
     let indLast;
-    let a6_1 = a6.reverse();
-
+    let a6_1 = a6.slice().reverse();
     ind = a6_1.findIndex((elem) => {
         if (elem > a6_from && elem < a6_to) {
             return true;
@@ -152,7 +151,7 @@ let a9 = ['2', '17', '45', '5', '14', '5', '45', '107'];
 let a9_1 = '5'; // ожидаю индекс 5
 
 const f9 = () => {
-    indLast = a9.lastIndexOf(a9_1.toLowerCase());
+    indLast = a9.lastIndexOf(a9_1);
     document.querySelector('.out-9').innerHTML = indLast;
 
 }
@@ -168,11 +167,11 @@ const f10 = () => {
     a10_res = a10.filter((elem, index) => {
         for (let i = 0; i < a11.length; i++) {
             if (index == a11[i]) {
-                return elem;
+                return true;
             }
         }
     })
-    document.querySelector('.out-10').innerHTML = a10_res;
+    document.querySelector('.out-10').innerHTML = a10_res.join(' ');
 }
 
 

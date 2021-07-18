@@ -113,8 +113,16 @@ let add = [999, 1000]
 
 // что хочу получить в результате работы функции - [-2, 3, 999,1000,  7]
 const f10 = (arr, from, num, add) => {
-    arr.splice(from, num, add)
-    return arr;
+    let newArr = [];
+    let newArrLast = [];
+    newArr = arr.filter((elem, i) => {
+        return i >= from ? false : true;
+    });
+    newArrLast = arr.filter((elem, i) => {
+        return i >= from + num ? true : false;
+    });
+    newArr = newArr.concat(add, newArrLast);
+    return newArr;
 
 }
 

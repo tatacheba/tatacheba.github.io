@@ -14,9 +14,6 @@ document.querySelector('.b-1').addEventListener('click', function () {
     document.querySelector('.out-1').innerHTML = t1(2, 4)
 })
 
-
-
-
 // Task 2
 // Напишите pure функцию t2, которая принимает два аргумента и выводит в .out-2 больше число. Используйте Math.max. Функция запускается по кнопке .b-2. 
 function t2(a, b) {
@@ -70,12 +67,12 @@ document.querySelector('.b-5').addEventListener('click', function () {
 // Task 6
 // Давайте напишем pure функцию t6, которая получает массив и возвращает его развернутым на 180 градусов ( чистый аналог reverse ). Функция запускается по кнопке .b-6. Для проверки - выводите результат на страницу, через пробел.
 function t6(arr) {
-    return arr.reverse().join(' ');
+    return arr.reverse();
 
 }
 
 document.querySelector('.b-6').addEventListener('click', function () {
-    document.querySelector('.out-6').innerHTML = t6([3, 4, 5, 6, 7]);
+    document.querySelector('.out-6').innerHTML = t6([3, 4, 5, 6, 7]).join(' ');
 })
 
 // Task 7
@@ -110,20 +107,20 @@ document.querySelector('.b-8').addEventListener('click', function () {
 // Метод push мутирует массив. Давайте напишем pure функцию t9 которая принимает массив и число в качестве аргумента и возвращает новый массив равный исходному с добавленным в него числом ( добавленным в конце массива). Запускаться функция дожна при нажатии  на кнопку b-9. Для проверки - выводите результат на страницу через пробел. 
 function t9(arr, num) {
     arr.push(num);
-    return arr.join(' ');
+    return arr;
 }
 
 document.querySelector('.b-9').addEventListener('click', function () {
-    document.querySelector('.out-9').innerHTML = t9(a8, year);
+    document.querySelector('.out-9').innerHTML = t9(a8, year).join(' ');
 })
 // Task 10
 // Метод push мутирует массив. Давайте напишем pure функцию t10 которая принимает массив и любое количество чисел в качестве аргументов и возвращает новый массив равный исходному с добавленными в него числами ( добавленным в конце массива). Запускаться функция дожна при нажатии  на кнопку b-10. Для проверки - выводите результат на страницу через пробел. 
 
 function t10(arr, ...num) {
     arr.push(num);
-    return arr.flat().join(' ');
+    return arr.flat();
 }
 
 document.querySelector('.b-10').addEventListener('click', function () {
-    document.querySelector('.out-10').innerHTML = t10(a8, 90, 89, 67, 56);
+    document.querySelector('.out-10').innerHTML = t10(a8, 90, 89, 67, 56).join(' ');
 })

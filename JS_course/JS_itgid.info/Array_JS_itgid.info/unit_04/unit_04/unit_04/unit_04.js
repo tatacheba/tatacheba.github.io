@@ -63,7 +63,7 @@ const f5 = () => {
 let a6 = ['a', 'b', 'c', 'd', 'e', 'f'];
 
 const f6 = (elem) => {
-    a6.splice(0, 1, elem);
+    a6.splice(0, 0, elem);
     return a6.length;
 }
 

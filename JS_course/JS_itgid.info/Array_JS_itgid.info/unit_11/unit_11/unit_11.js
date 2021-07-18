@@ -43,8 +43,7 @@ const f4 = (arr, delimiter) => {
         } else {
             out += elem + delimiter;
         }
-
-    })
+    });
     return out;
 }
 
@@ -57,7 +56,7 @@ a5[56] = 56;
 a5[57] = 56;
 
 const f5 = () => {
-    document.querySelector('.out-5').textContent = a5.filter(elem => elem).join('=');
+    document.querySelector('.out-5').textContent = a5.map(elem => elem).join('=');
 }
 
 // TASK 06 

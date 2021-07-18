@@ -117,7 +117,8 @@ let a5 = [{
 const f5 = () => {
 
     let out = a5.every(elem => {
-        if (elem.age >= 16) {
+        console.log(elem.pay);
+        if (elem.age >= 16 && elem.pay == true) {
             return true;
         }
     })
@@ -222,8 +223,7 @@ let a9 = [{
 const f9 = () => {
 
     let res = a9.some(item => {
-        console.log(item.age)
-        if (item.age >= 16) {
+        if (item.age <= 16) {
             return true;
         }
 

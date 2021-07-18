@@ -31,7 +31,7 @@ document.querySelector('.b-2').addEventListener('click', function () {
 // Task 3.
 //Напишите функцию t3, которая принимает два аргумента (число от, число до ) и выводит в блок .out-3 случайное целое число от первого аргумента(включительно) до второго(включительно). Задайте значение по умолчанию для min число 0 для max число 100. Функция запускается по кнопке .b-3. Обратите внимание на запуск функции. Чтобы передать аргументы, нам пришлось обернуть функцию в анонимную.
 
-function t3(min, max) {
+function t3(min = 0, max = 100) {
     let out = document.querySelector('.out-3');
     out.innerHTML = Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -134,12 +134,10 @@ document.querySelector('.b-8').addEventListener('click', function () {
 const out9 = document.querySelector('.out-9');
 
 function t9(text = '', block) {
-    if (arguments[1] === undefined) {
-        return;
+    if (block) {
+        return block.innerHTML = text.trim().toLowerCase();
     }
-    block.innerHTML = text.trim().toLowerCase();
 }
-
 document.querySelector('.b-9').addEventListener('click', function () {
     t9(' HelLO wORLd       ', out9);
 })

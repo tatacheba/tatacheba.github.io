@@ -106,16 +106,14 @@ let res08 = [];
 
 const f8 = () => {
     // ваш код
-
     let inp = +document.querySelector('.i-8').value;
-    a8.forEach((elem, ind) => {
-        if (elem == inp) {
-            res08.push(a8.indexOf(inp, ind));
-
-        }
-    })
+    let i = 0;
+    while (a8.indexOf(inp, i) !== -1) {
+        let result = a8.indexOf(inp, i);
+        a8.indexOf(inp, i += result + 1);
+        res08.push(result);
+    }
     document.querySelector('.out-8').innerHTML = res08;
-
 
 }
 
@@ -139,7 +137,7 @@ const f9 = () => {
     let inp = +document.querySelector('.i-9').value;
     let out = '';
     a9.forEach(elem => {
-        if (elem.indexOf(inp) > -1) {
+        if (elem.indexOf(inp) !== -1) {
             out += elem.indexOf(inp) + ' ';
         } else {
             out += '';

@@ -5,7 +5,7 @@
 let a1 = [22, 33, 44, 55, 66, 77, 88];
 
 const f1 = () => {
-    document.querySelector('.out-1').innerHTML = a1.reverse();
+    document.querySelector('.out-1').innerHTML = a1.reverse().join(' ');
 
 }
 
@@ -50,7 +50,7 @@ const f4 = () => {
     a4.forEach((elem, index) => {
         a4_res.push(a4[(a4.length - 1) - index]);
     });
-    document.querySelector('.out-4').textContent = a4_res.join(' ');
+    document.querySelector('.out-4').textContent = a4_res;
 }
 
 // TASK 05
@@ -68,7 +68,7 @@ const f5 = () => {
             array = [];
         }
     }
-    document.querySelector('.out-5').textContent = a5_res.flat().join(' ');
+    document.querySelector('.out-5').textContent = a5_res.flat();
 }
 
 // TASK 06
