@@ -17,9 +17,18 @@ public class Memory {
 
 
     public static void executeDefragmentation(String[] array) {
-        List<String> a = Arrays.asList(array);
-//        Arrays.sort(array);
-        Collections.sort(a, Comparator.naturalOrder());
         //напишите тут ваш код
+        String[] a = new String[array.length];
+        int s = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != null) {
+                a[s] = array[i];
+                s++;
+            }
+        }
+        for (int i = 0; i < a.length; i++) {
+           array[i]=a[i];
+        }
+
     }
 }
