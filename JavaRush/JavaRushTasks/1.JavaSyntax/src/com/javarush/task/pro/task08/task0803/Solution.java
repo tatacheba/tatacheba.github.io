@@ -19,9 +19,6 @@ public class Solution {
         //напишите тут ваш код
         int min = ints[0];
         for (int i = 0; i < ints.length - 1; i++) {
-//            if (min > Math.min(ints[i], ints[i + 1])) {
-//                min = Math.min(ints[i], ints[i + 1]);
-//            }
             min = min > Math.min(ints[i], ints[i + 1]) ? min = Math.min(ints[i], ints[i + 1]) : min;
         }
 

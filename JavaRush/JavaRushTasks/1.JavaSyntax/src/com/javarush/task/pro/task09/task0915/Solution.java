@@ -18,7 +18,7 @@ public class Solution {
         //напишите тут ваш код
         StringTokenizer u = new StringTokenizer(query, delimiter);
         int i = 0;
-//        System.out.println("jk "+u.countTokens());
+
         String[] arr=new String[u.countTokens()];
         while (u.hasMoreTokens())
         {
