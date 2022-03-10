@@ -194,7 +194,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  border-image: url("../img/headertop.png") 300 0 ;
 }
 
 #intro .intro-content h2 {
@@ -278,10 +277,10 @@ h1, h2, h3, h4, h5, h6 {
   #intro .bottom {
     content: '';
     background-image:url("../img/headerbottom.png");
-    position: absolute;
+    position: absolute; 
     height:100px;
     width: 100%;
-bottom: 0;
+    bottom: 0;
     right: 0;
     left: 0;
     z-index: 8;
