@@ -146,8 +146,8 @@ h1, h2, h3, h4, h5, h6 {
 #logo{
   position: relative;
   width: auto;
-  height: 8vh;
-  padding: 2px;
+  height: 7vh;
+  padding: 2px 0 0 0 ;
   overflow: hidden;
 }
 
@@ -167,7 +167,9 @@ h1, h2, h3, h4, h5, h6 {
   width:auto;
   height: 100%;
 }
-
+.col-8{
+  align-self: center;
+}
 @media (max-width: 768px) {
   #header {
     padding: 20px 0;
