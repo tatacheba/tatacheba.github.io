@@ -234,9 +234,12 @@ jQuery(document).ready(function ($) {
   let btn = document.querySelector('.b-1');
 
   btn.onclick = function () {
-    var a = document.querySelector('#inp-1').value;
+    var a = document.querySelector('#inp-1');
+
     console.log(a);
-    document.documentElement.style.setProperty('--main-bg-color', "#" + a);
+    document.documentElement.style.setProperty('--main-bg-color', "#" + a.value);
+
+    a.value = "";
 
   };
 
