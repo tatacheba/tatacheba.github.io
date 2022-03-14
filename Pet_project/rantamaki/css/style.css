@@ -8,7 +8,8 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  --main-bg-color: #304b26;
+  /* --main-bg-color: #304b26; */
+  --main-bg-color: #e34234;
   --main-color: #CCDAE7;
   --main-a-color:#50d8af;
   --main-text-color:#fff;
