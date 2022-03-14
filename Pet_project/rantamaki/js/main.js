@@ -222,6 +222,24 @@ jQuery(document).ready(function ($) {
       map: map
     });
   }
+
+
+
   google.maps.event.addDomListener(window, 'load', initialize_google_map);
+
+
+
+
+
+  let btn = document.querySelector('.b-1');
+
+  btn.onclick = function () {
+    var a = document.querySelector('#inp-1').value;
+    console.log(a);
+    document.documentElement.style.setProperty('--main-bg-color', "#" + a);
+
+  };
+
+
 
 });

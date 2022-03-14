@@ -8,8 +8,8 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  /* --main-bg-color: #304b26; */
-  --main-bg-color: #e34234;
+  --main-bg-color: #304b26;
+  /* --main-bg-color: #e34234; */
   --main-color: #CCDAE7;
   --main-a-color:#50d8af;
   --main-text-color:#fff;
@@ -291,8 +291,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #intro .bottom {
     content: '';
-    background-image:url("../img/borderheaderbottom.svg") ;
-
+    background-image:url("../img/borderheaderbottom.svg");
     position: absolute; 
     height:100px;
     width: 100%;
