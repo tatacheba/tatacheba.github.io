@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   /* padding: 10px 0; */
-  height: 10vh;
+  height: 8vh;
   transition: all 0.5s;
   z-index: 997;
   background: var(--main-bg-color);
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 #logo{
   position: relative;
   width: auto;
-  height: 9vh;
+  height: 7vh;
   padding: 5px 0 0 0 ;
   overflow: hidden;
 }
