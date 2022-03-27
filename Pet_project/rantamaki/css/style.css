@@ -1,17 +1,13 @@
 /*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 :root {
   --main-bg-color: #304b26;
   /* --main-bg-color: #e34234; */
   --main-color: #CCDAE7;
-  --main-a-color:#50d8af;
+  /* --main-a-color:#50d8af; */
+  /* --main-a-color:#732A07; */
+     --main-a-color:#5BA83E; 
   --main-text-color:#fff;
   --main-h-color:#000;
   --main-border-color:#555;
@@ -42,11 +38,20 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+ font-family: 'Amatic SC', cursive;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
 }
+ hr {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  height: 1px solid var(--main-color);
+  border: 0;
+  /* border-top: 2px solid var(--main-border-color); */
+}
+
 
 /* Back to top button */
 .back-to-top {
@@ -85,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 #topbar {
   background: var(--main-bg-color);
   padding: 10px 0;
-  border-bottom: 1px solid var(--main-border-color);
+  /* border-bottom: 2px solid var(--main-border-color); */
   font-size: 14px;
 }
 
@@ -130,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   /* padding: 10px 0; */
-  height: 6vh;
+  height: 10vh;
   transition: all 0.5s;
   z-index: 997;
   background: var(--main-bg-color);
@@ -140,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo h1 {
   font-size: 42px;
   margin: 0;
-  padding: 0;
+  padding: 1px;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -148,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 #logo{
   position: relative;
   width: auto;
-  height: 6vh;
+  height: 9vh;
   padding: 5px 0 0 0 ;
   overflow: hidden;
 }
@@ -218,7 +223,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-content h2 span {
-  color: var(--main-a-color);
+  /* color: var(--main-a-color); */
+
   text-decoration: underline;
 }
 
@@ -663,20 +669,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   float: left;
 }
 
-#services .box .icon i, #cottage .box .icon i{
+#services .box .icon img, #cottage .box .icon img{
   color: #444;
-  font-size: 64px;
+  /* font-size: 64px; */
+  height: 150px;
+  width: auto;
   transition: 0.5s;
   line-height: 0;
-  margin-top: 34px;
+
 }
 
-#services .box .icon i:before,#cottage .box .icon i:before {
+#services .box .icon img:before,#cottage .box .icon img:before {
   background: var(--main-h-color);
   background: linear-gradient(45deg, var(--main-a-color) 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 #services .box h4, #cottage .box h4 {
