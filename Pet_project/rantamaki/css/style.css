@@ -656,6 +656,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: var(--main-text-color);
   transition: 0.4s;
+  height: 25vh;
 }
 
 #services .box:hover, #cottage .box:hover{
