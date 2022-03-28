@@ -7,7 +7,7 @@
   --main-color: #CCDAE7;
   /* --main-a-color:#50d8af; */
   /* --main-a-color:#732A07; */
-     --main-a-color:#5BA83E; 
+  --main-a-color:#5BA83E; 
   --main-text-color:#fff;
   --main-h-color:#000;
   --main-border-color:#555;
@@ -581,6 +581,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
+/*Welcom
+------------------------------*/
+
+#welcom .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#welcom  h2 {
+  color: var(--main-t-color);
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+
 /* About Section
 --------------------------------*/
 #about {
@@ -594,6 +613,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
+}
+
+#about h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--main-a-color);
+  bottom: 0;
+  left: 0;
 }
 
 @media (max-width: 768px) {
@@ -610,7 +640,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: var(--main-h-color);
   font-weight: 700;
   font-size: 36px;
-  font-family: "Raleway", sans-serif;
+  position: relative;
+  padding-bottom: 20px;
+
 }
 
 #about .content h3 {
@@ -656,7 +688,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: var(--main-text-color);
   transition: 0.4s;
-  height: 25vh;
+  /* height: 25vh; */
 }
 
 #services .box:hover, #cottage .box:hover{
