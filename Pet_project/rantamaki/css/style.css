@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro #intro-carousel::before {
   content: '';
-  background-color: rgba(105, 105, 105, 0.6);
+  /* background-color: rgba(105, 105, 105, 0.6); */
   position: absolute;
   height: 100%;
   width: 100%;
@@ -595,10 +595,35 @@ body.mobile-nav-active #mobile-nav-toggle {
 #welcom  h2 {
   color: var(--main-t-color);
   margin-bottom: 30px;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
-}
+  position: relative;
+  padding: 5vh 0;
+  text-align: center;
 
+}
+#welcom  h2:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background: url(/img/hr.svg) no-repeat;
+  margin-left: -50px;
+  top: 1vh;
+  left: 50%;
+  right: 0;
+}
+#welcom  h2:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background: url(/img/hr.svg) no-repeat;
+  margin-left: -50px;
+  bottom: 1vh;
+  left: 50%;
+  right: 0;
+}
 
 /* About Section
 --------------------------------*/
