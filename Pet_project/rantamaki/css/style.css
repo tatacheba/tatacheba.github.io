@@ -602,7 +602,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 
 }
-#welcom  h2:after {
+#welcom  h2::before {
   content: '';
   position: absolute;
   width: 100px;
@@ -613,7 +613,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 50%;
   right: 0;
 }
-#welcom  h2:before {
+#welcom  h2::after {
   content: '';
   position: absolute;
   width: 100px;
