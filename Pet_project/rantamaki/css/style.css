@@ -607,7 +607,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   width: 100px;
   height: 20px;
-  background: url(/img/hr.svg) no-repeat;
+  background: url("../img/hr.svg") no-repeat;
   margin-left: -50px;
   top: 1vh;
   left: 50%;
@@ -618,7 +618,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   width: 100px;
   height: 20px;
-  background: url(/img/hr.svg) no-repeat;
+  background: url("../img/hr.svg") no-repeat;
   margin-left: -50px;
   bottom: 1vh;
   left: 50%;
