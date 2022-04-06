@@ -111,8 +111,50 @@ function t5() {
     return ar5;
 }
 
+let cash = 100;
+let head = 100;
+let price = [0.5, 5, 10];
+let result = [];
+
+
+function f() {
+    let array = ranarray();
+    let sumarray = [];
+    for (let i = 0; i < array.length; i++) {
+        sumarray[i] = array[i] * price[i];
+    }
+    if (sumarray.reduce((accum, item) => accum += item) > 100) {
+        console.log("f+ " + sumarray);
+        f();
+    } else {
+        return (
+            "телят: " + array[0] + "  ===>> " + array[0] + "*" + price[0] + "=" + sumarray[0] + "<br>" +
+            "коров: " + array[1] + "  ===>> " + array[1] + "*" + price[1] + "=" + sumarray[1] + "<br>" +
+            "быков: " + array[2] + "  ===>> " + array[2] + "*" + price[2] + "=" + sumarray[2] + "<br>" +
+            "Итого: " + array.reduce((accum, item) => accum += item) + " голов" + "  ===>> " + sumarray.reduce((accum, item) => accum += item));
+    }
+    console.log("s+ " + sumarray);
+    console.log("a+ " + array);
+
+    function ranarray() {
+        result = [];
+        for (i = 0; i < 3; i++) {
+            result.push(randomInteger(1, cash / price[i]));
+        }
+        if (result.reduce((accum, item) => accum += item) != 100) {
+            ranarray();
+        }
+        return result;
+    }
+
+
+
+
+}
+
+
 document.querySelector('.b-5').addEventListener('click', () => {
-    document.querySelector('.out-5').textContent = t5();
+    document.querySelector('.out-5').innerHTML = f();
 });
 
 // Task 6.

@@ -268,3 +268,14 @@ function f15() {
 }
 
 document.querySelector('.b-15').addEventListener('click', f15);
+
+
+
+
+let cash = 100;
+let head = 100;
+
+for (let i = head; i >= 0; i--) {
+
+
+}

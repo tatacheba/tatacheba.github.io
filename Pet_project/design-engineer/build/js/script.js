@@ -1,4 +1,3 @@
-
 window.onload = function () {
     let navBlock = document.querySelectorAll('nav>div');
     let sectionOn = document.querySelectorAll('section')
@@ -7,6 +6,7 @@ window.onload = function () {
     let sectionTest = document.querySelector('#test-me');
     let sectionAbout = document.querySelector('#about-me');
     let sectionResume = document.querySelector('#resume-me');
+
 
 
     for (let i = 0; i < navBlock.length; i++) {
