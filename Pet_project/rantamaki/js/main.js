@@ -205,27 +205,27 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  //Google Map
-  var get_latitude = $('#google-map').data('latitude');
-  var get_longitude = $('#google-map').data('longitude');
+  // //Google Map
+  // var get_latitude = $('#google-map').data('latitude');
+  // var get_longitude = $('#google-map').data('longitude');
 
-  function initialize_google_map() {
-    var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-    var mapOptions = {
-      zoom: 14,
-      scrollwheel: false,
-      center: myLatlng
-    };
-    var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map
-    });
-  }
+  // function initialize_google_map() {
+  //   var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
+  //   var mapOptions = {
+  //     zoom: 14,
+  //     scrollwheel: false,
+  //     center: myLatlng
+  //   };
+  //   var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+  //   var marker = new google.maps.Marker({
+  //     position: myLatlng,
+  //     map: map
+  //   });
+  // }
 
 
 
-  google.maps.event.addDomListener(window, 'load', initialize_google_map);
+  // google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
   //Переменная для включения/отключения индикатора загрузки
   var spinner = $('.ymap').children('.ymap__loader');
@@ -239,8 +239,8 @@ jQuery(document).ready(function ($) {
     var myMapTemp = new ymaps.Map("map-yandex", {
       center: [61.438771, 30.197599], // координаты центра на карте
       zoom: 12, // коэффициент приближения карты
-      controls: ['zoomControl', 'fullscreenControl'], // выбираем только те функции, которые необходимы при использовании
-      //behaviors: ['drag'],
+      controls: ['zoomControl'], // выбираем только те функции, которые необходимы при использовании
+      behaviors: ['drag'],
     });
     var myPlacemarkTemp = new ymaps.Placemark([61.437331, 30.238830], {
       balloonContent: "Республика Карелия, Лахденпохский район, поселок Лумиваара, полуостров Харвиа",
@@ -338,7 +338,7 @@ jQuery(document).ready(function ($) {
     ], {
       // Описываем свойства геообъекта.
       // Содержимое балуна.
-      balloonContent: "Путь до ООО 'ПЦ ТНК'"
+      balloonContent: 'Путь до хутора "Рантамяки"'
     }, {
       // Задаем опции геообъекта.
       // Отключаем кнопку закрытия балуна.
