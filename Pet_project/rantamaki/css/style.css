@@ -17,24 +17,33 @@
 
 body {
   background: var(--main-bg-color);
-  color: var(--main-color);
+  color: var(--main-t-color);
   font-family: "Open Sans", sans-serif;
 }
 
 a {
   color: var(--main-a-color);
   transition: 0.5s;
+  cursor: pointer;
 }
 
 a:hover, a:active, a:focus {
   color: var(--main-a-color);
   outline: none;
   text-decoration: none;
+  cursor: pointer;
+}
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
 }
 
-p {
+p, li {
   padding: 0;
   margin: 0 0 30px 0;
+  cursor: default;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +52,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+  /* cursor: default; */
+}
+
+a p{
+  cursor: pointer;
 }
  hr {
   margin-top: 1px;
@@ -701,7 +715,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 10px;
 }
 
-/* Services Section
+/* Services Cottage Section 
 --------------------------------*/
 #services, #cottage {
   padding: 30px 0 0 0;
@@ -713,7 +727,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: var(--main-text-color);
   transition: 0.4s;
-  /* height: 25vh; */
 }
 
 #services .box:hover, #cottage .box:hover{
@@ -728,8 +741,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon img, #cottage .box .icon img{
-  color: #444;
-  /* font-size: 64px; */
+  color: var(--main-border-color);
   height: 150px;
   width: auto;
   transition: 0.5s;
@@ -753,9 +765,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 22px;
 }
 
-#services .box h4 a,#cottage .box h4 a {
-  color: #444;
+#services .box a, #cottage .box a{
+  color: var(--main-h-color);
 }
+#services .box a:hover, #cottage .box a:hover{
+  color: var(--main-a-color);
+}
+
 
 #services .box p,#cottage .box p {
   font-size: 14px;
@@ -763,6 +779,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   line-height: 24px;
 }
+#cottage img{
+
+    pointer-events: none;
+    }
 
 @media (max-width: 767px) {
   #services .box .box ,  #cottage .box .box{
@@ -778,6 +798,91 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
   }
 }
+
+/*Modal pages
+-------------------------*/
+/*
+.carousel-inner{
+  height: 400px;
+  width: auto;
+  display: flex; 
+}
+.carousel-item  .d-block{
+  height: 400px;
+  margin: auto;
+ 
+}*/
+
+#carusel_modal  .carousel  {
+  position: relative;
+   max-width: 980px; /* ширина всего блока */
+   margin: 50px auto;
+   width:100%;
+  }
+
+
+
+   #carusel_modal  .carousel-wrapper {
+   margin: 10px 50px; /* отступы для стрелок */
+   overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+   position:relative;
+ }
+ #carusel_modal  .carousel-items {
+   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+   position: relative; /* позиционируем блок относительно основной области карусели */
+
+ }
+ #carusel_modal  .carousel-block {
+   float: left; /* выстраиваем все элементы карусели в ряд */
+   width: auto; /* задаём ширину каждого элемента */
+   height: 100%;
+   overflow: hidden;
+   padding: 10px; /* делаем оступы, чтобы элементы не сливались */
+ }
+ #carusel_modal  .work {
+        display: block;}
+        img { height: 200px;}
+        p {font-size: 1em;}
+      
+
+ 
+ 
+
+/*********** BUTTONS ***********/
+
+.carousel-button-left a, .carousel-button-right a {
+  position: absolute;
+   width: 50px; 
+   height: 50px; 
+   top: 100px;
+  cursor: pointer; 
+   text-decoration:none;
+   background-size: cover;
+ 
+}
+
+.carousel .carousel-button-left .hover .cls-1 {
+  fill: var(--main-bg-color);
+}
+.carousel .carousel-button-right .hover .cls-1 {
+  fill: var(--main-bg-color);
+}
+.carousel-button-left a {
+
+left: 0px;
+   /* background: url("../img/arrow_l.svg"); */
+
+   
+ 
+}
+.carousel-button-right a {
+right: 0px;
+   /* background: url("../img/arrow_r.svg") ; */
+ 
+}
+
+
+
 
 
 /* Our Portfolio Section
