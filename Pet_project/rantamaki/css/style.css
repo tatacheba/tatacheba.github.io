@@ -650,6 +650,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
+  pointer-events: none;
 }
 
 #about h2::before {
@@ -726,6 +727,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: var(--main-text-color);
   transition: 0.4s;
   min-height: 200px;
+  color: var(--main-t-color);
 }
 
 #services .box:hover, #cottage .box:hover{
@@ -733,6 +735,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
+  color: var(--main-a-color);
 }
 
 #services .box .icon, #cottage .box .icon{
@@ -740,7 +743,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon img, #cottage .box .icon img{
-  color: var(--main-border-color);
+
   height: 150px;
   width: auto;
   transition: 0.5s;
@@ -800,17 +803,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*Modal pages
 -------------------------*/
-/*
-.carousel-inner{
-  height: 400px;
-  width: auto;
-  display: flex; 
-}
-.carousel-item  .d-block{
-  height: 400px;
-  margin: auto;
- 
-}*/
 
 #carusel_modal  .carousel  {
   position: relative;
@@ -840,9 +832,10 @@ body.mobile-nav-active #mobile-nav-toggle {
  }
  #carusel_modal  .work {
         display: block;}
-        img { height: 200px;}
-        p {font-size: 1em;}
-      
+
+#carusel_modal  .work   img { height: 200px;}
+#carusel_modal  .work   p {font-size: 1em;}
+     
 
  
  
