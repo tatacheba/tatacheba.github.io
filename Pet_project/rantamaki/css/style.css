@@ -781,7 +781,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   line-height: 24px;
 }
-#cottage img{
+#services img, #cottage img{
 
     pointer-events: none;
     }
