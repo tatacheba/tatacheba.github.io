@@ -67,7 +67,7 @@ jQuery(document).ready(function ($) {
 
 
 
-  //Carusel
+  /* Carusel Modal*/
 
   //Обработка клика на стрелку вправо
   $(document).on('click', ".carousel-button-right", function () {
@@ -81,6 +81,11 @@ jQuery(document).ready(function ($) {
     left_carusel(carusel);
     return false;
   });
+  // Hide slide arrows if too few items.
+  if ($('#carousel-thumbs__modal .carousel-item').length < 2) {
+    $('#carousel-thumbs__modal [class^=carousel-control-]').remove();
+    $('.machine-carousel-container #carousel-thumbs__modal').css('padding', '0 5px');
+  }
 
   function left_carusel(carusel) {
     var block_width = $(carusel).find('.carousel-block').outerWidth();
@@ -107,19 +112,17 @@ jQuery(document).ready(function ($) {
       });
     });
   }
-
-  // $(function () {
-  //   //Раскомментируйте строку ниже, чтобы включить автоматическую прокрутку карусели
-  //   auto_right('.carousel:first');
-  // })
-
-  // // Автоматическая прокрутка
-  // function auto_right(carusel) {
-  //   setInterval(function () {
-  //     if (!$(carusel).is('.hover'))
-  //       right_carusel(carusel);
-  //   }, 3000)
-  // }
+  // Only display 3 items in nav on mobile.
+  if ($(window).width() < 575) {
+    $('#carousel-thumbs__modal .row div:nth-child(4)').each(function () {
+      var rowBoundary = $(this);
+      $('<div class="row mx-0">').insertAfter(rowBoundary.parent()).append(rowBoundary.nextAll().addBack());
+    });
+    $('#carousel-thumbs__modal .carousel-item .row:nth-child(even)').each(function () {
+      var boundary = $(this);
+      $('<div class="carousel-item">').insertAfter(boundary.parent()).append(boundary.nextAll().addBack());
+    });
+  }
   // Навели курсор на карусель
   $(document).on('mouseenter', '.carousel a', function () {
     $(this).addClass('hover')
@@ -129,7 +132,7 @@ jQuery(document).ready(function ($) {
     $(this).removeClass('hover')
   })
 
-
+  /* #Carusel Modal*/
 
   // Initiate the wowjs animation library
   new WOW().init();
@@ -216,83 +219,20 @@ jQuery(document).ready(function ($) {
     }
   });
 
-
-  // Porfolio - uses the magnific popup jQuery plugin
-  $('.portfolio-popup').magnificPopup({
-    type: 'image',
-    removalDelay: 300,
-    mainClass: 'mfp-fade',
-    gallery: {
-      enabled: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300,
-      easing: 'ease-in-out',
-      opener: function (openerElement) {
-        return openerElement.is('img') ? openerElement : openerElement.find('img');
-      }
-    }
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
+  /* Contact block */
+  document.querySelector('.contact_map__img').addEventListener('click', () => {
+    // console.log(document.querySelector('.alert_coord'));
+    $('.alert_coord').removeClass('hide');
+    setTimeout(
+      function () {
+        console.log($('.alert_coord'))
+        $('.alert_coord').addClass('hide');
       },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
-
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 2
-      },
-      768: {
-        items: 4
-      },
-      900: {
-        items: 6
-      }
-    }
-  });
-
-  // //Google Map
-  // var get_latitude = $('#google-map').data('latitude');
-  // var get_longitude = $('#google-map').data('longitude');
-
-  // function initialize_google_map() {
-  //   var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-  //   var mapOptions = {
-  //     zoom: 14,
-  //     scrollwheel: false,
-  //     center: myLatlng
-  //   };
-  //   var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-  //   var marker = new google.maps.Marker({
-  //     position: myLatlng,
-  //     map: map
-  //   });
-  // }
-
-
-
-  // google.maps.event.addDomListener(window, 'load', initialize_google_map);
-
+      1000
+    )
+  })
+  /* #Contact block */
+  /* MAP */
   //Переменная для включения/отключения индикатора загрузки
   var spinner = $('.ymap').children('.ymap__loader');
   //Переменная для определения была ли хоть раз загружена Яндекс.Карта (чтобы избежать повторной загрузки при наведении)
@@ -522,5 +462,52 @@ jQuery(document).ready(function ($) {
     document.execCommand("Copy");
     textArea.remove();
   })
+
+  /* #MAP */
+
+  /* Gallery */
+
+  // $('#myCarousel').carousel({
+  //   interval: false
+  // });
+  $('#carousel-thumbs').carousel({
+    interval: false
+  });
+
+  // handles the carousel thumbnails
+  $('[id^=carousel-selector-]').click(function () {
+    var id_selector = $(this).attr('id');
+
+    var id = parseInt(id_selector.substr(id_selector.lastIndexOf('-') + 1));
+
+    $('#myCarousel').carousel(id);
+
+  });
+
+  // Only display 3 items in nav on mobile.
+  if ($(window).width() < 575) {
+    $('#carousel-thumbs .row div:nth-child(4)').each(function () {
+      var rowBoundary = $(this);
+      $('<div class="row mx-0">').insertAfter(rowBoundary.parent()).append(rowBoundary.nextAll().addBack());
+    });
+    $('#carousel-thumbs .carousel-item .row:nth-child(even)').each(function () {
+      var boundary = $(this);
+      $('<div class="carousel-item">').insertAfter(boundary.parent()).append(boundary.nextAll().addBack());
+    });
+  }
+
+
+  // when the carousel slides, auto update
+  $('#myCarousel').on('slide.bs.carousel', function (e) {
+    var id = parseInt($(e.relatedTarget).attr('data-slide-number'));
+    $('[id^=carousel-selector-]').removeClass('selected');
+    $('[id=carousel-selector-' + id + ']').addClass('selected');
+  });
+
+  $('#myCarousel .carousel-item img').on('click', function (e) {
+    var src = $(e.target).attr('data-remote');
+    console.log(src);
+    if (src) $(this).ekkoLightbox();
+  });
 
 });
