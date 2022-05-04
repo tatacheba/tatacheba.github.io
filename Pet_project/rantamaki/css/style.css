@@ -971,6 +971,7 @@ overflow-x: auto;
 .table thead th{
   vertical-align: top;
   border-bottom:2px solid #000;
+  border-top:2px solid #000;
 }
 .table ul{
   padding-bottom: 5px;
