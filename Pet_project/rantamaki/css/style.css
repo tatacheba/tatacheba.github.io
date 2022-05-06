@@ -162,7 +162,7 @@ hr {
  transition: all 0.5s;
   z-index: 997;
   background: var(--main-bg-color);
-  min-height: 8vh;
+  min-height: 5rem;
   height: auto;
 }
 
@@ -178,7 +178,7 @@ hr {
 #logo {
   position: relative;
   width: auto;
-  height: 6vh;
+  height: 4rem;
   padding: 5px 0 0 0;
   overflow: hidden;
 }
