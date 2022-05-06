@@ -747,7 +747,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Cottage Section 
 --------------------------------*/
 #services,
-#cottage,#price {
+#cottage,#price, #gallery {
   padding: 30px 0 0 0;
 }
 
@@ -906,8 +906,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Gallery Section
 --------------------------------*/
+#gallery{
+  height: 100%;
+}
+#myCarousel{
+  width: auto;
+  height: 60%;
+}
 .carousel {
   position: relative;
+}
+.carousel-inner{
+  width: auto;
+  height: 80%;
+}
+.carousel-item{
+  width: auto;
+  height: 80%;
 }
 .carousel-item img {
   object-fit: cover;
