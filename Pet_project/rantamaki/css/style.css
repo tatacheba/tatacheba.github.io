@@ -935,7 +935,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
 }
 #carousel-thumbs img {
-  border: 5px solid transparent;
+  border: 1px solid transparent;
   cursor: pointer;
 }
 #carousel-thumbs img:hover {
