@@ -1,16 +1,26 @@
 # Web-course
-## Практические проекты реализованные в рамках курса:
+----
 
-* [AlinDiet]()
-* [Beehive]()
-* [Cafe]()
-* [Form]()
-* [Wedding Services]()
+## Language courses
 
-## Pet-project:
+* [JavaRush](https://github.com/tatacheba/tatacheba.github.io/tree/main/JavaRush)
+* [ITGid.info](https://tatacheba.github.io/js_course/js_itgid.info/)
+* [HTML Academy](https://tatacheba.github.io/js_course/html-academy/)
+
+### Практические проекты реализованные в рамках курса:
+
+* [AlinDiet](https://tatacheba.github.io/Pet_project/alindiet/index.html)
+* [Beehive](https://tatacheba.github.io/Pet_project/beehive/index.html)
+* [Cafe](https://tatacheba.github.io/Pet_project/cafe/index.html)
+* [Form](https://tatacheba.github.io/Pet_project/form/index.html)
+* [Wedding Services](https://tatacheba.github.io/Pet_project/wedding_services/index.html)
+
+### Pet-project:
 
 * [Инженер-конструктор портфолио](https://tatacheba.github.io/Pet_project/design-engineer/index.html)
 * [Rantamaki](https://tatacheba.github.io/pet_project/rantamaki/index.html) 
 * [HTML5-prompt](https://tatacheba.github.io/pet_project/html5-prompt/index.html)
 
-[![HH](https://img.shields.io/badge/hh-%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5-%23e1011c%20)](https://spb.hh.ru/resume/10b9a9d9ff084bdafe0039ed1f584a304c5441)
+
+
+https://img.shields.io/github/url?style=social&url=https%3A%2F%2Fgithub.com%2Ftatacheba%2Ftatacheba%2F
