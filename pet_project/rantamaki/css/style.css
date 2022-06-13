@@ -1,0 +1,1152 @@
+/*
+# General
+--------------------------------------------------------------*/
+:root {
+  --main-bg-color: #406c30;
+  --main-nav-color: #345a26;
+   /*--main-bg-color: #345a26;*/
+  /* --main-bg-color: #e34234; */
+  --main-color: #CCDAE7;
+  /* --main-a-color:#50d8af; */
+  /* --main-a-color:#732A07; */
+  --main-a-color: #5BA83E;
+  --main-text-color: #fff;
+  --main-h-color: #000;
+  --main-border-color: #0f2e18;
+  --main-t-color: #000;
+  --main-fa-color: #0f2e18;
+
+}
+
+body {
+  background: var(--main-bg-color);
+  color: var(--main-t-color);
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: var(--main-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: var(--main-a-color);
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+p,
+li {
+  padding: 0;
+  margin: 0 0 30px 0;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+ }
+
+a p {
+  cursor: pointer;
+}
+
+hr {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  height: 1px;
+  /* background-color: var(--main-border-color); */
+  border: 0;
+}
+
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: var(--main-a-color);
+  color: var(--main-text-color);
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+.back-to-top:focus {
+  background: var(--main-a-color);
+  color: var(--main-text-color);
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: var(--main-h-color);
+  color: var(--main-text-color);
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: var(--main-nav-color);
+  padding: 10px 0;
+  /* border-bottom: 2px solid var(--main-border-color); */
+  font-size: 14px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: var(--main-color);
+}
+
+#topbar .contact-info a:hover {
+  color: var(--main-a-color);
+}
+
+#topbar .contact-info i {
+  color: var(--main-a-color);
+  padding: 4px;
+}
+
+#topbar .contact-info .fa-phone {
+  padding-left: 20px;
+  margin-left: 20px;
+  border-left: 1px solid var(--main-border-color);
+}
+
+#topbar .social-links a {
+  color: var(--main-fa-color);
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  border-left: 1px solid var(--main-border-color);
+}
+
+#topbar .social-links a:hover {
+  color: var(--main-a-color);
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  /* padding: 10px 0; */
+ transition: all 0.5s;
+  z-index: 997;
+  background: var(--main-nav-color);
+  min-height: 5rem;
+  height: auto;
+}
+
+#header #logo h1 {
+  font-size: 42px;
+  margin: 0;
+  padding: 1px;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#logo {
+  position: relative;
+  width: auto;
+  height: 4rem;
+  padding: 5px 0 0 0;
+  overflow: hidden;
+}
+
+#header #logo h1 a {
+  color: var(--main-h-color);
+  line-height: 1;
+  display: inline-block;
+}
+
+#header #logo h1 a span {
+  color: var(--main-a-color);
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 100%;
+}
+
+.col-8 {
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  #header {
+    padding: 20px 0;
+    height: 74px;
+  }
+
+  #header #logo h1 {
+    font-size: 34px;
+  }
+
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: url("../img/intro-carousel/01.jpg") no-repeat;
+  background-size: cover;
+}
+
+#intro .intro-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro .intro-content h2 {
+  color: var(--main-t-color);
+  margin-bottom: 30px;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+#intro .intro-content h2 span {
+  /* color: var(--main-a-color); */
+
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 34px;
+  }
+}
+
+#intro .intro-content .btn-get-started,
+#intro .intro-content .btn-projects {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  color: var(--main-color);
+}
+
+#intro .intro-content .btn-get-started {
+  background: var(--main-h-color);
+  border: 2px solid var(--main-h-color);
+}
+
+#intro .intro-content .btn-get-started:hover {
+  background: none;
+  color: var(--main-bg-color);
+}
+
+#intro .intro-content .btn-projects {
+  background: var(--main-a-color);
+  border: 2px solid var(--main-a-color);
+}
+
+#intro .intro-content .btn-projects:hover {
+  background: none;
+  color: var(--main-a-color);
+}
+
+#intro #intro-carousel {
+  z-index: 8;
+}
+
+#intro #intro-carousel::before {
+  content: '';
+  /* background-color: rgba(105, 105, 105, 0.6); */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro .top {
+  content: '';
+  background-image: url("../img/borderheadertop.svg");
+  rotate: 180;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 8;
+}
+
+#intro .bottom {
+  content: '';
+  background-image: url("../img/borderheaderbottom.svg");
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 8;
+}
+
+#intro #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu>li {
+  float: left;
+}
+
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+.sf-arrows .sf-with-ul {
+  padding-right: 22px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 8px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container {
+    display: none;
+  }
+}
+
+/* Nav Meu Styling */
+.nav-menu a {
+  padding: 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--main-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  outline: none;
+}
+
+.nav-menu li:hover>a,
+.nav-menu>.menu-active>a {
+  color: var(--main-a-color);
+}
+
+.nav-menu>li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: var(--main-bg-color);
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: var(--main-color);
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover>a {
+  color: var(--main-a-color);
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
+/* Mobile Nav Toggle */
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: var(--main-border-color);
+}
+
+@media (max-width: 768px) {
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+/* Mobile Nav Styling */
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(15, 46, 24, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: var(--main-text-color);
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: var(--main-text-color);
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: var(--main-text-color);
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: var(--main-a-color);
+}
+
+#mobile-nav ul .menu-item-active {
+  color: var(--main-a-color);
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: var(--main-text-color);
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/* Sections Header
+--------------------------------*/
+.section-header {
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: var(--main-h-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-header h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--main-a-color);
+  bottom: 0;
+  left: 0;
+}
+
+.section-header p {
+  padding: 0;
+  margin: 0;
+}
+
+/*Welcom
+------------------------------*/
+
+#welcom .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#welcom h2 {
+  color: var(--main-t-color);
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  padding: 5vh 0;
+  text-align: center;
+
+}
+
+#welcom h2::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background: url("../img/hr.svg") no-repeat;
+  margin-left: -50px;
+  top: 1vh;
+  left: 50%;
+  right: 0;
+}
+
+#welcom h2::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background: url("../img/hr.svg") no-repeat;
+  margin-left: -50px;
+  bottom: 1vh;
+  left: 50%;
+  right: 0;
+}
+
+/* About Section
+--------------------------------*/
+#about,
+#contact {
+  padding: 60px 0 30px 0;
+}
+
+#about .about-img,
+#contact .about-img {
+  overflow: hidden;
+}
+
+#about .about-img img {
+  margin-left: -15px;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+#about h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--main-a-color);
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#about .content h2 {
+  color: var(--main-h-color);
+  font-weight: 700;
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 20px;
+
+}
+
+#about .content h3 {
+  color: var(--main-color);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about .content p {
+  line-height: 26px;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--main-a-color);
+}
+
+#about .content ul,
+#contact .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .content ul li,
+#contact .content ul li {
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Services Cottage Section 
+--------------------------------*/
+#services,
+#cottage,#price, #gallery {
+  padding: 30px 0 0 0;
+}
+
+#services .box,
+#cottage .box {
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  background: var(--main-text-color);
+  transition: 0.4s;
+  min-height: 200px;
+  color: var(--main-t-color);
+}
+
+#services .box:hover,
+#cottage .box:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  color: var(--main-a-color);
+}
+
+#services .box .icon,
+#cottage .box .icon {
+  float: left;
+}
+
+#services .box .icon img,
+#cottage .box .icon img {
+
+  height: 150px;
+  min-height:150px ;
+  width: auto;
+  transition: 0.5s;
+  line-height: 0;
+
+}
+
+#services .box .icon img:before,
+#cottage .box .icon img:before {
+  background: var(--main-h-color);
+  background: linear-gradient(45deg, var(--main-a-color) 0%, #a3ebd5 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+#services .box h4,
+#cottage .box h4 {
+  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#services .box a,
+#cottage .box a {
+  color: var(--main-h-color);
+}
+
+#services .box a:hover,
+#cottage .box a:hover {
+  color: var(--main-a-color);
+}
+
+
+#services .box p,
+#cottage .box p {
+  font-size: 14px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+#services img,
+#cottage img, #gallery img{
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+
+  #services .box .box,
+  #cottage .box .box {
+    margin-bottom: 20px;
+  }
+
+  #services .box .icon,
+  #cottage .box .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  #services .box h4,
+  #services .box p,
+  #cottage .box h4,
+  #cottage .box p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/*Modal pages
+-------------------------*/
+
+#carusel_modal .carousel {
+  position: relative;
+  max-width: 980px;
+  /* ширина всего блока */
+  margin: 50px auto;
+  width: 100%;
+}
+
+
+
+#carusel_modal .carousel-wrapper {
+  margin: 10px 50px;
+  /* отступы для стрелок */
+  overflow: hidden;
+  /* скрываем содержимое, выходящее за рамки основной области */
+  position: relative;
+}
+
+#carusel_modal .carousel-items {
+  width: 10000px;
+  /* устанавливаем большую ширину для набора элементов */
+  position: relative;
+  /* позиционируем блок относительно основной области карусели */
+
+}
+
+#carusel_modal .carousel-block {
+  float: left;
+  /* выстраиваем все элементы карусели в ряд */
+  width: auto;
+  /* задаём ширину каждого элемента */
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
+  /* делаем оступы, чтобы элементы не сливались */
+}
+
+#carusel_modal .work {
+  display: block;
+}
+
+#carusel_modal .work img {
+  height: 200px;
+}
+
+#carusel_modal .work p {
+  font-size: 1em;
+}
+
+/* Gallery Section
+--------------------------------*/
+#gallery{
+  height: 100%;
+}
+#myCarousel{
+  width: auto;
+  height: 60%;
+}
+.carousel {
+  position: relative;
+}
+.carousel-inner{
+  width: auto;
+  height: 80%;
+}
+.carousel-item{
+  width: auto;
+  height: 80%;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+#carousel-thumbs {
+  background: rgba(255,255,255,.3);
+  bottom: 0;
+  left: 0;
+  padding: 0 50px;
+  right: 0;
+}
+#carousel-thumbs img {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+#carousel-thumbs img:hover {
+  border-color: rgba(255,255,255,.3);
+}
+#carousel-thumbs .selected img {
+  border-color: #fff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  filter: invert(100%);
+}
+@media all and (max-width: 767px) {
+  .carousel-container #carousel-thumbs img {
+    border-width: 1px;
+  }
+}
+@media all and (min-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    position: absolute;
+  }
+}
+@media all and (max-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    background-color:rgba(208, 208, 208, .55);
+
+  }
+}
+
+/*Table*/
+
+.table{
+  word-wrap: break-word;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+ 
+}
+.table_price{
+overflow-x: auto;
+}
+.table td, .table th{
+
+  border-top:1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.table thead th{
+  vertical-align: top;
+  border-bottom:2px solid #000;
+  border-top:2px solid #000;
+}
+.table ul{
+  padding-bottom: 5px;
+}
+
+/* Contact Section
+--------------------------------*/
+#contact {
+  padding: 30px 0;
+}
+
+#contact .contact-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--main-a-color);
+}
+
+#contact .contact-info address,
+#contact .contact-info p {
+  margin-bottom: 0;
+  color: var(--main-bg-color);
+}
+
+#contact .contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+#contact .addr__map {
+  height: 290px;
+  margin-bottom: 20px;
+}
+
+#contact .content a {
+  font-style: none;
+  color: var(--main-t-color);
+}
+
+#contact .content a:hover {
+  font-style: none;
+  color: var(--main-a-color);
+}
+.coord{
+  position: relative;
+}
+.coord .alert_coord {
+  display: inline-block;
+  position: absolute;
+  height: 26px;
+  padding: 0px 3px 3px 3px;
+  width: auto;
+  opacity: 0.5;
+  margin: 0 0 0 20px;
+  border-radius: 3px;
+  background-color: #ffffff; /* Red */
+  color: #555;
+  /* margin-bottom: 15px; */
+}
+.coord .hide{
+  display: none;
+
+}
+
+@media (max-width: 576px) {
+  #contact .addr__map {
+    margin-top: 20px;
+  }
+}
+
+.addr__map {
+  flex: 0 1 50%;
+  /* margin-right: 50px; */
+  border: 1px solid #ccc;
+}
+
+/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
+.ymap {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  background-image: url('../img/yandexmapplaceholder.jpeg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, .2);
+}
+
+/* Блок, в котором появится Яндекс.Карта */
+.ymap__map {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.ymap__loader {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 6;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, .55);
+}
+
+.ymap__loader:after,
+.ymap__loader:before {
+  box-sizing: border-box;
+}
+
+.ymap__loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.ymap__loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+.contact_map__img svg {
+  margin: 0 0 0 5px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  fill: #CCDAE7;
+
+}
+
+.contact_map__img svg:hover {
+  fill: var(--main-a-color);
+}
+
