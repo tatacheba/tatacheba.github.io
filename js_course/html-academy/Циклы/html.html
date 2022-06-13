@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="picnic.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit 01</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>HTMLAcademy.
+            Циклы</h1>
+        <section>
+            <h2><a href="https://htmlacademy.ru/courses/211/challenge/1" target="_blank">Геометрическая прогрессия</a>
+            </h2>
+            <p>Напишите программу, которая последовательно выводит в консоль числа в геометрической прогрессии.
+
+                Стартовое значение, с которого должна начаться последовательность, записано в переменную startNumber.
+
+                Множитель записан в переменную multiplier.
+
+                Количество чисел записано в переменную quantity.</p>
+            <ul>
+                <li>let startNumber = 1;</li>
+                <li>let multiplier = 4;</li>
+                <li>let quantity = 7;</li>
+            </ul>
+            <button class="button-primary b-1">Task-1</button>
+            <div class="out-1"></div>
+        </section>
+
+        <section>
+            <h2><a href="https://htmlacademy.ru/courses/211/challenge/2" target="_blank">Сумма чисел</a></h2>
+            <p>
+
+                Напишите универсальную программу, которая вычисляет сумму чисел от 1 до n.
+
+                Число, до которого нужно складывать числа (включительно), указано в переменной lastNumber.
+
+                Найдите сумму всех чисел и сохраните результат в переменную sum.
+
+            </p>
+            <ul>
+                <li>let lastNumber = 10;</li>
+                <li> let sum = 0;</li>
+            </ul>
+            <button class="button-primary b-2">Task-2</button>
+            <div class="out-2"></div>
+        </section>
+
+        <section>
+            <h2><a href="https://htmlacademy.ru/courses/211/challenge/3" target="_blank">Произведение чётных</a></h2>
+            <p>
+                Напишите универсальную программу, которая находит произведение всех чётных чисел из последовательности
+                от 1 до n.
+
+                Число, до которого идёт последовательность (включительно), записано в переменную lastNumber
+
+                Найдите произведение всех чисел и сохраните результат в переменную multiplicationResult.
+
+            </p>
+            <ul>
+                <li>let lastNumber = 5;</li>
+                <li>let multiplicationResult = 1;</li>
+            </ul>
+            <button class="button-primary b-3">Task-3</button>
+            <div class="out-3"></div>
+        </section>
+
+        <section>
+            <h2><a href="https://htmlacademy.ru/courses/211/challenge/4" target="_blank">Делители</a>
+            </h2>
+            <p>
+                Напишите программу, которая находит все делители числа, кроме единицы и самого числа.
+
+                Число, делители которого нужно найти, записано в переменную number.
+
+                Выводите делители в консоль последовательно, друг за другом.
+
+
+            </p>
+            <ul>
+                <li>let number = 15;</li>
+            </ul>
+            <button class="button-primary b-4">Task-4</button>
+            <div class="out-4"></div>
+        </section>
+
+
+        <section>
+            <h2><a href="https://htmlacademy.ru/courses/211/challenge/5" target="_blank">Сколько цифр?</a></h2>
+            <p>
+                Напиши программу, которая определяет сколько цифр в одном числе.
+
+                Само число записано в переменную number.
+
+                Найди количество цифр в этом числе и запиши результат в переменную quantity.
+
+            </p>
+            <ul>
+                <li>let number = 123;</li>
+                <li>let quantity = 0;</li>
+            </ul>
+
+            <button class="button-primary b-5">Task-5</button>
+            <div class="out-5"></div>
+        </section>
+
+
+        <section>
+            <h2><a href="https://htmlacademy.ru/courses/211/challenge/6" target="_blank">Запасы протеина</a></h2>
+            <p>
+                Мяу! Программа должна считать количество протеина необходимое на период.
+
+                Во-первых, расчёт всегда начинается с понедельника. Это первый день.
+
+                Во-вторых, я принимаю протеин каждый третий день:
+                1 день, понедельник – нет,
+                2 день, вторник – нет,
+                3 день, среда – да,
+                4 день, четверг – нет,
+                5 день, пятница – нет,
+                6 день, суббота – да,
+                7 день, воскресенье – нет,
+                8 день, понедельник – нет,
+                9 день, вторник – да
+                и так далее.
+
+                В-третьих, известно, сколько протеина я съедаю в будние и сколько в выходные дни.
+
+                В-четвёртых, период задаётся целым числом, от одного до бесконечности (хотя планы дальше чем на месяц я
+                обычно не строю).
+
+                Программа должна возвращать общее количество протеина за период, записанное в переменную total.
+
+            </p>
+            <ul>
+                <li>let days = 9; // Дней в периоде</li>
+                <li>let period = 3; // Как часто я ем протеин (раз в три дня)</li>
+                <li>let workDayAmount = 200; // Количество протеина в будние</li>
+                <li>let weekendAmount = 100; // Количество протеина в выходные</li>
+            </ul>
+            <button class="button-primary b-6">Task-6</button>
+            <div class="out-6"></div>
+        </section>
+
+
+
+        <section>
+            <h2><a href="https://htmlacademy.ru/courses/211/challenge/7" target="_blank">Палиндром</a></h2>
+            <p>
+                Мяу! Напиши программу, которая проверяет, является ли число палиндромом.
+
+                Число записано в переменную poly.
+
+                Переменная, куда нужно записать «перевёрнутую» версию числа, называется ylop.
+
+                Выясни, является ли число из переменной poly палиндромом. Если да, значение флага isPalindrome должно
+                быть true, если число не палиндром, то false.
+
+            </p>
+            <ul>
+                <li>let poly = 1221;</li>
+                <li>let ylop = 0;</li>
+                <li>let isPalindrome = false;</li>
+            </ul>
+            <button class="button-primary b-7">Task-7</button>
+            <div class="out-7"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
