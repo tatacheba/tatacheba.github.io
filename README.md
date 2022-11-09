@@ -3,7 +3,7 @@
 ----
 
 * [JavaRush](https://github.com/tatacheba/tatacheba.github.io/tree/main/javarush/javarushtasks)
-* [ITGid.info](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info)
+* [ITGid.info](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info/index.html)
   - [Basic JS](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info/js_basics_itgid.info)
   - [Arrays JS](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info/array_js_itgid.info)
   - [Functions JS](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info/function_js_itgid.info)
