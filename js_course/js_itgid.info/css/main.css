@@ -1,14 +1,8 @@
-@font-face {
-    font-family: Oswald;
-    src: url('/font/Oswald-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-  body {
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body {
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    /* padding: 5px; */
-    /* width: 600px; */
     margin: 0 auto;
     height: auto;
   }
@@ -17,11 +11,9 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  /* justify-content: space-between; */
   align-items: stretch;
-
-
 }
+
 h1,a{
     font-family:Oswald !important;
 }
