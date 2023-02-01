@@ -24,6 +24,6 @@
 * [Rantamaki](https://tatacheba.github.io/pet_project/rantamaki/index.html) 
 * [HTML5-prompt](https://tatacheba.github.io/pet_project/html5-prompt/index.html)
 
-[![Github](https://img.shields.io/badge/github-profile-fff&?logo=github)]([jjj](https://github.com/tatacheba))
+[![Github](https://img.shields.io/badge/github-profile-fff&?logo=github)]((https://github.com/tatacheba))
 
 
