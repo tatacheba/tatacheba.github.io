@@ -1,0 +1,15 @@
+{
+  "name": "reactlearn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "testreact"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mustard-ui": "^1.0.4",
+    "tar": "^6.1.13"
+  }
+}
