@@ -177,7 +177,7 @@ function f8() {
             out = a8[key];
             break;
         } else {
-            out = false;
+            out = 0;
 
         }
     }
