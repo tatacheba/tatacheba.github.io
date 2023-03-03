@@ -1,10 +1,10 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function CategoryDescription() {
     let nameCat = useParams();
     return (
         <>
-            <Link to="/cat">Назад</Link>
+            <a href="/cat">Назад</a>
             <h1>Category:{nameCat.name}</h1>
         </>
     );
