@@ -3,52 +3,52 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-    const [valueInput, setValueInput] = useState();
-    let inputValue = React.createRef();
-    const h1 = React.createElement("h1", {}, "unit_08");
-    const h2 = React.createElement(
-        "h2",
-        { className: "text-orange" },
-        "unit_08"
-    );
-    const p = React.createElement(
-        "p",
-        {
-            style: {
+    const inputValue = React.useRef(null);
+    const [inpValue, setValue] = React.useState([]);
+    const h1 = <h1>unit_08</h1>;
+    const h2 = <h2 className="text-orange">unit_08</h2>;
+    const p = (
+        <p
+            style={{
                 color: "red",
-            },
-        },
-        "this is p"
+            }}
+        >
+            this is p
+        </p>
     );
-    const btn = React.createElement(
-        "button",
-        { onClick: getValueInput },
-        "Button"
+    const btn = <button onClick={getValueInput}>Button</button>;
+    const input = <input ref={inputValue} defaultValue={55} />;
+    const p1 = <p>hi</p>;
+    const p2 = <p>world</p>;
+    const div = (
+        <div className="text-grey">
+            {p1}
+            {p2}
+        </div>
     );
-    const input = React.createElement("input", {
-        type: "text",
-        value: valueInput,
-        onInput: (e) => setValueInput(e.target.value),
-    });
-    const p1 = React.createElement("p", {}, "hi ");
-    const p2 = React.createElement("p", {}, "world");
-    const div = React.createElement("div", { className: "text-grey" }, p1, p2);
 
     function getValueInput() {
-        console.log(input);
+        let tempValue = [...inpValue];
+
+        if (inputValue.current.value !== "") {
+            tempValue.push(inputValue.current.value);
+            setValue(tempValue);
+        }
     }
 
     return (
         <>
-            <React.Fragment>
-                {h1}
-                {h2}
-                {p}
-                {div}
-                {input}
-                {btn}
-                <ul>{}</ul>
-            </React.Fragment>
+            {h1}
+            {h2}
+            {p}
+            {div}
+            {input}
+            {btn}
+            <ul>
+                {inpValue.map((item) => (
+                    <li key={item}>{item}</li>
+                ))}
+            </ul>
         </>
     );
 }
