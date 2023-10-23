@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CommentsListHook from "./CommentsListHook";
+import Comments2ListHook from "./Comments2ListHook";
 
 function Comment2Hook() {
     const [data, setData] = useState([]);
@@ -28,7 +28,7 @@ function Comment2Hook() {
                 <option value="4">4</option>
             </select>
             <div>
-                <CommentsListHook data={data} />
+                <Comments2ListHook data={data} />
             </div>
         </div>
     );

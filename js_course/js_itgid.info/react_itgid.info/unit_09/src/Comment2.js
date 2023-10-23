@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CommentsList from "./CommentsList";
+import Comments2ListHook from "./Comments2ListHook";
 // import CommentsListHook from './CommentsListHook';
 
 class Comment2 extends Component {
@@ -32,7 +32,7 @@ class Comment2 extends Component {
                     <option value="4">4</option>
                 </select>
                 <div>
-                    <CommentsList data={this.state.data} />
+                    <Comments2ListHook data={this.state.data} />
                 </div>
             </div>
         );

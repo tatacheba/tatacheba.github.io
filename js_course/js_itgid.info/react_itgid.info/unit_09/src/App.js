@@ -1,18 +1,15 @@
 import "./App.css";
 import React from "react";
 // import Button from './Button';
-import PlaceholderPost from "./PlaceholderPost";
-import Comment from "./Comment";
-import Comment2 from "./Comment2";
-import CommentHook from "./CommentHook";
+import PlaceholderPostHook from "./PlaceholderPostHook";
+import Comment2Hook from "./Comment2Hook";
+// import Comment2Hook from "./Comment2Hook";
 
 function App() {
     return (
         <>
-            <CommentHook />
-            <PlaceholderPost />
-            {/* <Comment/> */}
-            {/* <Comment2 /> */}
+            <Comment2Hook />
+            <PlaceholderPostHook />
         </>
     );
 }
