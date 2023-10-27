@@ -50,8 +50,8 @@ function f3() {
         "odd": "hi",
         "mix": "mix"
     };
+    return a3.five + " " + a3.odd;
     // return
-    return a3.five + " " + a3.odd;;
 }
 
 document.querySelector('.b-3').onclick = () => {
@@ -79,6 +79,7 @@ function f4() {
         out += key + " " + a4[key] + "<br>";
     }
     return out;
+    // return out;
 }
 
 document.querySelector('.b-4').onclick = () => {
@@ -92,7 +93,7 @@ document.querySelector('.b-4').onclick = () => {
 function f5(arr, block) {
     let out = '';
     for (let key in arr) {
-        out += `${key}:${arr[key]}<br>`;
+        out += `${key} : ${arr[key]} <br>`;
     }
     // цикл
     // формат вывода `${key} : ${arr[key]} <br>`;
@@ -121,14 +122,12 @@ let a6 = {
 };
 
 function f6() {
-    let out = "",
-        inp61 = document.querySelector('.i-61').value,
-        inp62 = document.querySelector('.i-62').value;
-
+    let out = '',
+        inp61 = document.querySelector('.i-62').value,
+        inp62 = document.querySelector('.i-61').value;
     a6[inp61] = inp62;
-
     for (let key in a6) {
-        out += `${key}:${a6[key]}<br>`;
+        out += `${key}:${a6[key]}<br>`
     }
     document.querySelector('.out-6').innerHTML = out;
 }
@@ -145,18 +144,8 @@ let a7 = {
 
 
 function f7() {
-    let inp = +document.querySelector('.i-7').value,
-        out = '';
-    for (let key in a7) {
-        if (a7[key] == inp) {
-            out = true;
-            break;
-        } else {
-            out = false;
-
-        }
-    }
-    document.querySelector('.out-7').innerHTML = out;
+    let inp = document.querySelector('.i-7').value;
+    document.querySelector('.out-7').textContent = (inp in a7) ? 1 : 0;
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -170,6 +159,7 @@ let a8 = {
 };
 
 function f8() {
+<<<<<<< HEAD
     let inp = +document.querySelector('.i-8').value,
         out = '';
     for (let key in a8) {
@@ -182,6 +172,10 @@ function f8() {
         }
     }
     document.querySelector('.out-8').innerHTML = out;
+=======
+    let inp = document.querySelector('.i-8').value;
+    document.querySelector('.out-8').textContent = (inp in a8) ? a8[inp] : 0;
+>>>>>>> c3033dc (up)
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -198,19 +192,12 @@ let a9 = {
 };
 
 function f9() {
-    let inp = +document.querySelector('.i-9').value,
-        out = '';
+    let out = ''
+    inp = document.querySelector('.i-9').value;
     for (let key in a9) {
-        if (a9[key] == inp) {
-            console.log(a9[key]);
-            out += key + ' ';
-            // break;
-        } else {
-            out += '';
-        };
-
-    };
-    document.querySelector('.out-9').innerHTML = out;
+        out += (inp == a9[key]) ? `${key} ` : '';
+    }
+    document.querySelector('.out-9').textContent = out;
 }
 
 document.querySelector('.b-9').onclick = f9;
@@ -219,13 +206,11 @@ document.querySelector('.b-9').onclick = f9;
 // Давайте напишем полезную функцию f10, которая проверяет есть ли значение в ассоциативном массиве. Фукнция должна возвращать true если есть, и false если нет. Массив и значение передавать функции в качестве параметров.
 
 function f10(arr, val) {
+    let a = [];
     for (let key in arr) {
-        if (arr[key] == val) {
-            return true;
-        } else {
-            return false;
-        }
+        a.push(arr[key]);
     }
+    return a.includes(val);
     //return true;
     //return false;
 }
@@ -252,18 +237,9 @@ let a11 = {
 };
 
 function f11() {
-    let inp = +document.querySelector('.i-11').value,
-        out = "";
-    for (let key in a11) {
-        if (a11[key] == inp) {
-            delete a11[key];
-        } else {
-            // out += key + ":" + " " + a11[key] + " ";
-            out += `${key}:${a11[key]}<br>`;
-        }
-
-    }
-    document.querySelector('.out-11').innerHTML = out;
+    let inp = document.querySelector('.i-11').value;
+    (inp in a11) ? delete a11[inp]: true;
+    f5(a11, '.out-11');
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -280,16 +256,13 @@ let a12 = {
 };
 
 function f12() {
-    let inp = +document.querySelector('.i-12').value,
-        out = "";
+    let inp = document.querySelector('.i-12').value;
     for (let key in a12) {
         if (a12[key] == inp) {
             delete a12[key];
-        } else {
-            out += `${key}: ${a12[key]}<br>`;
         }
     }
-    document.querySelector('.out-12').innerHTML = out;
+    f5(a12, '.out-12');
 }
 
 document.querySelector('.b-12').onclick = f12;
@@ -305,19 +278,16 @@ let a13 = {
 };
 
 function f13() {
-    let out = "",
-        a131 = [];
-
-    for (let key in a13) {
-        if (typeof a13[key] == "number") {
-            a131.push(a13[key]);
+    function searchNumAndPutArray(arr) {
+        let array = [];
+        for (let key in arr) {
+            (typeof a13[key] == "number") ? array.push(a13[key]): true;
         }
+        return array;
     }
-    out = a131.reduce(function (sum, elem) {
-        return sum + elem;
-    }, 0);
-
-    document.querySelector('.out-13').innerHTML = out;
+    document.querySelector('.out-13').textContent = searchNumAndPutArray(a13).reduce((e, sum) => {
+        return sum + e;
+    })
 }
 
 document.querySelector('.b-13').onclick = f13;
@@ -334,12 +304,11 @@ let a14 = {
 };
 
 function f14() {
-    let out = "";
+    let array = [];
     for (let key in a14) {
-        out += a14[key][0] + " ";
-
+        array.push(a14[key][0]);
     }
-    document.querySelector('.out-14').innerHTML = out;
+    document.querySelector('.out-14').textContent += array.join(" ")
 }
 
 document.querySelector('.b-14').onclick = f14;
@@ -357,13 +326,11 @@ let a15 = {
 };
 
 function f15() {
-    let out = "";
+    let array = [];
     for (let key in a15) {
-        for (let i = 0; i < a15[key].length; i++) {
-            out += a15[key][i] + " ";
-        }
+        array.push(a15[key]);
     }
-    document.querySelector('.out-15').innerHTML = out;
+    document.querySelector('.out-15').textContent = array.flat().join(" ");
 }
 
 document.querySelector('.b-15').onclick = f15;
@@ -387,15 +354,11 @@ let a16 = {
 }
 
 function f16() {
-    let out = "";
+    let array = [];
     for (let key in a16) {
-        for (let bey in a16[key]) {
-            if (bey == "name") {
-                out += a16[key][bey] + " ";
-            }
-        }
+        array.push(a16[key].name)
     }
-    document.querySelector('.out-16').innerHTML = out;
+    document.querySelector('.out-16').textContent = array.join(" ");
 }
 
 document.querySelector('.b-16').onclick = f16;
@@ -420,15 +383,11 @@ let a17 = {
 }
 
 function f17() {
-    let out = '';
-    for (let key in a17) {
-        for (let bey in a17[key]) {
-            if (bey == 'age' && a17[key][bey] > 30) {
-                out += `${bey}:${a17[key][bey]} <br>`;
-            }
-        }
+    let array = [];
+    for (let key in a16) {
+        array.push(a16[key].age)
     }
-    document.querySelector('.out-17').innerHTML = out;
+    document.querySelector('.out-17').textContent = array.filter(e => e > 30).join(' ');
 }
 
 document.querySelector('.b-17').onclick = f17;
@@ -443,18 +402,8 @@ let a18 = {
 }
 
 function f18() {
-    let out = '',
-        inp = document.querySelector('.i-18').value;
-    for (let key in a18) {
-        for (let i = 0; i < a18[key].length; i++) {
-            if (inp == key) {
-                out += `${a18[key][i]} <br>`;
-            } else {
-                out += '';
-            }
-        }
-    }
-    document.querySelector('.out-18').innerHTML = out;
+    let inp = document.querySelector('.i-18').value;
+    document.querySelector('.out-18').textContent = (inp in a18) ? a18[inp].join(" ") : ' ';
 }
 document.querySelector('.b-18').onclick = f18;
 // Task 19
@@ -468,19 +417,11 @@ let a19 = {
 }
 
 function f19() {
-    let out = '',
-        inp = document.querySelector('.i-19').value;
-    inp = inp.toLowerCase();
+    let inp = document.querySelector('.i-19').value,
+        out = document.querySelector('.out-19');
     for (let key in a19) {
-        for (let i = 0; i < a19[key].length; i++) {
-            if (inp == a19[key][i].toLowerCase()) {
-                out += `${key}`;
-            } else {
-                out += "";
-            }
-        }
+        out.textContent = a19[key].includes(inp) ? key : ' ';
     }
-    document.querySelector('.out-19').innerHTML = out;
 }
 
 document.querySelector('.b-19').onclick = f19;
@@ -510,16 +451,13 @@ let a20 = {
 }
 
 function f20() {
-    let out = '';
+    let out = document.querySelector('.out-20');
     for (let key in a20) {
-        for (let bey in a20[key]) {
-            console.log(a20[key][bey][1]);
-            if (a20[key][bey][1] == 2) {
-                out += `${a20[key][bey][0]} `;
+        a20[key].forEach(e => {
+            if (e[1] == 2) {
+                out.textContent += e[0] + ' ';
             }
-        }
+        });
     }
-    document.querySelector('.out-20').innerHTML = out;
 }
-
-document.querySelector('.b-20').onclick = f20
+document.querySelector('.b-20').onclick = f20;

@@ -2,6 +2,7 @@ import React from "react";
 
 class Homework1 extends React.Component {
     constructor(props) {
+        console.log(props);
         super();
         this.s2 = 201;
         this.state = {
@@ -9,6 +10,7 @@ class Homework1 extends React.Component {
         };
     }
     buttonHander = () => {
+        console.log("buttonHander ");
         this.s2 += 50;
 
         let s1Val = this.state.s1;
@@ -17,6 +19,7 @@ class Homework1 extends React.Component {
         this.setState({ s1: s1Val });
     };
     componentDidMount() {
+        console.log("componentDidMount ");
         let val = this.state.s1;
         val += 5;
 
@@ -26,6 +29,7 @@ class Homework1 extends React.Component {
     }
 
     render() {
+        console.log("render ");
         return (
             <>
                 <div>

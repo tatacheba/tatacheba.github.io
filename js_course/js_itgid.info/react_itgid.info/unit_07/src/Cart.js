@@ -3,6 +3,7 @@ import React from "react";
 class Cart extends React.Component {
     renderObj = () => {
         let out = [];
+        console.log(JSON.stringify(this.props.cart));
         for (let key in this.props.cart) {
             let goods = this.getGoodsFromArr(key);
             out.push(

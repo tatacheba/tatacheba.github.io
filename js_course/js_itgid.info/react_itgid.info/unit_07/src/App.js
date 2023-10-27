@@ -14,9 +14,13 @@ class App extends React.Component {
     }
     addToCart = (event) => {
         console.log(event);
-        event.preventDefault();
+
+        // event.preventDefault(); //метод для предотвращения обновления страницы
         if (!event.target.classList.contains("add-to-cart")) return false;
         let cartTemp = this.state.cart;
+        console.log(cartTemp);
+        console.log(event.target.dataset.key);
+        console.log(cartTemp[event.target.dataset.key]);
         cartTemp[event.target.dataset.key]
             ? cartTemp[event.target.dataset.key]++
             : (cartTemp[event.target.dataset.key] = 1);
