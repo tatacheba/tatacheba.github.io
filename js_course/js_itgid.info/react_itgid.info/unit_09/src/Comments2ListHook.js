@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-function Comments2ListHook() {
-    const [data, setData] = useState([]);
+function Comments2ListHook(props) {
+    let [data, setData] = useState([]);
+
     function onlyEven() {
-        let a = data;
-        let evenPost = a.filter((e) => e);
-        c;
-        setData(evenPost);
+        let a = data.filter((item, index) => {
+            return index % 2 === 0;
+        });
+        setData([...a]); // Создаем новый массив и устанавливаем его в состояние
     }
+    useEffect(() => {
+        if (props.data.length > 0) setData(props.data);
+    }, [props.data]);
+
     return (
         <div>
             <div>

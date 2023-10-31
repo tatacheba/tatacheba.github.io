@@ -4,7 +4,6 @@ function CommentHook() {
     const [data, setData] = useState([]);
 
     const selectHandler = (event) => {
-        console.log(event.target.value);
         fetch(
             "https://jsonplaceholder.typicode.com/posts/" +
                 event.target.value +
@@ -12,11 +11,10 @@ function CommentHook() {
         )
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 setData(data);
             });
     };
-
+    console.log("CommentHook.data: " + data);
     return (
         <div>
             <p>Choose post ID:</p>

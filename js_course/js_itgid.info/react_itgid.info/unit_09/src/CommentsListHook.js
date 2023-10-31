@@ -7,7 +7,7 @@ function CommentsListHook(props) {
             <div>
                 <button onClick={onlyEven}>Only even comments</button>
             </div>
-            {props.map((el, index) => (
+            {props.data.map((el, index) => (
                 <section key={el.id}>
                     <p>
                         <b>

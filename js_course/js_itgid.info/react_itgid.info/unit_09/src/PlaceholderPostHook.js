@@ -7,7 +7,6 @@ function PlaceholderPost() {
         fetch("https://jsonplaceholder.typicode.com/users/1/posts")
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 setData(data);
             });
     }, []);
