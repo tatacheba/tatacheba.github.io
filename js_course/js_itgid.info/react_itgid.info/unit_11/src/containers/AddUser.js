@@ -3,29 +3,22 @@ import { addNewUsers } from "../action";
 
 const AddUser = () => {
     const dispatch = useDispatch();
-
+    const formHandler = (e) => {
+        e.preventDefault();
+        dispatch(
+            addNewUsers(
+                e.target.elements.passport.value,
+                e.target.elements.name.value,
+                e.target.elements.age.value
+            )
+        );
+    };
     return (
         <div>
-            <form
-                onSubmit={(e) => {
-                    e.preventDefault();
-                    console.dir(e.target.elements.passport.value);
-                    console.dir(e.target.elements.name.value);
-                    console.dir(e.target.elements.age.value);
-                    console.dir("we push button");
-                    dispatch(
-                        addNewUsers(
-                            e.target.elements.passport,
-                            e.target.elements.name,
-                            e.target.elements.age
-                        )
-                    );
-                }}
-            >
-                <input name="passport" defaultValue="" />
-                <input name="name" defaultValue="" />
-                <input name="age" defaultValue="" />
-                {/* <button type="submit" onClick={formHandler}> */}
+            <form onSubmit={formHandler}>
+                <input name="passport" defaultValue="" placeholder="Passport" />
+                <input name="name" defaultValue="" placeholder="Name" />
+                <input name="age" defaultValue="" placeholder="Age" />
                 <button type="submit">Add </button>
             </form>
         </div>

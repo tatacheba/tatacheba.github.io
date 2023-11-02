@@ -10,10 +10,10 @@ const user = (state = [], action) => {
                     name: action.name,
                     age: action.age,
                 },
+                // console.log("we add new user 2"),
+                // console.log(action),
             ];
         default:
-            console.log("we add new user 2");
-            console.log(state);
             return state;
     }
 };
