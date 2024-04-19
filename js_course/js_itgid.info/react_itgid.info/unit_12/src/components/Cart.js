@@ -16,7 +16,7 @@ function Cart(props) {
                 <tr>
                     <th colSpan="2">Наименование</th>
                     <th>Цена за шт.</th>
-                    <th colSpan="2">Количество</th>
+                    <th colSpan="3">Количество</th>
                     <th>Стоимость</th>
                 </tr>
             </thead>
@@ -24,19 +24,45 @@ function Cart(props) {
                 {Object.keys(cart).map((key) => (
                     <tr key={key}>
                         <td>
-                            <button className="remove-button">{key}X</button>
+                            <img
+                                src={goodsObject[key]["image"]}
+                                alt=""
+                                srcset=""
+                            />
                         </td>
                         <td>{goodsObject[key]["title"]}</td>
-                        <td>$10.00</td>
-
+                        <td>${goodsObject[key]["cost"]}</td>
                         <td className="quantity">{cart[key]}</td>
                         <td>
-                            <button className="quantity-button">-</button>
+                            <button
+                                className="quantity-button"
+                                data-articul={key}
+                            >
+                                -
+                            </button>
                         </td>
-
-                        <td>$20.00</td>
+                        <td>
+                            <button
+                                className="remove-button"
+                                data-articul={key}
+                            >
+                            </button>
+                        </td>
+                        <td>${cart[key] * goodsObject[key]["cost"]}</td>
                     </tr>
                 ))}
+                <tr>
+                    <td>ИТОГО</td>
+                    <td colSpan="5"></td>
+                    <td>
+                        $
+                        {Object.keys(cart).reduce(
+                            (total, key) =>
+                                total + cart[key] * goodsObject[key]["cost"],
+                            0
+                        )}
+                    </td>
+                </tr>
             </tbody>
         </table>
     );

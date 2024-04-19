@@ -9,7 +9,7 @@ export const goodsSlice = createSlice({
     reducers: {},
 });
 
-export const {} = goodsSlice.actions;
+// export const {} = goodsSlice.actions;
 export const selectGoods = (state) => {
     return state.goods.products;
 };

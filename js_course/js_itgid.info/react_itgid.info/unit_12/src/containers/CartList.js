@@ -1,34 +1,32 @@
 import React from "react";
-// import { useDispatch, useSelector } from "react-redux";
 import Cart from "../components/Cart";
-import { useDispatch } from "react-redux";
-// import { selectGoods } from "../store/goodsSlice";
+import { useDispatch, useSelector } from "react-redux";
 
-import { increment, minus, action_delete } from "../store/cartSlice";
+import { minus, action_delete, selectCart } from "../store/cartSlice";
 function CartList() {
-    // const goods = useSelector(selectGoods);
+    const cart = useSelector(selectCart);
     const dispatch = useDispatch();
-    let clickHandler = (event) => {
+    const clickHandler = (event) => {
         event.preventDefault();
-        let t = event.target;
-        if (!t.classList.contains("remove-button")) return true;
-        // Extract the articul from the button's dataset
-        let articul = t.dataset.articul;
-        console.log("Clicked remove button with articul:", articul);
-        console.log("Clicked remove button with articul:", t);
+        const target = event.target;
 
-        // Ensure that articul is not undefined before dispatching
-        if (articul !== undefined) {
-            // Dispatch the action_delete action with the articul as payload
-            dispatch(action_delete({ payload: articul }));
+        if (target.classList.contains("remove-button")) {
+            const articul = target.dataset.articul;
+
+            if (articul) {
+                dispatch(action_delete(target.getAttribute("data-articul")));
+            }
+        } else if (target.classList.contains("quantity-button")) {
+            const articul = target.dataset.articul;
+
+            if (articul) {
+                dispatch(minus(target.getAttribute("data-articul")));
+            }
         }
     };
     return (
-        <div>
-            <div className="cart-block" onClick={clickHandler}>
-                <img alt="" />
-                <Cart />
-            </div>
+        <div className="cart-block" onClick={clickHandler}>
+            <Cart cart={cart} />
         </div>
     );
 }

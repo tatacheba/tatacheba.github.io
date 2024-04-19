@@ -6,25 +6,25 @@ export const cartSlice = createSlice({
         valueCart: {},
     },
     reducers: {
-        increment: (state, value) => {
-            let articul = value.payload;
-            if (state.valueCart[articul] === undefined) {
-                state.valueCart[articul] = 0;
+        increment: (state, action) => {
+            const { payload } = action;
+            if (state.valueCart[payload] === undefined) {
+                state.valueCart[payload] = 0;
             }
-            state.valueCart[articul]++;
+            state.valueCart[payload]++;
         },
-        minus: () => {
-            console.log("minus");
+        minus: (state, action) => {
+            const { payload } = action;
+            if (state.valueCart[payload] > 0) {
+                state.valueCart[payload]--;
+                if (state.valueCart[payload] === 0) {
+                    delete state.valueCart[payload]; // Remove the item if its count reaches 0
+                }
+            }
         },
-        action_delete: (state, value) => {
-            let articul = value.payload;
-            console.log("value");
-            console.log(value);
-            console.log("state");
-            console.log(state);
-            // Use the spread operator to create a new object without the specified articul
-            state.valueCart = { ...state.valueCart };
-            delete state.valueCart[articul];
+        action_delete: (state, action) => {
+            const { payload } = action;
+            delete state.valueCart[payload];
         },
     },
 });
