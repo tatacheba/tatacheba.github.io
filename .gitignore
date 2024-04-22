@@ -1,3 +1,6 @@
 ﻿**/.idea/
 *.iml
+/node_modules
 plagins
+package-lock.json
+package.json
