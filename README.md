@@ -1,29 +1,61 @@
+# page
 
-## Language courses
-----
+This template should help get you started developing with Vue 3 in Vite.
 
-* [JavaRush](https://github.com/tatacheba/tatacheba.github.io/tree/main/javarush/javarushtasks)
-* [ITGid.info](https://tatacheba.github.io/js_course/js_itgid.info/index.html)
-  - [Basic JS](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info/js_basics_itgid.info)
-  - [Arrays JS](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info/array_js_itgid.info)
-  - [Functions JS](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info/function_js_itgid.info)
-  - [OOP JS](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/js_itgid.info/oop_itgid.info)
-* [HTML Academy](https://github.com/tatacheba/tatacheba.github.io/tree/main/js_course/html-academy)
+## Recommended IDE Setup
 
-#### Практические проекты реализованные в рамках Web-курса:
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-* [AlinDiet](https://tatacheba.github.io/web/alindiet/index.html)
-* [Beehive](https://tatacheba.github.io/web/beehive/index.html)
-* [Cafe](https://tatacheba.github.io/web/cafe/index.html)
-* [Form](https://tatacheba.github.io/web/form/index.html)
-* [Wedding Services](https://tatacheba.github.io/web/wedding_services/index.html)
+## Type Support for `.vue` Imports in TS
 
-### Pet-project:
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-* [Инженер-конструктор портфолио](https://tatacheba.github.io/pet_project/design-engineer/index.html)
-* [Rantamaki](https://tatacheba.github.io/pet_project/rantamaki/index.html) 
-* [HTML5-prompt](https://tatacheba.github.io/pet_project/html5-prompt/index.html)
+## Customize configuration
 
-[![Github](https://img.shields.io/badge/github-profile-fff&?logo=github)](https://github.com/tatacheba)
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
+## Project Setup
 
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+npm run test:unit
+```
+
+### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+
+```sh
+npm run test:e2e:dev
+```
+
+This runs the end-to-end tests against the Vite development server.
+It is much faster than the production build.
+
+But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+
+```sh
+npm run build
+npm run test:e2e
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```

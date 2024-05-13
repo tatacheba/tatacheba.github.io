@@ -1,0 +1,81 @@
+.content,
+.tehnologist,
+.verified {
+  margin-bottom: 20px;
+  padding: 20px 0 20px 20px;
+  border-bottom: 1px solid #444;
+}
+h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.tehnologist_img {
+  display: flex;
+  justify-content: center; /* Выравнивание по горизонтали по центру */
+  align-items: center; /* Выравнивание по вертикали по центру */
+  /* width: 100%; */
+}
+img {
+  width: 80%;
+}
+.tehnologist_img a img {
+  width: 50px;
+  height: 50px;
+}
+
+.tehnologist a {
+  margin: 0 5px; /* Расстояние между изображениями */
+}
+
+.tehnologist blockquote p {
+  font-style: italic;
+}
+
+.verified ul {
+  padding-left: 20px;
+}
+.terminal {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.resume-main {
+  background-color: #333;
+  padding: 20px;
+  /* width: 100%; */
+}
+.education-entry,
+.employment-entry {
+  margin-bottom: 1rem;
+}
+.header {
+  /* background: #0c0c0c; */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.header h3 {
+  padding-bottom: 0;
+}
+.header div {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: -3rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+.header img {
+  height: 30px;
+  width: auto;
+  margin-bottom: 15px;
+}
+/* .running_tests img {
+  width: 80%;
+} */
+.running_tests,
+.report_allure_report,
+.integration_allure_testops,
+.integration_jira,
+.notifications_telegram_bot,
+.videotest {
+  text-align: center;
+}
