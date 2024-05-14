@@ -38,3 +38,13 @@ db/*.sqlite3
 *.VC.db
 
 *.tsbuildinfo
+
+target/
+.idea/
+*.iml
+*.class
+*.properties
+/out/
+/JavaRushPlugin.properties
+/out.log
+/out.log.*
