@@ -61,15 +61,15 @@
           "
         ></div>
         <ul :class="item.title.toLowerCase()" v-show="item.open">
-          <router-link :to="{ path: item.torouter[index] }">
+          <router-link :to="{ path: item.torouter[0] }">
             <li>{{ item.subtitle[0] }}</li>
           </router-link>
 
-          <router-link :to="{ path: item.torouter[index] }">
+          <router-link :to="{ path: item.torouter[1] }">
             <li>{{ item.subtitle[1] }}</li>
           </router-link>
 
-          <router-link :to="{ path: item.torouter[index] }">
+          <router-link :to="{ path: item.torouter[2] }">
             <li>{{ item.subtitle[2] }}</li>
           </router-link>
         </ul>
