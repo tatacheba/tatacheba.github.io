@@ -33,36 +33,3 @@ router.beforeEach((to, from, next) => {
 })
 
 export default router
-// import { createRouter, createWebHistory } from 'vue-router'
-// import MainContent from '../components/MainContent.vue'
-
-// const routes = [
-//   { path: '/', component: MainContent },
-//   { path: '/qa-iunokian', component: () => import('../views/QaPageIUNokian.vue') },
-//   { path: '/qa-apinokian', component: () => import('../views/QaPageAPINokian.vue') },
-//   { path: '/qa-mobilewiki', component: () => import('../views/QaPageMobileWiki.vue') }
-// ]
-
-// const router = createRouter({
-//   history: createWebHistory(import.meta.env.BASE_URL),
-//   routes
-// })
-
-// export default router
-
-// import { createRouter, createWebHistory } from 'vue-router'
-// import MainContent from '../components/MainContent.vue'
-
-// const routes = [
-//   { path: '/', component: MainContent },
-//   { path: '/qa-iunokian', component: () => import('../views/QaPageIUNokian.vue') },
-//   { path: '/qa-apinokian', component: () => import('../views/QaPageAPINokian.vue') },
-//   { path: '/qa-mobilewiki', component: () => import('../views/QaPageMobileWiki.vue') }
-// ]
-
-// const router = createRouter({
-//   history: createWebHistory(import.meta.env.BASE_URL),
-//   routes
-// })
-
-// export default router
