@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
-     "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "test:unit": "vitest",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
@@ -20,7 +20,8 @@
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
-    "vuetify": "^3.6.3"
+    "vuetify": "^3.6.3",
+    "gh-pages": "^3.2.3"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
