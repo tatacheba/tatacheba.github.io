@@ -21,33 +21,33 @@ Make sure you have Node.js and npm installed.
 
 ### Cloning the Repository
 
-````bash
-```
+```bash
 git clone https://github.com/tatacheba/tatacheba.github.io.git
-```
-```
+
 cd tatacheba.github.io
 ```
 
 Installing Dependencies
 
-bash
-```npm install```
+```bash
+npm install
+```
 
 Running in Development Mode
 
-bash
-```npm run dev```
+```bash
+npm run dev
+```
 
 Building the Project
 
-bash
-```npm run build```
+```bash
+npm run build
+```
 
 Serving the Built Project
 
-bash
-```
+```bash
 npm run serve
 ```
 
@@ -57,33 +57,36 @@ The project is automatically deployed to GitHub Pages from the gh-pages branch. 
 
 Build the project:
 
-bash
-
-```npm run build```
+```bash
+npm run build
+```
 
 Navigate to the dist directory:
 
-bash
+```bash
+cd dist
+```
 
-```cd dist```
 Initialize a new Git repository (if not already done):
 
-bash
+```bash
+git init
+```
 
-```git init```
 Add all files to the commit:
 
-bash
-```git add .
-git commit -m "Update site build"```
+```bash
+git add .
+git commit -m "Update site build"
+```
 
 Create the gh-pages branch and push it to the remote repository:
 
-bash
-```git branch -M gh-pages
+```bash
+git branch -M gh-pages
 git remote add origin https://github.com/tatacheba/tatacheba.github.io.git
-git push -u origin gh-pages --force```
+git push -u origin gh-pages --force
+```
 
 Contact
 If you have any questions or suggestions, please contact me via my GitHub profile.
-````
