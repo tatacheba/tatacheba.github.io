@@ -22,8 +22,12 @@ Make sure you have Node.js and npm installed.
 ### Cloning the Repository
 
 ````bash
-```git clone https://github.com/tatacheba/tatacheba.github.io.git```
-```cd tatacheba.github.io```
+```
+git clone https://github.com/tatacheba/tatacheba.github.io.git
+```
+```
+cd tatacheba.github.io
+```
 
 Installing Dependencies
 
@@ -43,7 +47,9 @@ bash
 Serving the Built Project
 
 bash
-```npm run serve```
+```
+npm run serve
+```
 
 Deployment on GitHub Pages
 
