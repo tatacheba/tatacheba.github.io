@@ -64,7 +64,7 @@ export default defineComponent({
   methods: {
     loadData() {
       var xhr = new XMLHttpRequest()
-      xhr.open('GET', '/data/educationData.json', true)
+      xhr.open('GET', '../data/educationData.json', true)
       xhr.onload = () => {
         if (xhr.status >= 200 && xhr.status < 300) {
           // Успешно получили данные, обновляем состояние cards
