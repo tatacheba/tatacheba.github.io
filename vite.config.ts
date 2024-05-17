@@ -7,11 +7,15 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // base: '/tatacheba.github.io/',
   plugins: [vue(), vueJsx(), VueDevTools()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    outDir: 'dist'
   }
 })
 // import { defineConfig } from 'vite'
@@ -19,7 +23,8 @@ export default defineConfig({
 // import { resolve } from 'path'
 
 // export default defineConfig({
-//   plugins: [vue()],
+//   base: '/tatacheba.github.io/',
+//   plugins: [vue(), vueJsx(), VueDevTools()],
 //   resolve: {
 //     alias: {
 //       '@': resolve(__dirname, 'src')
