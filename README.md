@@ -24,5 +24,3 @@ This project is a personal website created using Vue.js, TypeScript, and Vite. T
 - **Prettier**: A code formatting tool for ensuring consistent coding style in JavaScript and TypeScript.
 - **GitHub Pages**: A hosting service that provides free storage and hosting for static websites directly from GitHub repositories.
 - **Node.js and npm**: JavaScript runtime environment on the server and package manager for managing project dependencies.
-
-This list represents the core libraries and frameworks used in your project. You can include it in your `README.md` file to give users an overview of the technologies used in your project.
