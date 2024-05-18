@@ -17,7 +17,7 @@
                 >
                   <img
                     v-if="item.serthref !== ''"
-                    src="/public/diploma_3914347.png"
+                    src="/public/diploma.png"
                     alt=""
                     height="20px"
                     srcset=""
@@ -34,7 +34,7 @@
                 rel="noopener noreferrer"
                 ><img
                   v-if="item.serthref !== ''"
-                  src="/public/diploma_3914347.png"
+                  src="/public/diploma.png"
                   alt=""
                   height="20px"
                   srcset=""
