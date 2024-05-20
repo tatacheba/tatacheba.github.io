@@ -1,12 +1,12 @@
 # tatacheba.github.io
 
 <p align="center">
-<a href="https://vuejs.org/"><img src="/public/logo/vue.png" width="50" height="50"  alt="Vue"/></a>
-<a href="https://www.typescriptlang.org/"><img src="/public/logo/typescript.png" width="50" height="50"  alt="Typescript"/></a>
-<a href="https://vitejs.dev//"><img src="/public/logo/vite.png" width="50" height="50"  alt="Vite"/></a>
-<a href="https://nodejs.org/"><img src="/public/logo/node.png" width="50" height="50"  alt="Node"/></a>
-<a href="https://prettier.io/"><img src="/public/logo/prettier.png" width="50" height="50"  alt="Prettier"/></a>
-<a href="https://github.com/"><img src="/public/logo/github.png" width="50" height="50"  alt="Github"/></a>
+<a href="https://vuejs.org/"><img src="/public/images/vue.png" width="50" height="50"  alt="Vue"/></a>
+<a href="https://www.typescriptlang.org/"><img src="/public/images/typescript.png" width="50" height="50"  alt="Typescript"/></a>
+<a href="https://vitejs.dev//"><img src="/public/images/vite.png" width="50" height="50"  alt="Vite"/></a>
+<a href="https://nodejs.org/"><img src="/public/images/node.png" width="50" height="50"  alt="Node"/></a>
+<a href="https://prettier.io/"><img src="/public/images/prettier.png" width="50" height="50"  alt="Prettier"/></a>
+<a href="https://github.com/"><img src="/public/images/github.png" width="50" height="50"  alt="Github"/></a>
 </p>
 
 ## Description
