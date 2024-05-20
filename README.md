@@ -15,12 +15,12 @@ This project is a personal website created using Vue.js, TypeScript, and Vite. T
 
 ## Libraries and Frameworks Used
 
-- **Vue.js**: A progressive JavaScript framework for building user interfaces.
-- **TypeScript**: A statically typed programming language that extends JavaScript by adding types.
-- **Vite**: A fast build tool for modern JavaScript and TypeScript applications.
-- **Vue Router**: The official router for Vue.js applications.
-- **Vue TypeScript Support**: A plugin for supporting TypeScript in Vue.js.
-- **ESLint**: A static code analysis tool for identifying problems in JavaScript and TypeScript code.
-- **Prettier**: A code formatting tool for ensuring consistent coding style in JavaScript and TypeScript.
-- **GitHub Pages**: A hosting service that provides free storage and hosting for static websites directly from GitHub repositories.
-- **Node.js and npm**: JavaScript runtime environment on the server and package manager for managing project dependencies.
+-   **Vue.js**: A progressive JavaScript framework for building user interfaces.
+-   **TypeScript**: A statically typed programming language that extends JavaScript by adding types.
+-   **Vite**: A fast build tool for modern JavaScript and TypeScript applications.
+-   **Vue Router**: The official router for Vue.js applications.
+-   **Vue TypeScript Support**: A plugin for supporting TypeScript in Vue.js.
+-   **ESLint**: A static code analysis tool for identifying problems in JavaScript and TypeScript code.
+-   **Prettier**: A code formatting tool for ensuring consistent coding style in JavaScript and TypeScript.
+-   **GitHub Pages**: A hosting service that provides free storage and hosting for static websites directly from GitHub repositories.
+-   **Node.js and npm**: JavaScript runtime environment on the server and package manager for managing project dependencies.

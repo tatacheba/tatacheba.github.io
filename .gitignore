@@ -38,6 +38,8 @@ db/*.sqlite3
 *.VC.db
 
 *.tsbuildinfo
+frontend
+tatacheba.github.md
 
 target/
 .idea/
