@@ -38,7 +38,7 @@ db/*.sqlite3
 *.VC.db
 
 *.tsbuildinfo
-frontend
+# frontend
 tatacheba.github.md
 
 target/

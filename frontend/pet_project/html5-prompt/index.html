@@ -1,0 +1,1513 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>
+        HTML5 шпаргалка
+    </title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="../img/Logo_icon.svg" rel="shortcut icon" type="image/x-icon">
+   </head>
+<body>
+    <div id="documenter_sidebar">
+        <a href="#documenter_structure" id="documenter_logo">
+            <img alt="" src="img/Logo.svg">
+        </a>
+        <ul id="documenter_nav">
+            <li>
+                <a href="#documenter_structure">
+                    Структура HTML-документа
+                </a>
+            </li>
+            <li>
+                <a href="#tag_head">
+                    Элементы тега &lt;head&gt;
+                </a>
+            </li>
+            <li>
+                <a href="#tag_body">
+                    Элементы тега &lt;body&gt;
+                </a>
+            </li>
+            <li>
+                <a href="#universal_atribute">
+                    Универсальные атрибуты
+                </a>
+            </li>
+            <li>
+                <a href="#events">
+                    Атрибуты событий
+                </a>
+            </li>
+         </ul>
+    </div>
+    <div id="documenter_content">
+        <section id="documenter_structure">
+            <h1> HTML5<span class="shpar"> шпаргалка</span></h1>
+            <h2>
+               Структура HTML-документа
+            </h2>
+            <hr class="notop">
+            <p>Код HTML документа по версии HTML5</p>
+            <div class="view_code"><ol class="tages"><li><span class="value_name">&lt;!DOCTYPE HTML&gt;</span></li><li><span class="tage_name">&lt;html</span><span class="atrib_name">&nbsp;lang</span><span class="tage_name">=</span><span class="value_name">"ru"</span><span class="tage_name">&gt;</span></li><li><span class="tage_name">    &lt;head&gt;</span></li><li><span class="">      Cодержит метаданные, которые используются для хранения информации предназначенной для браузеров и поисковых систем.</span></li><li><span class="tage_name">    &lt;/head&gt;</span></li><li><span class="tage_name">    &lt;body&gt;</span></li><li><span class="">      Содержит видимый для пользователя контент страницы.</span></li><li><span class="tage_name">    &lt;/body&gt;</span></li><li><span class="tage_name">&lt;/html&gt;</span></li></ol></div>
+            <p>Код тега <span class="code_s">&lt;head&gt;</span>            </p>
+            <div class="view_code"><ol class="tages"><li><span class="tage_name">&lt;head</span><span class="tage_name">&gt;</span></li><li><span class="tage_name">    &lt;meta</span><span class="atrib_name">&nbsp;charset</span><span class="tage_name">=</span><span class="value_name">"UTF-8"</span><span class="tage_name">&gt;</span></li><li><span class="tage_name">    &lt;title&gt;</span><span class=""> Название страницы </span><span class="tage_name">&lt;/title&gt;</span></li><li><span class="tage_name">    &lt;meta</span><span class="atrib_name">&nbsp;name</span><span class="tage_name">=</span><span class="value_name">"description"&nbsp;</span><span class="atrib_name">content</span><span class="tage_name">=</span><span class="value_name">"Описание страницы"</span><span class="tage_name">&gt;</span></li><li><span class="tage_name">    &lt;link</span><span class="atrib_name">&nbsp;rel</span><span class="tage_name">=</span><span class="value_name">"stylesheet"</span><span class="atrib_name">&nbsp;type</span><span class="tage_name">=</span><span class="value_name">"text/css"</span><span class="atrib_name">&nbsp;href</span><span class="tage_name">=</span><span class="value_name">"/css/style.css"</span><span class="tage_name">&gt;</span></li><li><span class="tage_name">    &lt;link</span><span class="atrib_name">&nbsp;rel</span><span class="tage_name">=</span><span class="value_name">"icon"</span><span class="atrib_name">&nbsp;href</span><span class="tage_name">=</span><span class="value_name">"/img/favicon.png"</span><span class="tage_name">&gt;</span></li><li><span class="tage_name">    &lt;script</span><span class="atrib_name">&nbsp;type</span><span class="tage_name">=</span><span class="value_name">"text/javascript"</span><span class="atrib_name">&nbsp;src</span><span class="tage_name">=</span><span class="value_name">"/code.js"</span><span class="tage_name">&gt;</span><span class="tage_name">&lt;/script&gt;</span></li><li><span class="comment">&lt;!--[if lt IE 9]&gt;</span></li><li>  <span class="comment">   &lt;script src="/code.js"&gt;&lt;/script&gt;</span></li><li><span class="comment">&lt;![endif]--&gt;</span></li><li><span class="tage_name">&lt;/head&gt;</span></li></ol></div>
+            <p>Код тега <span class="code_s">&lt;body&gt;</span></p>
+            <div class="view_code"><ol class="tages"><li><span class="tage_name">&lt;body</span><span class="tage_name">&gt;</span></li><li><span class="tage_name">    &lt;header</span><span class="atrib_name">&nbsp;class</span><span class="tage_name">=</span><span class="value_name">"attribute</span><span class="tage_name">&gt;</span></li><li><span class="">          Шапка</span></li><li><span class="tage_name">         &lt;nav&gt;</span><span class=""> Навигация </span><span class="tage_name">&lt;/nav&gt;</span></li><li><span class="tage_name">    &lt;/header&gt;</span></li><li><span class="tage_name">    &lt;main</span><span class="tage_name">&gt;</span></li><li><span class="tage_name">         &lt;section&gt;</span></li><li><span class="tage_name">             &lt;h1</span><span class="tage_name">&gt;</span><span class=""> Заголовок страницы </span><span class="tage_name">&lt;/h1&gt;</span></li><li><span class="">             Основная часть</span></li><li><span class="tage_name">         &lt;/section&gt;</span></li><li><span class="tage_name">    &lt;/main&gt;</span></li><li><span class="tage_name">    &lt;aside</span><span class="tage_name">&gt;</span></li><li><span class="">         Боковая колонка (сайдбар)</span></li><li><span class="tage_name">    &lt;/aside&gt;</span></li><li><span class="tage_name">    &lt;footer</span><span class="tage_name">&gt;</span></li><li><span class="">         Подвал</span></li><li><span class="tage_name">    &lt;/footer&gt;</span></li><li><span class="tage_name">&lt;/body&gt;</span></li></ol></div>
+        </section>
+        <section id="tag_head">
+            <h2>
+                Элементы тега <span class="code_s">&lt;head&gt;</span>
+            </h2>
+            <hr class="notop">
+            <p>
+                Элемент <span class="code_s">&lt;head&gt;</span> предназначен для хранения других элементов, цель которых — помочь браузеру в работе с данными. Также внутри контейнера <span class="code_s">&lt;head&gt;</span> находятся метатеги, которые используются для хранения информации предназначенной для браузеров и поисковых систем.
+            </p>
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Тег</th>
+                        <th>Описание</th>
+                        <th width="30%">Атрибуты</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>Первый элемент в HTML-странице. Собирает все метаданные страницы.</td>
+                        <td>нет</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;title&gt;</td>
+                        <td>Заголовок документа.</td>
+                        <td>нет</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;meta&gt;*</td>
+                        <td>Содержит метатеги, которые используются для хранения информации предназначенной для браузеров и поисковых систем.</td>
+                        <td>
+                            <li data-title="Задает кодировку документа.">charset</li>
+                            <li data-title="Устанавливает значение атрибута, заданного с помощью name или http-equiv.">content</li>
+                            <li data-title="Предназначен для конвертирования метатега в заголовок HTTP.">http-equiv</li>
+                            <li data-title="Имя метатега, также косвенно устанавливает его предназначение. ">name</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;base&gt;*</td>
+                        <td>Задает основной URL страницы для формирования относительных ссылок.</td>
+                        <td>
+                            <li data-title="Адрес, который должен использоваться для указания полного пути к файлам. ">href</li>
+                            <li data-title="Имя окна или фрейма, куда будет загружаться документ, открываемый по ссылке.">target</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;link&gt;*</td>
+                        <td>Определяет связь между документом и внешним ресурсом, используется для ссылки на внешние таблицы стилей.</td>
+                        <td>
+                            <li data-title="Кодировка связываемого документа.">charset</li>
+                            <li data-title="Путь к связываемому файлу.">href</li>
+                            <li data-title="Определяет устройство, для которого следует применять стилевое оформление. ">media</li>
+                            <li data-title="Определяет отношения между текущим документом и файлом, на который делается ссылка.">rel</li>
+                            <li data-title="Указывает размер иконок для визуального отображения.">sizes</li>
+                            <li data-title="Сообщает браузеру, к какому типу относится элемент формы. ">type</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;style&gt;</td>
+                        <td>Содержит встроенные CSS стили страницы.</td>
+                        <td>
+                            <li data-title="Определяет устройство вывода, для работы с которым предназначена таблица стилей. ">media</li>
+                            <li data-title="Сообщает браузеру, какой синтаксис использовать, чтобы правильно интерпретировать стили.">type</li>
+                            <li data-title="Является логическим атрибутом, который указывает, что стили применяются не ко всему документу, а только к родительскому элементу и его дочерним элементам. Элемент <style> при этом размещается не внутри элемента <head>, а внутри того родительского элемента для которого применяются стили.">scoped</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;noscript&gt;</td>
+                        <td>Показывает свое содержимое, если браузер не поддерживает работу со скриптами или их поддержка отключена пользователем. </td>
+                        <td>нет</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;script&gt;</td>
+                        <td>Используется для подключения скриптов к HTML документу.</td>
+                        <td>
+                            <li data-title="Загружает скрипт асинхронно.">async</li>
+                            <li data-title="Откладывает выполнение скрипта до тех пор, пока вся страница не будет загружена полностью. ">defer</li>
+                            <li data-title="Устанавливает язык программирования на котором написан скрипт. ">language</li>
+                            <li data-title="Адрес скрипта из внешнего файла для импорта в текущий документ. ">src</li>
+                            <li data-title="Определяет тип содержимого тега <script>">type</li>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <p>*-закрывающий тег не требуется.</p>
+            </div>
+        </section>
+        <section id="tag_body">
+            <h2>
+                Элементы тега <span class="code_s">&lt;body&gt;</span>
+            </h2>
+            <hr class="notop">
+            <p>
+                HTML тег <span class="code_s">&lt;body&gt;</span> определяет содержимое (контент) HTML-документа, которое отображается в окне браузера (текст, ссылки, картинки (изображения), таблицы, списки и т.д.). Он должен быть единственным в документе и всегда должен располагаться внутри элемента <span class="code_s">&lt;html&gt;</span>, сразу после элемента <span class="code_s">&lt;head&gt;</span>.
+            </p>
+            <h3>
+                Теги документа
+            </h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Тег</th>
+                        <th>Описание</th>
+                        <th width="30%">Атрибуты</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>Cодержит все содержимое HTML-документа, например текст, гиперссылки, изображения, таблицы, списки и т. д.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem">&lt;article&gt;</td>
+                        <td>Применяется для обозначения раздела страницы, содержащего завершенную, независимую композицию. Данный элемент может содержать в себе такую информацию как запись блога, товар в интернет-магазине, пост на форуме, газетная статья, любой другой независимый элемент содержимого или просто основной текст страницы.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem">&lt;aside&gt;</td>
+                        <td>Определяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой информации. Такой блок, как правило, называется «сайдбар» или «боковая панель».</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem">&lt;address&gt;</td>
+                        <td>Предназначен для хранения информации об авторе и может включать в себя любые элементы HTML вроде ссылок, текста, выделений и т.д. Планируется, что поисковые системы будут анализировать содержимое этого тега для сбора информации об авторах сайтов. </td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;section&gt;</td>
+                        <td>Содержит элементы, сгруппированные по темам.Применяться для блока новостей, контактной информации, глав текста, вкладок в диалоговом окне и др. Раздел обычно содержит заголовок. Допускается вкладывать один тег &lt;section&gt; внутрь другого.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;header&gt;</td>
+                        <td>Задает «шапку» сайта или раздела, в которой обычно располагается заголовок.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;nav&gt;</td>
+                        <td>Задаёт навигацию по сайту. Если на странице несколько блоков ссылок, то в &lt;nav&gt; обычно помещают приоритетные ссылки. Также допустимо использовать несколько &lt;nav&gt; в документе. Запрещается вкладывать &lt;nav&gt; внутрь &lt;address&gt;.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;footer&gt;</td>
+                        <td>Задаёт «подвал» сайта или раздела веб-страницы, в нём может располагаться имя автора, дата документа, контактная и правовая информация. &lt;footer&gt; нельзя вкладывать внутрь другого &lt;footer&gt;, а также внутрь элементов &lt;address&gt; и &lt;header&gt;. Внутри &lt;footer&gt; не должно быть элемента &lt;main&gt;.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;hgroup&gt;</td>
+                        <td>Используется для группирования заголовков веб-страницы или раздела. Внутри располагаются теги заголовков от &lt;h1&gt; до &lt;h6&gt;.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;h1&gt; .. &lt;h6&gt;</td>
+                        <td>Заголовок для текущего раздела.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;!-- --&gt;</td>
+                        <td>Добавляет комментарий в код документа.</td>
+                        <td>нет</td>
+                    </tr>
+                </tbody></table>
+                <p><span class="block_elem code_s">&lt;address&gt;</span> - блочный элемент. Блочные элементы занимают всю ширину своего родителя (контейнера), формально создавая «блок». </p>
+            </div>
+            <h3>
+                Теги группировки, списки
+            </h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Тег</th>
+                        <th>Описание</th>
+                        <th width="30%">Атрибуты</th>
+                    </tr>
+                    <tr>
+                        <td class="block_elem">&lt;dd&gt;*</td>
+                        <td>Предоставляет подробности или определение предшествующего термина. Каждый такой список начинается с контейнера &lt;dl&gt;, куда входит тег &lt;dt&gt; создающий термин и тег &lt;dd&gt; задающий определение этого термина. </td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem">&lt;dl&gt;</td>
+                        <td>Создаёт список определений.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem">&lt;dt&gt;*</td>
+                        <td>Создает термин в списке определений.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;li&gt;</td>
+                        <td>Определяет отдельный элемент списка. </td>
+                        <td>
+                            <li data-title="Число, с которого будет начинаться нумерованный список.">value</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;ol&gt;</td>
+                        <td>Устанавливает нумерованный список. </td>
+                        <td>
+                            <li data-title="Устанавливает вид маркера списка. ">type</li>
+                            <li data-title="Нумерация в списке становится по убыванию (3,2,1).">reversed</li>
+                            <li data-title="Задаёт число, с которого будет начинаться нумерованный список.">start</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;ul&gt;</td>
+                        <td>Устанавливает маркированный список. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;hr&gt;*</td>
+                        <td>Рисует горизонтальную линию, которая по своему виду зависит от используемых параметров, а также браузера.</td>
+                        <td>
+                          <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem code_s">&lt;br&gt;*</td>
+                        <td>Устанавливает перевод строки в том месте, где этот тег находится. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;p&gt;*</td>
+                        <td>Определяет текстовый абзац.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figure&gt;</td>
+                        <td>Используется для группирования любых элементов, например, изображений и подписей к ним.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;figcaption&gt;</td>
+                        <td>Содержит описание для тега &lt;figure&gt;.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;div&gt;</td>
+                        <td>Предназначен для выделения фрагмента документа с целью изменения вида содержимого.</td>
+                        <td>
+                        <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;pre&gt;</td>
+                        <td>Определяет блок предварительно форматированного текста. Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="block_elem code_s">&lt;blockquote&gt;</td>
+                        <td>Предназначен для выделения длинных цитат внутри документа.</td>
+                        <td>
+                            <li data-title="Адрес, который указывает на источник цитаты.">cite</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <p>* - закрывающий тег не требуется.</p>
+                <p><span class="block_elem code_s">&lt;address&gt;</span> - блочный элемент. Блочные элементы занимают всю ширину своего родителя (контейнера), формально создавая «блок». </p>
+                <p><span class="string_elem code_s">&lt;br&gt;</span> - строчный элемент. Используются для разметки частей содержимого элементов. Ширина строчного элемента равна объему содержимого.</p>
+            </div>
+            <h3>
+                Теги табличных данных
+            </h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Тег</th>
+                        <th>Описание</th>
+                        <th width="30%">Атрибуты</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;col&gt;*</td>
+                        <td>Задает ширину и другие характеристики одной или нескольких колонок таблицы. При наличии этого тега браузер начинает показывать содержимое таблицы, не дожидаясь ее полной загрузки. </td>
+                        <td>
+                            <li data-title="Количество колонок, к которым следует применять параметры.">span</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;colgroup&gt;*</td>
+                        <td>Предназначен для задания ширины и стиля одной или нескольких колонок таблицы. Этот тег позволяет уменьшить код таблицы за счет сокращения повторяющихся атрибутов, и при наличии этого тега браузер начинает показывать содержимое таблицы, не дожидаясь ее полной загрузки. </td>
+                        <td>
+                            <li data-title="Количество колонок, к которым следует применять параметры.">span</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;caption&gt;</td>
+                        <td>Предназначен для создания заголовка к таблице и может размещаться только внутри контейнера &lt;table&gt;, причем сразу после открывающего тега.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Создает таблицу. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;*</td>
+                        <td>Служит контейнером для создания строки таблицы.Каждая ячейка в пределах такой строки может задаваться с помощью тега &lt;th&gt; или &lt;td&gt;.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;*</td>
+                        <td>Предназначен для создания одной ячейки таблицы. Тег &lt;td&gt; должен размещаться внутри контейнера &lt;tr&gt;, который в свою очередь располагается внутри тега &lt;table&gt;. </td>
+                        <td>
+                            <li data-title="Объединяет горизонтальные ячейки.">colspan</li>
+                            <li data-title="Позволяет связать ячейки с заголовком.">headers</li>
+                            <li data-title="Объединяет вертикальные ячейки.">rowspan</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;*</td>
+                        <td>Предназначен для создания одной ячейки таблицы, которая обозначается как заголовочная. Текст в такой ячейке отображается браузером обычно жирным шрифтом и выравнивается по центру. Тег &lt;th&gt; должен размещаться внутри контейнера &lt;tr&gt;, который в свою очередь располагается внутри тега &lt;table&gt;.</td>
+                        <td>
+                            <li data-title="Объединяет горизонтальные ячейки.">colspan</li>
+                            <li data-title="Позволяет связать ячейки с заголовком.">headers</li>
+                            <li data-title="Объединяет вертикальные ячейки.">rowspan</li>
+                            <li data-title="Позволяет связать ячейки простой таблицы с заголовками в речевых браузерах.">scope</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;*</td>
+                        <td>Предназначен для хранения одной или нескольких строк таблицы. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;*</td>
+                        <td>Предназначен для хранения одной или нескольких строк, которые представлены вверху таблицы.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;*</td>
+                        <td>Предназначен для хранения одной или нескольких строк, которые представлены внизу таблицы.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <p>* - закрывающий тег не требуется.</p>
+            </div>
+            <h3>
+                Теги создания форм
+            </h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Тег</th>
+                        <th>Описание</th>
+                        <th width="30%">Атрибуты</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;button&gt;</td>
+                        <td>Создает на веб-странице кнопку.используется для размещения кнопки. Внутри тега &lt;button&gt;вы можете разместить как отформатированный текст, так и изображение. Это основная разница между этим элементом и кнопками, созданными с использованием тега &lt;input&gt; (c атрибутом type = "button").</td>
+                        <td>
+                            <li data-title="Устанавливает, что кнопка получает фокус после загрузки страницы.">autofocus</li>
+                            <li data-title="Блокирует доступ и изменение элемента. ">disabled</li>
+                            <li data-title="Связывает между собой форму и кнопку.">form</li>
+                            <li data-title="Задаёт адрес, на который пересылаются данные формы при нажатии на кнопку.">formaction</li>
+                            <li data-title="Способ кодирования данных формы.">formenctype</li>
+                            <li data-title="Указывает метод пересылки данных формы.">formmethod</li>
+                            <li data-title="Отменяет проверку формы на корректность.">formnovalidate</li>
+                            <li data-title="Открывает результат отправки формы в новом окне или фрейме.">formtarget</li>
+                            <li data-title="Определяет уникальное имя кнопки. ">name</li>
+                            <li data-title="Тип кнопки — обычная, для отправки данных формы на сервер или для очистки формы. ">type</li>
+                            <li data-title="Значение кнопки, которое будет отправлено на сервер или прочитано с помощью скриптов.">value</li>
+                           <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;meter&gt;</td>
+                        <td>Используется для вывода значения в некотором известном диапазоне. Используется преимущественно для отображения числовых значений, например, количества результатов поиска, объема жидкости, давления и др.</td>
+                        <td>
+                            <li data-title="Устанавливает значение. Обязательный атрибут.">value</li>
+                            <li data-title="Задает минимально возможное значение.">min</li>
+                            <li data-title="Задает максимально возможное значение.">max</li>
+                            <li data-title="Определяет предел, при достижении которого значение считается низким.">low</li>
+                            <li data-title="Определяет предел, при достижении которого значение считается высоким.">high</li>
+                            <li data-title="Определяет наилучшее или оптимальное значение.">optimum</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;datalist&gt;</td>
+                        <td>Создает список вариантов, которые можно выбирать при наборе в текстовом поле. Изначально этот список скрыт и становится доступным при получении полем фокуса или наборе текста.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;fieldset&gt;</td>
+                        <td>Предназначен для группирования элементов формы. Такая группировка облегчает работу с формами, содержащими большое число данных. Например, один блок может быть предназначен для ввода текстовой информации, а другой — для флажков. </td>
+                        <td>
+                            <li data-title="Блокирует поля формы в группе.">disabled</li>
+                            <li data-title="Связывает группу с формой.">form</li>
+                            <li data-title="Добавляет всплывающую подсказку к группе формы.">title</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;progress&gt;</td>
+                        <td>Используется для отображения прогресса завершенности задачи. Изменение значения происходит через JavaScript.</td>
+                        <td>
+                            <li data-title="Текущее значение прогресса.">value</li>
+                            <li data-title="Максимальное значение прогресса. ">max</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;form&gt;</td>
+                        <td>Устанавливает форму на веб-странице. Форма предназначена для обмена данными между пользователем и сервером. Область применения форм не ограничена отправкой данных на сервер, с помощью клиентских скриптов можно получить доступ к любому элементу формы, изменять его и применять по своему усмотрению. </td>
+                        <td>
+                            <li data-title="Устанавливает кодировку, в которой сервер может принимать и обрабатывать данные.">accept-charset</li>
+                            <li data-title="Адрес программы или документа, который обрабатывает данные формы. ">action</li>
+                            <li data-title="Включает автозаполнение полей формы.">autocomplete</li>
+                            <li data-title="Способ кодирования данных формы.">enctype</li>
+                            <li data-title="Метод протокола HTTP. ">method</li>
+                            <li data-title="Имя формы.">name</li>
+                            <li data-title="Отменяет встроенную проверку данных формы на корректность ввода.">novalidate</li>
+                            <li data-title="Имя окна или фрейма, куда обработчик будет загружать возвращаемый результат.">target</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input&gt;*</td>
+                        <td>Предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.</td>
+                        <td>
+                            <li data-title="Устанавливает фильтр на типы файлов, которые вы можете отправить через поле загрузки файлов.">accept</li>
+                            <li data-title="Переход к элементу с помощью комбинации клавиш. ">accesskey</li>
+                            <li data-title="Альтернативный текст для кнопки с изображением. ">alt</li>
+                            <li data-title="Включает или отключает автозаполнение.">autocomplete</li>
+                            <li data-title="Устанавливает фокус в поле формы.">autofocus</li>
+                            <li data-title="Предварительно активированный переключатель или флажок. ">checked</li>
+                            <li data-title="Блокирует доступ и изменение элемента.">disabled</li>
+                            <li data-title="Связывает поле с формой по её идентификатору.">form</li>
+                            <li data-title="Определяет адрес обработчика формы.">formaction</li>
+                            <li data-title="Устанавливает способ кодирования данных формы при их отправке на сервер.">formenctype</li>
+                            <li data-title="Сообщает браузеру каким методом следует передавать данные формы на сервер.">formmethod</li>
+                            <li data-title="Отменяет встроенную проверку данных на корректность.">formnovalidate</li>
+                            <li data-title="Задает высоту элемента (только для <input type = &quot;image&quot; >).">height</li>
+                            <li data-title="Указывает на список вариантов, которые можно выбирать при вводе текста.">list</li>
+                            <li data-title="Верхнее значение для ввода числа или даты.">max</li>
+                            <li data-title="Максимальное количество символов разрешенных в тексте.">maxlength</li>
+                            <li data-title="Нижнее значение для ввода числа или даты.">min</li>
+                            <li data-title="Позволяет загрузить несколько файлов одновременно.">multiple</li>
+                            <li data-title="Имя поля, предназначено для того, чтобы обработчик формы мог его идентифицировать.">name</li>
+                            <li data-title="Устанавливает шаблон ввода.">pattern</li>
+                            <li data-title="Выводит подсказывающий текст.">placeholder</li>
+                            <li data-title="Устанавливает, что поле не может изменяться пользователем.">readonly</li>
+                            <li data-title="Обязательное для заполнения поле.">required</li>
+                            <li data-title="Ширина текстового поля.">size</li>
+                            <li data-title="Адрес графического файла для поля с изображением.">src</li>
+                            <li data-title="Шаг приращения для числовых полей.">step</li>
+                            <li data-title="Определяет порядок перехода между элементами с помощью клавиши Tab.">tabindex</li>
+                            <li data-title="Сообщает браузеру, к какому типу относится элемент формы.">type</li>
+                            <li data-title="Значение элемента. ">value</li>
+                            <li data-title="Задает ширину элемента (только для <input type = &quot;image&quot;>). ">width</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;keygen&gt;*</td>
+                        <td>Используется для генерации пары ключей — закрытого и открытого.</td>
+                        <td>
+                            <li data-title="Передает фокус элементу при загрузке страницы. ">autofocus</li>
+                            <li data-title="Определяет, должно ли значение изменяться при отправке формы.">challenge</li>
+                            <li data-title="Отключает этот элемент.">disabled</li>
+                            <li data-title="Идентификатор формы к которой применяется шифрование.">form</li>
+                            <li data-title="Задает алгоритм шифрования ключа. К примеру, значение rsa использует криптографический алгоритм RSA. ">keytype</li>
+                            <li data-title="Имя элемента.">name</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;label&gt;</td>
+                        <td>Устанавливает связь между определенной меткой, в качестве которой обычно выступает текст, и элементом формы (&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;). Такая связь необходима, чтобы изменять значения элементов формы при нажатии курсором мыши на текст. Кроме того, с помощью &lt;label&gt; можно устанавливать горячие клавиши на клавиатуре и переходить на активный элемент подобно ссылкам.</td>
+                        <td>
+                            <li data-title="Определяет форму/формы с которой будет связана метка. ">form</li>
+                            <li data-title="Идентификатор элемента, с которым следует установить связь. ">for</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;legend&gt;</td>
+                        <td>Применяется для создания заголовка группы элементов формы, которая определяется с помощью тега &lt;fieldset&gt;.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;optgroup&gt;</td>
+                        <td>Группирует элементы списка.</td>
+                        <td>
+                            <li data-title="Блокирует доступ к группе списка.">disabled</li>
+                            <li data-title="Текст, который будет входить в список в виде заголовка группы. ">label</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;option&gt;*</td>
+                        <td>Определяет отдельные пункты списка, создаваемого с помощью контейнера &lt;select&gt;.</td>
+                        <td>
+                            <li data-title="Заблокировать для доступа элемент списка.">disabled</li>
+                            <li data-title="Указание метки пункта списка.">label</li>
+                            <li data-title="Заранее устанавливает определенный пункт списка выделенным.">selected</li>
+                            <li data-title="Значение пункта списка, которое будет отправлено на сервер или прочитано с помощью скриптов.">value</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;output&gt;</td>
+                        <td>Определяет область для вывода, преимущественно с помощью скриптов.</td>
+                        <td>
+                            <li data-title="Определяет идентификатор одного и более элементов для связывания с тегом <output>.">for</li>
+                            <li data-title="Задает имя формы, которой принадлежит область для вывода.">form</li>
+                            <li data-title="Задает уникальное имя элемента.">name</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;select&gt;</td>
+                        <td>Позволяет создать элемент интерфейса в виде раскрывающегося списка, а также список с одним или множественным выбором.</td>
+                        <td>
+                            <li data-title="Устанавливает, что список получает фокус после загрузки страницы.">autofocus</li>
+                            <li data-title="Блокирует доступ и изменение элемента. ">disabled</li>
+                            <li data-title="Связывает список с формой. ">form</li>
+                            <li data-title="Позволяет одновременно выбирать сразу несколько элементов списка.">multiple</li>
+                            <li data-title="Имя элемента для отправки на сервер или обращения через скрипты.">name</li>
+                            <li data-title="Список обязателен для выбора перед отправкой формы.">required</li>
+                            <li data-title="Количество отображаемых строк списка.">size</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;textarea&gt;</td>
+                        <td>Представляет собой элемент формы для создания области, в которую можно вводить несколько строк текста. </td>
+                        <td>
+                            <li data-title="Автоматическое получение фокуса.">autofocus</li>
+                            <li data-title="Ширина поля в символах. ">cols</li>
+                            <li data-title="Блокирует доступ и изменение элемента.">disabled</li>
+                            <li data-title="Определяет специальное имя поля формы, которое используется, чтобы указать направление текста в текстовой области, оно будет подставлено браузером автоматически и отправлено на сервер вместе с формой отправки.">dirname</li>
+                            <li data-title="Связывает текстовое поле с формой по её идентификатору.">form</li>
+                            <li data-title="Максимальное число введенных символов.">maxlength</li>
+                            <li data-title="Указывает минимальное количество символов, которое может содержаться в текстовой области.">minlength</li>
+                            <li data-title="Имя поля, предназначено для того, чтобы обработчик формы мог его идентифицировать.">name</li>
+                            <li data-title="Указывает замещающийся текст.">placeholder</li>
+                            <li data-title="Устанавливает, что поле не может изменяться пользователем.">readonly</li>
+                            <li data-title="Обязательное для заполнения поле.">required</li>
+                            <li data-title="Высота поля в строках текста.">rows</li>
+                            <li data-title="Параметры переноса строк. ">wrap</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <p>* - закрывающий тег не требуется.</p>
+            </div>
+            <h3>
+                Интерактивные элементы
+            </h3>
+            <hr class="notop">
+            <div>
+                <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a><table>
+                    <tbody><tr>
+                        <th width="10%">Тег</th>
+                        <th>Описание</th>
+                        <th width="30%">Атрибуты</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;menu&gt;</td>
+                        <td>Предназначен для отображения списка пунктов меню.Выступает контейнером для тега &lt;command&gt; и создания меню.</td>
+                        <td>
+                            <li data-title="Устанавливает видимую метку для меню. ">label</li>
+                            <li data-title="Задает тип меню.">type</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;command&gt;*</td>
+                        <td>Создает команду в виде переключателя, флажка или обычной кнопки. Тег &lt;command&gt;должен располагаться внутри &lt;menu&gt;, в противном случае он не будет показан.Это нестандартный элемент и браузерами не поддерживается.</td>
+                        <td>
+                            <li data-title="Активирует команду. Доступно только если type установлен как radio или checkbox. ">checked</li>
+                            <li data-title="Задает, доступна команда или нет.">disabled</li>
+                            <li data-title="Адрес картинки, которая показывается как команда.">icon</li>
+                            <li data-title="Название команды.">label</li>
+                            <li data-title="Задает имя группы переключателей. Доступно только если type установлен как radio. ">radiogroup</li>
+                            <li data-title="Определяет тип команды (checkbox, command, radio). По умолчанию command.">type</li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;summary&gt;</td>
+                        <td>Указывает заголовок для тега &lt;details&gt;, по которому можно щелкать для разворачивания/сворачивания информации. Тег &lt;summary&gt; должен идти первым внутри &lt;details&gt;.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;details&gt;</td>
+                        <td>Используется для хранения информации, которую можно скрыть или показать по требованию пользователя. По умолчанию содержимое тега не отображается, для изменения статуса применяется атрибут open.</td>
+                        <td>
+                            <li data-title="Показывает информацию внутри тега.">open</li>
+                        </td>
+                        
+                    </tr>
+                </tbody></table>
+                <p>* - закрывающий тег не требуется.</p>
+            </div>
+            <h3>
+                Семантика и форматирование текста
+            </h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Тег</th>
+                        <th>Описание</th>
+                        <th width="30%">Атрибуты</th>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;a&gt;</td>
+                        <td>Ппредназначен для создания ссылок. </td>
+                        <td>
+                            <li data-title="Предлагает скачать указанный по ссылке файл.">download</li>
+                            <li data-title="Задает адрес документа, на который следует перейти. ">href</li>
+                            <li data-title="Идентифицирует язык текста по ссылке.">hreflang</li>
+                            <li data-title="Отношения между ссылаемым и текущим документами.">rel</li>
+                            <li data-title="Имя окна или фрейма, куда браузер будет загружать документ.">target</li>
+                            <li data-title="Указывает MIME-тип документа, на который ведёт ссылка.">type</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;b&gt;*</td>
+                        <td>Устанавливает жирное начертание шрифта. </td>
+                        <td>
+                           <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;abbr&gt;</td>
+                        <td>Указывает, что последовательность символов является аббревиатурой.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;bdo&gt;</td>
+                        <td>устанавливает направление вывода текста и преимущественно предназначен для использования с языками, где чтение происходит справа налево. Например, к ним относится арабский язык.</td>
+                        <td>
+                            <li data-title="Указывает направление текста — слева направо или справа налево. ">dir</li>
+                        
+                        <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;code&gt;</td>
+                        <td>Предназначен для отображения текста программного код.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr><tr>
+                        <td class="string_elem">&lt;span&gt;</td>
+                        <td>Упредназначен для определения строчных элементов документа. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;ruby&gt;</td>
+                        <td>предназначен для добавления небольшой аннотации сверху или снизу от заданного текста.</td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;rt&gt;</td>
+                        <td>Добавляет аннотацию сверху или снизу от текста, заключенного в контейнер &lt;ruby&gt;. Сама аннотация выводится уменьшенным шрифтом. </td>
+                        <td><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;rp&gt;</td>
+                        <td>Используется для вывода текста в браузерах, которые не поддерживают тег &lt;ruby&gt;. В остальных браузерах текст, заключенный в контейнер &lt;rp&gt;, не отображается. Тег &lt;rp&gt;должен идти до или после тега &lt;rt&gt;.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;dfn&gt;</td>
+                        <td>Выделяет термин в документе.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;q&gt;</td>
+                        <td>Используется для выделения в тексте цитат. </td>
+                        <td>
+                            <li data-title="Адрес, который указывает на источник цитаты.">cite</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;cite&gt;</td>
+                        <td>Помечает текст как цитату или сноску на другой материал. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;em&gt;</td>
+                        <td>Предназначен для акцентирования текста.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;time&gt;</td>
+                        <td>Предназаначен для установки времени и даты.</td>
+                        <td>
+                            <li data-title="Задает дату, время или оба значения для текста.">datetime</li><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;var&gt;</td>
+                        <td>Используется для выделения переменных компьютерных программ. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;samp&gt;</td>
+                        <td>Используется для отображения текста, который является результатом вывода компьютерной программы.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;i&gt;</td>
+                        <td>Устанавливает курсивное начертание шрифта.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;sub&gt;</td>
+                        <td>Отображает шрифт в виде нижнего индекса. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;sup&gt;</td>
+                        <td>Отображает шрифт в виде верхнего индекса. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;smail&gt;</td>
+                        <td>Уменьшает размер шрифта на единицу по сравнению с обычным текстом.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;strong&gt;</td>
+                        <td>Акцентирует текст, обычно жирным начертанием.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;strike&gt;</td>
+                        <td>Отображает текст как перечеркнутый. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;mark&gt;</td>
+                        <td>Определяет выделенный/подсвеченный текст.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;ins&gt;</td>
+                        <td>Предназначен для выделения текста, который был добавлен в новую версию документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны.</td>
+                        <td>
+                            <li data-title="Указывает ссылку на документ, где приведена причина редактирования текста и другие подробности.">cite</li>
+                            <li data-title="Дата и время редактирования текста. ">datetime</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;del&gt;</td>
+                        <td>Используется для выделения текста, который был удален в новой версии документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны. </td>
+                        <td>
+                            <li data-title="Указывает ссылку на документ, где приведена причина редактирования текста и другие подробности.">cite</li>
+                            <li data-title="Дата и время редактирования текста. ">datetime</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;kbd&gt;</td>
+                        <td>Используется для обозначения текста, который набирается на клавиатуре или для названия клавиш.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;s&gt;</td>
+                        <td>Отображает текст как перечеркнутый. </td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="string_elem">&lt;wbr&gt;*</td>
+                        <td>Указывает браузеру место, где допускается делать перенос строки в тексте, если этого требует ширина родительского элемента.</td>
+                        <td>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="string_elem">&lt;tt&gt;</td>
+                        <td>Отображает текст моноширинным текстом.</td>
+                        <td>
+                            <p><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a></p>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <p>* - закрывающий тег не требуется.</p>
+                <p><span class="string_elem code_s">&lt;br&gt;</span> - строчный элемент. Используются для разметки частей содержимого элементов. Ширина строчного элемента равна объему содержимого.</p>
+            </div>
+            <h3>
+                Объектное встраивание контента
+            </h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Тег</th>
+                        <th>Описание</th>
+                        <th width="30%">Атрибуты</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;area&gt;*</td>
+                        <td>Определяет активные области изображения, которые являются ссылками. Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением. Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой. Тег &lt;area&gt; задает форму области, ее размеры, устанавливает адрес документа, на который следует сделать ссылку, а также имя окна или фрейма, куда браузер будет загружать документ. Этот тег всегда располагается в контейнере &lt;map&gt;, который связывает координаты областей с изображением.</td>
+                        <td>
+                            <li data-title="Переход к области с помощью комбинации клавиш. ">accesskey</li>
+                            <li data-title="Альтернативный текст для области изображения. ">alt</li>
+                            <li data-title="Координаты активной области. ">coords</li>
+                            <li data-title="Задает адрес документа, на который следует перейти.">href</li>
+                            <li data-title="Указывает язык документа, на который ведет ссылка.">hrefland</li>
+                            <li data-title="Область без ссылки на другой документ. ">nohref</li>
+                            <li data-title="Форма области. ">shape</li>
+                            <li data-title="Задает последовательность перехода между элементами с помощью клавиши Tab.">tabindex</li>
+                            <li data-title="Имя окна или фрейма, куда браузер будет загружать документ.">target</li>
+                            <li data-title="Устанавливает MIME-тип документа, на который ведёт ссылка.">type</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;audio&gt;</td>
+                        <td>Добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. </td>
+                        <td>
+                            <li data-title="Звук начинает играть сразу после загрузки страницы.">autoplay</li>
+                            <li data-title="Добавляет панель управления к аудиофайлу.">controls</li>
+                            <li data-title="Повторяет воспроизведение звука с начала после его завершения.">loop</li>
+                            <li data-title="Используется для загрузки файла вместе с загрузкой веб-страницы.">preload</li>
+                            <li data-title="Указывает путь к воспроизводимому файлу.">src</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;canvas&gt;</td>
+                        <td>Создает область, в которой при помощи JavaScript можно рисовать разные объекты, выводить изображения, трансформировать их и менять свойства. При помощи тега &lt;canvas&gt; можно создавать рисунки, анимацию, игры и др. </td>
+                        <td>
+                            <li data-title="Задает высоту холста. По умолчанию 300 пикселов.">height</li>
+                            <li data-title="Задает ширину холста. По умолчанию 150 пикселов.">width</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;device&gt;</td>
+                        <td>Позволяет script получать доступ к устройствам, таким как Web-камера.</td>
+                        <td>нет</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;embed&gt;*</td>
+                        <td>Используется для загрузки и отображения объектов (например, видеофайлов, флэш-роликов, некоторых звуковых файлов и т.д.), которые исходно браузер не понимает. Как правило, такие объекты требуют подключения к браузеру специального модуля, который называется плагин, или запуска вспомогательной программы. </td>
+                        <td>
+                            <li data-title="Высота объекта.">height</li>
+                            <li data-title="Путь к файлу. ">src</li>
+                            <li data-title="MIME-тип объекта.">type</li>
+                            <li data-title="Ширина объекта.">width</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;iframe&gt;*</td>
+                        <td>Создает плавающий фрейм, который находится внутри обычного документа, он позволяет загружать в область заданных размеров любые другие независимые документы.</td>
+                        <td>
+                            <li data-title="Имя фрейма.">name</li>
+                            <li data-title="Позволяет задать ряд ограничений на контент загружаемый во фрейме.">sandbox</li>
+                            <li data-title="Определяет, что содержимое фрейма должно отображаться так, словно оно является частью документа.">seamless</li>
+                            <li data-title="Путь к файлу, содержимое которого будет загружаться во фрейм.">src</li>
+                            <li data-title="Хранит содержимое фрейма непосредственно в атрибуте.">srcdoc</li>
+                            <li data-title="Вертикальный отступ от фрейма до окружающего контента.">vspace</li>
+                            <li data-title="Ширина фрейма.">width</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;*</td>
+                        <td>Отображает на веб-странице изображение.</td>
+                        <td>
+                            <li data-title="Альтернативный текст для изображения. ">alt</li>
+                            <li data-title="Атрибут определяет, используется ли CORS при загрузке изображения. Изображения, загруженные с помощью CORS, могут использоваться в элементах <canvas>, при этом функциональность последних не ограничивается.">crossorigin</li>
+                            <li data-title="Высота изображения.">height</li>
+                            <li data-title="Говорит браузеру, что картинка является серверной картой-изображением.">ismap</li>
+                            <li data-title="Указывает адрес документа, где содержится аннотация к картинке.">longdesc</li>
+                            <li data-title="Путь к графическому файлу. ">src</li>
+                            <li data-title="Ширина изображения.">width</li>
+                            <li data-title="Ссылка на тег <map>, содержащий координаты для клиентской карты-изображения.">usemap</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;map&gt;</td>
+                        <td>Служит контейнером для элементов &lt;area&gt;, которые определяют активные области для карт-изображений. </td>
+                        <td>
+                            <li data-title="Имя карты-изображения. ">name</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;object&gt;</td>
+                        <td>Сообщает браузеру, как загружать и отображать объекты, которые исходно браузер не понимает.</td>
+
+                        <td>
+                            <li data-title="Адрес файла для его отображения в окне браузера. ">data</li>
+                            <li data-title="Высота объекта.">hight</li>
+                            <li data-title="MIME-тип объекта.">type</li>
+                            <li data-title="Определяет имя карты с изображением, используемую с объектом.">usemap</li>
+                            <li data-title="Задает имя объекта.">name</li>
+                            <li data-title="Указывает ширину объекта.">width</li>
+                            <li data-title="Задает одну или несколько форм к которым объект принадлежит.">form</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;param&gt;*</td>
+                        <td>Используется для определения параметров для плагинов, встроенных в элемент &lt;object&gt;.</td>
+                        <td>
+                            <li data-title="Определяет имя параметра.">name</li>
+                            <li data-title="Указывает значение параметра.">value</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;source&gt;*</td>
+                        <td>Позволяет указать несколько мультимедийных файлов в различном формате. Это необходимо, чтобы браузер смог выбрать подходящий поддерживаемый формат для загрузки и дальнейшего воспроизведения аудио, либо видео.</td>
+                        <td>
+                            <li data-title="Указывает, что файл адаптирован под определённые виды устройств.">media</li>
+                            <li data-title="Указывает URL адрес медиа-файла.">src</li>
+                            <li data-title="Указывает MIME-типы для медиа.">type</li><a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;track&gt;*</td>
+                        <td>позволяет добавить текстовые дорожки, синхронизированный текст (субтитры) для таких элементов как &lt;audio&gt; (добавляет аудио контент на страницу) и &lt;video&gt; (добавляет видео контент на страницу). Элемент используется в качестве дочернего элемента для тегов &lt;audio&gt; и &lt;video&gt;.</td>
+                        <td>
+                            <li data-title="Указывает, что данная дорожка должна быть включена по умолчанию.">default</li>
+                            <li data-title="Определяет вид текстовой дорожки.">kind</li>
+                            <li data-title="    Указывает заголовок текста дорожки.">label</li>
+                            <li data-title="Указывает URL файла дорожки. Является обязательным атрибутом.">src</li>
+                            <li data-title="Указывает язык текста дорожки ( требуется, если kind = subtitles).">srclang</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Добавляет видео контент на страницу.</td>
+                        <td>
+                            <li data-title="Указывает, что видео запустится автоматически, как только оно будет готово.">autoplay</li>
+                            <li data-title="Отображение встроенных элементов управления мультимедийным файлом (кнопка воспроизведения/паузы, регулятор, позволяющий перейти к определенному фрагменту ролика, а также регулятор уровня громкости).">controls</li>
+                            <li data-title="Устанавливает высоту видео проигрывателя.">height</li>
+                            <li data-title="Зацикливает воспроизведение файла (наша песня хороша – начинай сначала).">loop</li>
+                            <li data-title="Указывает, что видео будет заглушено (без звука).">muted</li>
+                            <li data-title="Задает изображение, которое отображается в то время пока видео загружается, или пока пользователь не нажмет кнопку воспроизведения.">poster</li>
+                            <li data-title="Указывает как видео должно загружаться при загрузке страницы. Атрибут игнорируется, если присутствует атрибут autoplay.">preload</li>
+                            <li data-title="Указывает URL адрес видео файла.">src</li>
+                            <li data-title="Указывает URL адрес видео файла.">width</li>
+                            <a href="#universal_atribute">Универсальные атрибуты</a> и <a href="#events">события</a>
+                        </td>
+                    </tr>
+                </tbody></table>
+                <p>* - закрывающий тег не требуется.</p>
+            </div>
+        </section>
+        <section id="universal_atribute">
+            <h2>
+                Универсальные атрибуты
+            </h2>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Атрибуты</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>accesskey</td>
+                        <td>Определяет клавишу, активирующую элемент или переводящую на него фокус.</td>
+                    </tr>
+                    <tr>
+                        <td>class</td>
+                        <td>Содержит имя класса или список имен классов, разделенных пробелами (используются в CSS и JavaScript).</td>
+                    </tr>
+                    <tr>
+                        <td>contenteditable</td>
+                        <td>Указывает, может ли пользователь редактировать содержимое данного элемента или нет.</td>
+                    </tr>
+                    <tr>
+                        <td>contextmenu</td>
+                        <td>Контекстное меню для элемента (контекстное меню появляется , когда пользователь кликает правой кнопкой мыши на элементе).</td>
+                    </tr>
+                    <tr>
+                        <td>dir</td>
+                        <td>Определяет направление текста для содержания в элементе.</td>
+                    </tr>
+                    <tr>
+                        <td>draggable</td>
+                        <td>Определяет, может ли пользователь перетаскивать данный элемент или нет.</td>
+                    </tr>
+                    <tr>
+                        <td>dropzone</td>
+                        <td>Атрибут указывает, что следует делать при перетаскивании на элемент copy/move/link.</td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Скрывает содержимое элемента от просмотра на странице.</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>Определяет уникальный идентификатор для элемента, Атрибут должен использоваться только один раз в конкретном HTML-документе.</td>
+                    </tr>
+                    <tr>
+                        <td>lang</td>
+                        <td>Определяет язык содержимого в элементе.</td>
+                    </tr>
+                    <tr>
+                        <td>spellcheck</td>
+                        <td>Указывает браузеру проверять или нет правописание и грамматику в тексте элемента.</td>
+                    </tr>
+                    <tr>
+                        <td>style</td>
+                        <td>Задает встроенный (inline) CSS стиль для элемента.</td>
+                    </tr>
+                    <tr>
+                        <td>tabindex</td>
+                        <td>Указывает порядок приоритета при переходе между элементами при использовании клавиши "Tab".</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td>Указывает дополнительную текстовую подсказку о содержимом при наведении курсора на элемент.</td>
+                    </tr>
+                    <tr>
+                        <td>translate</td>
+                        <td>Сообщает браузеру переводить указанный текст в элементе или нет.</td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </section>
+        <section id="events">
+            <h2>
+                Атрибуты событий
+            </h2>
+            <hr class="notop">
+            <h3>События клавиатуры</h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Атрибут</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>onkeydown</td>
+                        <td>Скрипт срабатывает, когда пользователь нажимает на любую клавишу.</td>
+                    </tr>
+                    <tr>
+                        <td>onkeypress</td>
+                        <td>Скрипт срабатывает после того, как пользователь нажал на клавишу (не работает с такими клавишами как Alt, Ctrl, Shift, Esc, PrScr и т.п.).</td>
+                    </tr>
+                    <tr>
+                        <td>onkeyup</td>
+                        <td>Скрипт срабатывает после того, как нажатая клавиша была отпущена.</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <h3>События мыши</h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Атрибут</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>onclick</td>
+                        <td>Скрипт срабатывает при нажатии на элементе.</td>
+                    </tr>
+                    <tr>
+                        <td>ondblclick</td>
+                        <td>Скрипт срабатывает после двойного клика мыши на элементе.</td>
+                    </tr>
+                    <tr>
+                        <td>ondrag</td>
+                        <td>Скрипт срабатывает, когда элемент или выделенный текст перетаскивается.</td>
+                    </tr>
+                    <tr>
+                        <td>ondragend</td>
+                        <td>Скрипт срабатывает, когда пользователь закончил перетаскивание элемента (после операции перетаскивания).</td>
+                    </tr>
+                    <tr>
+                        <td>ondragenter</td>
+                        <td>Скрипт срабатывает, когда элемент будет перенесен на заданную зону (цель для переноса).</td>
+                    </tr>
+                    <tr>
+                        <td>ondragleave</td>
+                        <td>Скрипт срабатывает, когда элемент выходит из допустимой зоны для переноса.</td>
+                    </tr>
+                    <tr>
+                        <td>ondragover</td>
+                        <td>Скрипт срабатывает, когда элемент перемещают над допустимой зоной для переноса.</td>
+                    </tr>
+                    <tr>
+                        <td>ondragstart</td>
+                        <td>Скрипт срабатывает, когда пользователь начинает перетаскивать элемент.</td>
+                    </tr>
+                    <tr>
+                        <td>ondrop</td>
+                        <td>Скрипт срабатывает после того, как перетаскиваемый элемент опустился на объект перетаскивания.</td>
+                    </tr>
+                    <tr>
+                        <td>onmousedown</td>
+                        <td>Скрипт срабатывает при нажатии кнопки мыши на элементе.</td>
+                    </tr>
+                    <tr>
+                        <td>onmousemove</td>
+                        <td>Скрипт срабатывает, пока указатель мыши перемещается над элементом.</td>
+                    </tr>
+                    <tr>
+                        <td>onmouseout</td>
+                        <td>Скрипт срабатывает, когда указатель мыши перемещается за пределы элемента.</td>
+                    </tr>
+                    <tr>
+                        <td>onmouseover</td>
+                        <td>Скрипт срабатывает, когда указатель мыши начал перемещаться над элементом.</td>
+                    </tr>
+                    <tr>
+                        <td>onmouseup</td>
+                        <td>Скрипт срабатывает при отпускании кнопки мыши с элемента.</td>
+                    </tr>
+                    <tr>
+                        <td>onscroll</td>
+                        <td>Скрипт срабатывает во время прокручивания полосы прокрутки элемента.</td>
+                    </tr>
+                    <tr>
+                        <td>onwheel</td>
+                        <td>Скрипт срабатывает при использовании колеса мыши на элементе.</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <h3>События формы</h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Атрибут</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>onblur</td>
+                        <td>Скрипт срабатывает, когда элемент теряет фокус.</td>
+                    </tr>
+                    <tr>
+                        <td>onchange</td>
+                        <td>Скрипт срабатывает при изменении значений элемента.</td>
+                    </tr>
+                    <tr>
+                        <td>oncontextmenu</td>
+                        <td>Скрипт срабатывает при вызове контекстного меню на элементе.</td>
+                    </tr>
+                    <tr>
+                        <td>onfocus</td>
+                        <td>Скрипт срабатывает, когда элемент получает фокус.</td>
+                    </tr>
+                    <tr>
+                        <td>oninput</td>
+                        <td>Скрипт срабатывает, когда элемент получает ввод данных от пользователя.</td>
+                    </tr>
+                    <tr>
+                        <td>oninvalid</td>
+                        <td>Скрипт срабатывает, когда отправляемый элемент формы был проверен и не удовлетворяет ограничениям формы (например, не заполнено обязательное поле - атрибут required).</td>
+                    </tr>
+                    <tr>
+                        <td>onreset</td>
+                        <td>Скрипт срабатывает при сбросе формы.</td>
+                    </tr>
+                    <tr>
+                        <td>onsearch</td>
+                        <td>Скрипт срабатывает, когда пользователь нажимает клавишу "Enter" или кнопку "х" в элементе &lt;input&gt; (type="search").</td>
+                    </tr>
+                    <tr>
+                        <td>onselect</td>
+                        <td>Скрипт срабатывает при выделении текста в элементе.</td>
+                    </tr>
+                    <tr>
+                        <td>onsubmit</td>
+                        <td>Скрипт срабатывает при отправке формы.</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <h3>События буфера обмена</h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Атрибут</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>oncopy</td>
+                        <td>Скрипт срабатывает, когда пользователь копирует содержимое элемента.</td>
+                    </tr>
+                    <tr>
+                        <td>oncut</td>
+                        <td>Скрипт срабатывает, когда пользователь вырезает содержимое элемента.</td>
+                    </tr>
+                    <tr>
+                        <td>onpaste</td>
+                        <td>Скрипт срабатывает, когда пользователь вставляет содержимое в элемент.</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <h3>Атрибуты событий окна</h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Атрибут</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>onafterprint</td>
+                        <td>Скрипт срабатывает после того, как документ будет напечатан.</td>
+                    </tr>
+                    <tr>
+                        <td>onbeforeprint</td>
+                        <td>Скрипт выполняется перед распечаткой документа.</td>
+                    </tr>
+                    <tr>
+                        <td>onbeforeunload</td>
+                        <td>Скрипт срабатывает до загрузки документа.</td>
+                    </tr>
+                    <tr>
+                        <td>onerror</td>
+                        <td>Скрипт срабатывает, при возникновении ошибки.</td>
+                    </tr>
+                    <tr>
+                        <td>onhashchange</td>
+                        <td>Скрипт срабатывает, в том случае если произошли изменения в названии #якоря в документе (из текущего URL-адреса).</td>
+                    </tr>
+                    <tr>
+                        <td>onload</td>
+                        <td>Скрипт запустится после завершения полной загрузки страницы (включая изображения, внешние таблицы стилей и внешние скрипты).</td>
+                    </tr>
+                    <tr>
+                        <td>onmessage</td>
+                        <td>Скрипт выполняется при срабатывании сообщения.</td>
+                    </tr>
+                    <tr>
+                        <td>onoffline</td>
+                        <td>Скрипт срабатывает, когда браузер начинает работать в автономном режиме.</td>
+                    </tr>
+                    <tr>
+                        <td>ononline</td>
+                        <td>Скрипт срабатывает, когда браузер начинает работать в онлайн.</td>
+                    </tr>
+                    <tr>
+                        <td>onpagehide</td>
+                        <td>Скрипт срабатывает, когда пользователь покидает страницу.</td>
+                    </tr>
+                    <tr>
+                        <td>onpageshow</td>
+                        <td>Скрипт срабатывает, когда пользователь переходит на страницу.</td>
+                    </tr>
+                    <tr>
+                        <td>onpopstate</td>
+                        <td>Скрипт срабатывает при изменении окна истории.</td>
+                    </tr>
+                    <tr>
+                        <td>onresize</td>
+                        <td>Скрипт срабатывает, когда окно браузера изменяется.</td>
+                    </tr>
+                    <tr>
+                        <td>onstorage</td>
+                        <td>Скрипт срабатывает, когда веб-хранилище данных обновляется.</td>
+                    </tr>
+                    <tr>
+                        <td>onunload</td>
+                        <td>Скрипт срабатывает при выходе пользователя из документа.</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <h3>События медиа-файлов</h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Атрибут</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>onabort</td>
+                        <td>Скрипт срабатывает при прерывании.</td>
+                    </tr>
+                    <tr>
+                        <td>oncanplay</td>
+                        <td>Скрипт срабатывает, когда файл будет готов, чтобы начать проигрывание (когда будет достаточно буферизирован, чтобы начать).</td>
+                    </tr>
+                    <tr>
+                        <td>oncanplaythrough</td>
+                        <td>Скрипт срабатывает, когда файл может быть воспроизведен полностью (от начала до конца), не останавливаясь для буферизации.</td>
+                    </tr>
+                    <tr>
+                        <td>ondurationchange</td>
+                        <td>Скрипт срабатывает при изменении длины продолжительности медиа файла.</td>
+                    </tr>
+                    <tr>
+                        <td>onemptied</td>
+                        <td>Скрипт срабатывает, когда произошла какая-то неполадка и файл стал недоступен (например при разрыве связи с интернетом).</td>
+                    </tr>
+                    <tr>
+                        <td>onended</td>
+                        <td>Скрипт срабатывает, когда аудио/видео файл дойдет до конца (например для вывода сообщения: спасибо за прослушивание/просмотр).</td>
+                    </tr>
+                    <tr>
+                        <td>onerror</td>
+                        <td>Скрипт срабатывает, если возникнет ошибка при загрузке файла.</td>
+                    </tr>
+                    <tr>
+                        <td>onloadeddata</td>
+                        <td>Скрипт срабатывает при загрузке данных медиа файла.</td>
+                    </tr>
+                    <tr>
+                        <td>onloadedmetadata</td>
+                        <td>Скрипт срабатывает, когда загружены мета-данные (например размер и продолжительность).</td>
+                    </tr>
+                    <tr>
+                        <td>onloadstart</td>
+                        <td>Скрипт срабатывает при загрузке файла прежде, чем начнет загружаться на самом деле.</td>
+                    </tr>
+                    <tr>
+                        <td>onpause</td>
+                        <td>Скрипт срабатывает, если воспроизведение файла приостановлено (нажали паузу) пользователем или программно.</td>
+                    </tr>
+                    <tr>
+                        <td>onplay</td>
+                        <td>Скрипт срабатывает, когда файл готов начать воспроизводиться.</td>
+                    </tr>
+                    <tr>
+                        <td>onplaying</td>
+                        <td>Скрипт срабатывает при воспроизведении файла.</td>
+                    </tr>
+                    <tr>
+                        <td>onprogress</td>
+                        <td>Скрипт срабатывает, когда браузер находится в процессе получения данных медиа файла.</td>
+                    </tr>
+                    <tr>
+                        <td>onratechange</td>
+                        <td>Скрипт срабатывает, каждый раз, при изменении режима воспроизведения (например, когда пользователь переключается на медленное воспроизведение или режим быстрой перемотки).</td>
+                    </tr>
+                    <tr>
+                        <td>onseeked</td>
+                        <td>Скрипт срабатывает, когда атрибут object.seeking у тегов &lt;audio&gt; или &lt;video&gt; имеет значение "false" (пользователь не переходит на новые позиции воспроизведения - окончание "перемотки").</td>
+                    </tr>
+                    <tr>
+                        <td>onseeking</td>
+                        <td>Скрипт срабатывает, когда атрибут object.seeking у тегов &lt;audio&gt; или &lt;video&gt; имеет значение "true" (пользователь переходит к новой позиции воспроизведения - "перемотка").</td>
+                    </tr>
+                    <tr>
+                        <td>onstalled</td>
+                        <td>Скрипт срабатывает, когда браузер не может получить данные медиа файла по любой причине.</td>
+                    </tr>
+                    <tr>
+                        <td>onsuspend</td>
+                        <td>Скрипт срабатывает, когда получение данных медиа файла прекращается, до окончания полной загрузки по любой причине.</td>
+                    </tr>
+                    <tr>
+                        <td>ontimeupdate</td>
+                        <td>Скрипт срабатывает, когда позиция воспроизведения изменилась (например, когда пользователь выбрал другую точку воспроизведения).</td>
+                    </tr>
+                    <tr>
+                        <td>onvolumechange</td>
+                        <td>Скрипт срабатывает каждый раз при изменении значения громкости звука (включая полное отключение звука).</td>
+                    </tr>
+                    <tr>
+                        <td>onwaiting</td>
+                        <td>Скрипт срабатывает, когда медиа файл остановлен, но ожидается возобновление запуска (например, когда файл делает паузу для буферизации оставшихся данных).</td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <h3>Прочие события</h3>
+            <hr class="notop">
+            <div>
+                <table>
+                    <tbody><tr>
+                        <th width="10%">Атрибут</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>onerror</td>
+                        <td>Скрипт срабатывает, когда происходит ошибка во время загрузки внешнего файла.</td>
+                    </tr>
+                    <tr>
+                        <td>onshow</td>
+                        <td>Скрипт срабатывает, когда элемент &lt;menu&gt; отображается как контекстное меню.</td>
+                    </tr>
+                    <tr>
+                        <td>ontoggle</td>
+                        <td>Скрипт срабатывает, когда пользователь открывает или закрывает элемент &lt;details&gt;.</td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </section>
+            </div>  
+
+</body></html>
