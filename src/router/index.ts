@@ -1,30 +1,32 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
+import type { RouteRecordRaw } from "vue-router";
 import MainContent from "../components/MainContent.vue";
 
+const routes: RouteRecordRaw[] = [
+    {
+        path: "/",
+        name: "MainContent",
+        component: MainContent,
+    },
+    {
+        path: "/qaiunokian",
+        name: "QaPageIUNokian",
+        component: () => import("@/views/qaPages/QaPageIUNokian.vue"),
+    },
+    {
+        path: "/qaapinokian",
+        name: "QaPageAPINokian",
+        component: () => import("@/views/qaPages/QaPageAPINokian.vue"),
+    },
+    {
+        path: "/qamobilewiki",
+        name: "QaMobileWiki",
+        component: () => import("@/views/qaPages/QaPageMobileWiki.vue"),
+    },
+];
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes: [
-        {
-            path: "/",
-            name: "MainContent",
-            component: MainContent,
-        },
-        {
-            path: "/qaiunokian",
-            name: "QaPageIUNokian",
-            component: () => import("@/views/qaPages/QaPageIUNokian.vue"),
-        },
-        {
-            path: "/qaapinokian",
-            name: "QaPageAPINokian",
-            component: () => import("@/views/qaPages/QaPageAPINokian.vue"),
-        },
-        {
-            path: "/qamobilewiki",
-            name: "QaMobileWiki",
-            component: () => import("@/views/qaPages/QaPageMobileWiki.vue"),
-        },
-    ],
+    history: createWebHashHistory(import.meta.env.BASE_URL),
+    routes,
 });
 router.beforeEach((to, from, next) => {
     // Прокручиваем страницу в начало
