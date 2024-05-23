@@ -126,8 +126,8 @@ export default {
                 {
                     title: "Backend",
                     open: false,
-                    subtitle: ["Us", "As", "Ai"],
-                    torouter: ["/qaiunokian", "/qaapinokian", "/qamobilewiki"],
+                    subtitle: ["API Book Nanny Ogg", "As", "Ai"],
+                    torouter: ["/nannyoggapi", "/qaapinokian", "/qamobilewiki"],
                 },
                 {
                     title: "Web",

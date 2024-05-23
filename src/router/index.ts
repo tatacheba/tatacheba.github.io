@@ -23,6 +23,11 @@ const routes: RouteRecordRaw[] = [
         name: "QaMobileWiki",
         component: () => import("@/views/qaPages/QaPageMobileWiki.vue"),
     },
+    {
+        path: "/nannyoggapi",
+        name: "NannyOggApi",
+        component: () => import("@/views/backendPages/NannyOggApi.vue"),
+    },
 ];
 const router = createRouter({
     history: createWebHashHistory(import.meta.env.BASE_URL),

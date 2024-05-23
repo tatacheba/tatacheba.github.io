@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "name": "Spaghetti Bolognese",
+        "ingredients": ["spaghetti", "minced meat", "tomato sauce"]
+    },
+    {
+        "id": 2,
+        "name": "Chicken Curry",
+        "ingredients": ["chicken", "curry powder", "coconut milk"]
+    }
+]
