@@ -1,27 +1,71 @@
-<script setup lang="ts">
-import { ref, onMounted } from "vue";
-import type { Recipe } from "@/types/Recipe";
-
-// Инициализация переменной с типом Recipe[]
-const recipes = ref<Recipe[]>([]);
-
-onMounted(async () => {
-    try {
-        const response = await fetch("http://localhost:3000/api/recipes");
-        recipes.value = await response.json();
-    } catch (error) {
-        console.error("Error fetching recipes:", error);
-    }
-});
-</script>
-
 <template>
-    <div>
-        <h1>Recipes</h1>
-        <ul>
-            <li v-for="recipe in recipes" :key="recipe.id">
-                {{ recipe.name }}
-            </li>
-        </ul>
+    <div class="nanny-ogg-api">
+        <h1>Nanny Ogg's Recipes</h1>
+        <div v-if="loading">Loading...</div>
+        <div v-else>
+            <div v-for="recipe in recipes" :key="recipe.id" class="recipe-card">
+                <h2>{{ recipe.title }}</h2>
+                <p><strong>Servings:</strong> {{ recipe.servings }}</p>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li
+                        v-for="ingredient in recipe.ingredients"
+                        :key="ingredient.name"
+                    >
+                        {{ ingredient.quantity }} {{ ingredient.unit || "" }}
+                        {{ ingredient.name }}
+                        <span v-if="ingredient.optional">(optional)</span>
+                    </li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li
+                        v-for="instruction in recipe.instructions"
+                        :key="instruction"
+                    >
+                        {{ instruction }}
+                    </li>
+                </ol>
+                <h3>Notes:</h3>
+                <ul>
+                    <li v-for="note in recipe.notes" :key="note">{{ note }}</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
+
+<script>
+import axios from "axios";
+
+export default {
+    name: "NannyOggApi",
+    data() {
+        return {
+            recipes: [],
+            loading: true,
+        };
+    },
+    created() {
+        this.fetchRecipes();
+    },
+    methods: {
+        async fetchRecipes() {
+            try {
+                const response = await axios.get(
+                    "http://localhost:3000/api/recipes"
+                );
+                this.recipes = response.data;
+            } catch (error) {
+                console.error("Error fetching recipes:", error);
+            } finally {
+                this.loading = false;
+            }
+        },
+    },
+};
+</script>
+
+<style scoped src="@/assets/styles/nanny-ogg-api.css">
+@import "/src/assets/styles/nanny-ogg-api.css";
+</style>

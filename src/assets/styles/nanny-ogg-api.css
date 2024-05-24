@@ -1,0 +1,14 @@
+.nanny-ogg-api {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.recipe-card h2 {
+    margin-top: 0;
+}
