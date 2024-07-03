@@ -1,0 +1,27 @@
+[
+    {
+        "dev": "QA",
+        "projects": [
+            {
+                "title": "UI-Auto Nokian tyres",
+                "text": "Lorem Ips",
+                "toroute": "/qaiunokian"
+            },
+            {
+                "title": "API-Auto Nokian tyres",
+                "text": "Lorem Ips",
+                "toroute": "/qaapinokian/"
+            },
+            {
+                "title": "Autotest Mobile Wiki",
+                "text": "tab-3",
+                "toroute": "/qamobilewiki"
+            },
+            {
+                "title": "Nanny Ogg's cookbook Api",
+                "text": "tab-4",
+                "toroute": "https://en.gikit.ru/"
+            }
+        ]
+    }
+]

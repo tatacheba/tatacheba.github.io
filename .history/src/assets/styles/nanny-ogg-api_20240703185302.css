@@ -1,0 +1,49 @@
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 80%;
+}
+.resume-main {
+    background-color: #333;
+    padding: 20px;
+}
+.education-entry,
+.employment-entry {
+    margin-bottom: 1rem;
+}
+.header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.header h3 {
+    padding-bottom: 0;
+}
+.header div {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: -3rem;
+    justify-content: center;
+}
+.header img {
+    height: 30px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#runningtests,
+#reportallurereport,
+#integrationalluretestops,
+#integrationjira,
+#notificationstelegrambot,
+#videotest {
+    text-align: center;
+}
+.content p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

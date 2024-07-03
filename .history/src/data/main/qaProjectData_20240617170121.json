@@ -1,0 +1,31 @@
+[
+    {
+        "dev": "QA",
+        "projects": [
+            {
+                "title": "UI-Auto Nokian tyres",
+                "text": " The 'autotestForNokianTyres' project is a thesis by QA.GURU aimed at automating user interface testing for NOKIAN TYRES. The project uses various technologies and tools, including Selenide for UI testing, Gradle for project assembly, JUnit 5 for testing, Jenkins for test execution, and Allure TestOps for visualization of test results. Jira and Telegram Bot are also integrated into the project for management and notification. Tests test the functionality of pages, such as browsing and activating extended warranty.",
+                "imglink":"../../public/images/interface.png",
+                "toroute": "/qaiunokian"
+            },
+            {
+                "title": "API-Auto Nokian tyres",
+                "text": " 333333333   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                  "imglink":"../../public/images/api.png",
+                "toroute": "/qaapinokian/"
+            },
+            {
+                "title": "Autotest Mobile Wiki",
+                "text": "  вфвввв3  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                  "imglink":"../../public/images/smartphon.png",
+                "toroute": "/qamobilewiki"
+            },
+            {
+                "title": "Nanny Ogg's cookbook Api",
+                "text": " 44444444   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                  "imglink":"../../public/images/api.png",
+                "toroute": "/qanannycookbook/"
+            }
+        ]
+    }
+]

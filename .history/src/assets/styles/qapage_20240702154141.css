@@ -1,0 +1,85 @@
+.content,
+.tehnologist,
+.verified {
+    margin-bottom: 20px;
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px solid #444;
+}
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.tehnologistimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 80%;
+}
+.tehnologistimg a img {
+    width: 50px;
+    height: 50px;
+}
+
+.tehnologist a {
+    margin: 0 5px;
+}
+
+.tehnologist blockquote p {
+    font-style: italic;
+}
+
+.verified ul {
+    padding-left: 20px;
+}
+.terminal {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.resume-main {
+    background-color: #333;
+    padding: 20px;
+}
+.education-entry,
+.employment-entry {
+    margin-bottom: 1rem;
+}
+.header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.header h3 {
+    padding-bottom: 0;
+}
+.header div {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: -3rem;
+    justify-content: center;
+}
+.header img {
+    height: 30px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.runningtests,
+.reportallurereport,
+.integrationalluretestops,
+.integrationjira,
+.notificationstelegrambot,
+.videotest {
+    text-align: center;
+}
+.content p:hover {
+    border: 2px solid red;
+    cursor: pointer;
+}
+.qauiautonokian {
+    background-color: blue;
+    border: 2px solid red;
+    cursor: pointer;
+}

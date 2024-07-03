@@ -1,0 +1,35 @@
+[
+    {
+        "dev": "QA",
+        "projects": [
+            {
+                "id":1,
+                "title": "UI-Auto Nokian tyres",
+                "text": "The 'UI-Auto Nokian tyres' project  is to automate user interface testing for NOKIAN TYRES. The project uses technologies and tools, including Selenide for UI testing, Gradle for project assembly, JUnit 5 for testing, Jenkins for test execution, and Allure TestOps for visualization of test results. Jira and Telegram Bot are also integrated into the project management and notification. Tests assess the functionality of the pages, including browsing and activating extended guarantees.",
+                "imglink":"../../public/images/interface.png",
+                "toroute": "/qaiunokian"
+            },
+            {
+              "id":2,
+                "title": "API-Auto Nokian tyres",
+                "text": " The 'API-Auto Nokian tyres' project automates API testing for NOKIAN TYRES. Using Java, Rest-Assured, JUnit 5, and Gradle, the project validates API features such as bus search and shopping cart management. Jenkins and Allure tools are used for automation and reporting, and integration with Jira and Telegram provides task management and notification.",
+                  "imglink":"../../public/images/api.png",
+                "toroute": "/qaapinokian/"
+            },
+            {
+                      "id":3,
+                "title": "Autotest Mobile Wiki",
+                "text": "The 'Autotest Mobile Wiki' project automates testing for the Wikipedia mobile application. Using Java, IntelliJ IDEA, JUnit 5, Gradle, Appium, Rest-Assured, BrowserStack, Jenkins, Allure, and Telegram, it ensures thorough testing of launch screens and search functionality. Tests can run locally on emulators or real devices and integrate with Jenkins for continuous testing. Allure provides detailed test reports, while Telegram delivers notifications.",
+                  "imglink":"../../public/images/smartphon.png",
+                "toroute": "/qamobilewiki"
+            },
+            {
+                      "id":4,
+                "title": "Nanny Ogg's cookbook Api",
+                "text": " 44444444   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                  "imglink":"../../public/images/api.png",
+                "toroute": "/qanannycookbook/"
+            }
+        ]
+    }
+]

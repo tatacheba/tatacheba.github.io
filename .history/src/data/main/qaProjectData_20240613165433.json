@@ -1,0 +1,27 @@
+[
+    {
+        "dev": "QA",
+        "projects": [
+            {  
+                "title": "UI-Auto Nokian tyres",
+                "src": "tab-1",
+                "toroute": "/qaiunokian"
+            },
+            {
+                "title": "API-Auto Nokian tyres",
+                "src": "tab-2",
+                "toroute": "/qaapinokian/"
+            },
+            {
+                "title": "Autotest Mobile Wiki",
+                "src": "tab-3",
+                "toroute": "/qamobilewiki"
+            },
+            {
+                "title": "Security",
+                "src": "tab-4",
+                "toroute": "https://en.gikit.ru/"
+            }
+        ]
+    }
+]

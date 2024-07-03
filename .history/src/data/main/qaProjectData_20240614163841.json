@@ -1,0 +1,27 @@
+[
+    {
+        "dev": "QA",
+        "projects": [
+            {
+                "title": "UI-Auto Nokian tyres",
+                "text": "    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                "toroute": "/qaiunokian"
+            },
+            {
+                "title": "API-Auto Nokian tyres",
+                "text": "    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                "toroute": "/qaapinokian/"
+            },
+            {
+                "title": "Autotest Mobile Wiki",
+                "text": "    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                "toroute": "/qamobilewiki"
+            },
+            {
+                "title": "Nanny Ogg's cookbook Api",
+                "text": "    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                "toroute": "https://en.gikit.ru/"
+            }
+        ]
+    }
+]

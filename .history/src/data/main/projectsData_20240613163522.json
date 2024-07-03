@@ -1,0 +1,21 @@
+
+        dev: "QA",
+        projects: [
+            {
+                text: "UI-Auto Nokian tyres",
+                value: "tab-1",
+            },
+            {
+                text: "Code of Conduct",
+                value: "tab-2",
+            },
+            {
+                text: "MIT License",
+                value: "tab-3",
+            },
+            {
+                text: "Security",
+                value: "tab-4",
+            },
+        ],
+    

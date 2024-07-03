@@ -1,0 +1,46 @@
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 80%;
+}
+.resume-main {
+    background-color: #333;
+    padding: 20px;
+}
+
+.header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.header h3 {
+    padding-bottom: 0;
+}
+.header div {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: -3rem;
+    justify-content: center;
+}
+.header img {
+    height: 30px;
+    width: auto;
+    margin-bottom: 15px;
+}
+.tehnologistimg img {
+    width: 50px;
+    height: 50px;
+}
+
+#tehnologist a {
+    margin: 0 10px;
+}
+
+#tehnologist p {
+    font-style: italic;
+    margin: 10 0px;
+}

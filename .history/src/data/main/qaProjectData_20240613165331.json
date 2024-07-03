@@ -1,0 +1,27 @@
+[
+    {
+        "dev": "QA",
+        "projects": [
+            {  
+                "text": "UI-Auto Nokian tyres",
+                "src": "tab-1",
+                "toroute": "https://en.gikit.ru/"
+            },
+            {
+                "text": "API-Auto Nokian tyres",
+                "src": "tab-2",
+                "toroute": "https://en.gikit.ru/"
+            },
+            {
+                "text": "MIT License",
+                "src": "tab-3",
+                "toroute": "https://en.gikit.ru/"
+            },
+            {
+                "text": "Security",
+                "src": "tab-4",
+                "toroute": "https://en.gikit.ru/"
+            }
+        ]
+    }
+]

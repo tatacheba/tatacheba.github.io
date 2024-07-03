@@ -1,0 +1,21 @@
+.resume-main {
+    background-color: #333;
+    padding: 20px;
+}
+.education-entry,
+.employment-entry {
+    margin-bottom: 1rem;
+}
+.resume-header {
+    /* background: #0c0c0c; */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.resume-sidebar {
+    height: 100%;
+}
+.v-card {
+    padding: 10px;
+}

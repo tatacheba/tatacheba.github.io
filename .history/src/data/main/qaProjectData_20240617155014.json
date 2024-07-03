@@ -1,0 +1,31 @@
+[
+    {
+        "dev": "QA",
+        "projects": [
+            {
+                "title": "UI-Auto Nokian tyres",
+                "text": "  2222222222  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                "imglink":"../../public/images/interface.png",
+                "toroute": "/qaiunokian"
+            },
+            {
+                "title": "API-Auto Nokian tyres",
+                "text": " 333333333   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                  "imglink":"../../public/images/api.png",
+                "toroute": "/qaapinokian/"
+            },
+            {
+                "title": "Autotest Mobile Wiki",
+                "text": "  вфвввв3  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                  "imglink":"../../public/images/smartphone.png",
+                "toroute": "/qamobilewiki"
+            },
+            {
+                "title": "Nanny Ogg's cookbook Api",
+                "text": " 44444444   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum veniam voluptatum iusto vitae accusamus nam voluptatem perspiciatis repellendus quibusdam id soluta, expedita earum, reprehenderit, fugiat architecto blanditiis voluptatibus illo voluptate!",
+                  "imglink":"",
+                "toroute": "/qanannycookbook/"
+            }
+        ]
+    }
+]
