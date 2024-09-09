@@ -54,19 +54,16 @@
             <h2>Skills</h2>
             <ul>
                 <li>
-                    AutoQA: <br />
-                    Selenium, Cucumber, <br />
-                    Postman, Jest, Cypress,<br />
-                    Playwright, Gradle, NPM, Git
+                    AutoQA: Java (JUnit, TestNG, Selenium WD),<br />
+                    JS (Jest, Cypress, Playwright),<br />
+                    Postman, Gradle, NPM, Git
                 </li>
                 <li>
-                    Development: <br />
-                    HTML, CSS,<br />
-                    JS (Vue, React, Node), Java
+                    Development: HTML, CSS,<br />
+                    JS (Vue, React, Node, Next)
                 </li>
                 <li>
-                    Other: <br />
-                    Photoshop, Figma,<br />
+                    Other: Photoshop, Figma,<br />
                     Illustrator, AutoCad,<br />
                     AD Inventor 3D, 3DMaya <br />
                 </li>
