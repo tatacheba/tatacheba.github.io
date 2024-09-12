@@ -11,8 +11,8 @@ import VueScrollTo from "vue-scrollto";
 const app = createApp(App);
 
 const vuetify = createVuetify({
-    components,
-    directives,
+  components,
+  directives,
 });
 
 app.use(router);

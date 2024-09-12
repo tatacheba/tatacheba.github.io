@@ -22,11 +22,7 @@
   },
   {
     "href": "https://www.itgid.info/",
-    "qualification": [
-      "JavaScript",
-      "Node.JS",
-      "React.JS"
-    ],
+    "qualification": ["JavaScript", "Node.JS", "React.JS"],
     "serthref": [
       "https://itgid.info/ru/certificate/view?Certificate[uid]=6vn1n39qwky1",
       "https://itgid.info/ru/certificate/view?Certificate[uid]=tjp7reqwd1ej",
@@ -34,11 +30,7 @@
     ],
     "src": "/public/images/itgid.png",
     "title": "ITGID",
-    "years": [
-      "2021",
-      "2023",
-      "2024"
-    ]
+    "years": ["2021", "2023", "2024"]
   },
   {
     "href": "https://stepik.org/",

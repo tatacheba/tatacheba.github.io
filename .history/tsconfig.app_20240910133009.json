@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "esnext", // Важно: установлено "esnext"
+        "target": "es2020", // Совместимо с использованием import.meta
+        "lib": ["dom", "es2020"],
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    }
+}
