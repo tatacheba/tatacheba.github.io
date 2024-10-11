@@ -35,9 +35,9 @@
   {
     "href": "https://stepik.org/",
     "qualification": ["SQL Trainer", "Testing Api Postman"],
-    "serthref": ["https://stepik.org/cert/1927665?lang=en", "https://stepik.org/cert/2588191?lang=en"],
+    "serthref": ["https://stepik.org/cert/1927665?lang=en", ""]
     "src": "/public/images/stepik.svg",
     "title": "Stepik",
-    "years": ["2023", "2024"]
+    "years": "2023"
   }
 ]
