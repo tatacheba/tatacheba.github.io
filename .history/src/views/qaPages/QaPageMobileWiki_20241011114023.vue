@@ -174,11 +174,11 @@
 export default {
     name: "QaPageMobileWiki",
     mounted() {
-        console.log("Компонент загружен."); // Проверка, что компонент загружается
+        // Находим элемент по селектору
         const button = document.querySelector("#videotest");
 
         if (button) {
-            console.log("Элемент найден:", button); // Вывод найденного элемента
+            // Добавляем атрибут для тестирования только если элемент существует
             button.setAttribute("data-test-id", "submit-button");
         } else {
             console.error("Элемент с ID 'videotest' не найден.");

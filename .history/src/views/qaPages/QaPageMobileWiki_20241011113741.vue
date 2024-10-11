@@ -171,19 +171,13 @@
     </main>
 </template>
 <script lang="ts">
+// Находим элемент по селектору
+const button = document.querySelector("#videotest");
+
+// Добавляем атрибут для тестирования
+button.setAttribute("data-test-id", "submit-button");
 export default {
     name: "QaPageMobileWiki",
-    mounted() {
-        console.log("Компонент загружен."); // Проверка, что компонент загружается
-        const button = document.querySelector("#videotest");
-
-        if (button) {
-            console.log("Элемент найден:", button); // Вывод найденного элемента
-            button.setAttribute("data-test-id", "submit-button");
-        } else {
-            console.error("Элемент с ID 'videotest' не найден.");
-        }
-    },
 };
 </script>
 <style scoped src="@/assets/styles/qapage.css"></style>
